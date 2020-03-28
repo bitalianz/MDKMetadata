@@ -42,7 +42,7 @@
 								"Placeholder": "$(L, search)"
 							},
 							"Value": [
-								"#Property:OrderID"
+								"{OrderID}"
 							],
 							"_Name": "WorkOrderLstPkr",
 							"_Type": "Control.Type.FormCell.ListPicker"
