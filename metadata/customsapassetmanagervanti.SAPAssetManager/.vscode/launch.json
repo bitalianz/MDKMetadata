@@ -9,7 +9,7 @@
             "type": "MDK",
             "request": "attach",
             "platform": "android",
-            "appRoot": "C:/Users/I516195/OneDrive - SAP SE/Documents/SAP/asset_manager/MDKCLNT01P_1/MDKClient_SDK/Example App",
+            "appRoot": "C:/Users/bitcr/Downloads/MDK_SDK_4_1_2_Notarized/MDKClient_SDK/Vanti4",
             "sourceMaps": true,
             "watch": false
         },
@@ -19,7 +19,7 @@
             "type": "MDK",
             "request": "launch",
             "platform": "android",
-            "appRoot": "C:/Users/I516195/OneDrive - SAP SE/Documents/SAP/asset_manager/MDKCLNT01P_1/MDKClient_SDK/Example App",
+            "appRoot": "C:/Users/bitcr/Downloads/MDK_SDK_4_1_2_Notarized/MDKClient_SDK/Vanti4",
             "sourceMaps": true,
             "watch": true
         }
