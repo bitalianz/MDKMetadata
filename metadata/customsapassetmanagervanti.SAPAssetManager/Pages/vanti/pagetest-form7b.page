@@ -144,7 +144,7 @@
 				"Caption": "Siguente",
 				"Clickable": true,
 				"Enabled": true,
-				"OnPress": "/SAPAssetManager/Rules/vanti/SalirdePaginas.js",
+				"OnPress": "/SAPAssetManager/Rules/vanti/CallOperationConfirmation.js",
 				"Visible": true,
 				"_Name": "ToolbarItem0",
 				"_Type": "Control.Type.ToolbarItem"
