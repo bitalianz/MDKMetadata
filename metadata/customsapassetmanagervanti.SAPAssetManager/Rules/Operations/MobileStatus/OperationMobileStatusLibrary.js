@@ -88,7 +88,8 @@ export default class {
         libMobile.setStartStatus(context);
         return context.executeAction('/SAPAssetManager/Actions/WorkOrders/MobileStatus/OperationStartUpdate.action').then(function() {
             context.setToolbarItemCaption('IssuePartTbI', context.localizeText('end_operation'));
-            return context.executeAction('/SAPAssetManager/Actions/WorkOrders/MobileStatus/OperationMobileStatusSuccessMessage.action');
+            //return context.executeAction('/SAPAssetManager/Actions/WorkOrders/MobileStatus/OperationMobileStatusSuccessMessage.action');
+            return context.executeAction('/SAPAssetManager/Actions/vanti/Open_form_1.action');
         },
         () => {
             return context.executeAction('/SAPAssetManager/Actions/WorkOrders/MobileStatus/OperationMobileStatusFailureMessage.action');

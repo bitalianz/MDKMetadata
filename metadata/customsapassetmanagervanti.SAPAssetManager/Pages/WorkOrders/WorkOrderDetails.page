@@ -90,7 +90,7 @@
 						"SubstatusText": "/SAPAssetManager/Rules/WorkOrders/WorkOrderPriorityFormat.js",
 						"Tags": "/SAPAssetManager/Rules/WorkOrders/Details/WorkOrderDetailsObjectHeaderTags.js",
 						"Target": {
-							"EntitySet": "{{#Property:@odata.readLink}}",
+							"EntitySet": "{{#Property:@odata.readLink}}/Activities",
 							"QueryOptions": "$expand=MobileStatus,Equipment,FunctionalLocation,Equipment/MeasuringPoints,Equipment/MeasuringPoints/MeasurementDocs,MarkedJob,WOPriority&$orderby=OrderId,ObjectKey,Priority",
 							"Service": "/SAPAssetManager/Services/AssetManager.service"
 						}
@@ -133,22 +133,22 @@
 							"SimplePropertyCell": {
 								"AccessoryType": "disclosureIndicator",
 								"KeyName": "Datos clientes",
-								"OnPress": "/SAPAssetManager/Actions/vanti/Open_form_1_datos_cliente.action"
+								"OnPress": "/SAPAssetManager/Actions/vanti/Open_form_1_datos_cliente.action",
+								"Value": "Value"
 							}
 						},
 						{
 							"SimplePropertyCell": {
 								"AccessoryType": "disclosureIndicator",
 								"KeyName": "Datos técnicos",
-								"OnPress": "/SAPAssetManager/Actions/vanti/Open_form_1_datos_tecnicos.action"
+								"OnPress": "/SAPAssetManager/Actions/vanti/Open_form_1_datos_tecnicos.action",
+								"Value": "Value"
 							}
 						}
 					],
 					"_Name": "SectionSimplePropertyCollection0",
 					"_Type": "Section.Type.SimplePropertyCollection"
 				},
-				
-				
 				{
 					"DataSubscriptions": [
 						"Confirmations",
@@ -339,7 +339,7 @@
 							}
 						}
 					],
-					"_Name": "SectionSimplePropertyCollection0",
+					"_Name": "SectionSimplePropertyCollection1",
 					"_Type": "Section.Type.SimplePropertyCollection"
 				}
 			],
@@ -380,15 +380,6 @@
 				"SystemItem": "FlexibleSpace",
 				"Visible": true,
 				"_Name": "FlexibleSpaceRightTbI",
-				"_Type": "Control.Type.ToolbarItem"
-			},
-			{
-				"Caption": "Vanti",
-				"Clickable": true,
-				"Enabled": true,
-				"OnPress": "/SAPAssetManager/Actions/vanti/Open_form_1.action",
-				"Visible": true,
-				"_Name": "vanti",
 				"_Type": "Control.Type.ToolbarItem"
 			}
 		]
