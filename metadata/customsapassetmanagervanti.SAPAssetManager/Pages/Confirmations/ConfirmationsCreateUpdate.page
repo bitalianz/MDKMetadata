@@ -51,7 +51,7 @@
                             "IsEditable": false,
                             "Value": "{ConfirmationNum}",
                             "_Name": "ConfirmationIdProperty",
-                            "Caption": "$(L, confirmation_title, '') $(L, ID)",
+                            "Caption": "$(L, confirmation_title, '')  $(L, ID)",
                             "IsVisible": "/SAPAssetManager/Rules/Confirmations/CreateUpdate/IsOnUpdate.js",
                             "_Type": "Control.Type.FormCell.SimpleProperty"
                         },
