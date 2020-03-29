@@ -22,7 +22,7 @@ export default class {
         } else if (isTimeSheetsEnabled(context)) {
             return this.showTimeSheetCaptureMessage(context);
         }
-        // Default resolve true
+        // Default resolve true 
         return Promise.resolve(true);
     }
 
