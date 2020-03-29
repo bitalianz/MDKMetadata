@@ -272,7 +272,7 @@
 								"KeyName": "$(L,'operations')",
 								"OnPress": "/SAPAssetManager/Rules/WorkOrders/Operations/OperationsListViewNav.js",
 								"Value": "/SAPAssetManager/Rules/Operations/OperationCount.js",
-								"Visible": "/SAPAssetManager/Rules/WorkOrders/Operations/IsOperationLevelAssigmentType.js"
+								"Visible": false
 							}
 						},
 						{
