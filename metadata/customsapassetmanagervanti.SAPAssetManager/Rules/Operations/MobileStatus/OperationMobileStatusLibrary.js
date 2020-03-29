@@ -38,7 +38,7 @@ export default class {
             let overrides = {
                 'IsWorkOrderChangable': false,
                 'IsOperationChangable': false,
-                //'OrderID': binding.OrderId,
+                'OrderID': binding.OrderId,
                 'WorkOrderHeader': binding.WOHeader,
                 'Operation': binding.OperationNo,
                 'MobileStatus': binding.MobileStatus,
