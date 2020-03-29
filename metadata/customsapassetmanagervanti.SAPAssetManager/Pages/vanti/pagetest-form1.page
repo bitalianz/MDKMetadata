@@ -181,6 +181,7 @@
 			"_Type": "Control.Type.FormCellContainer"
 		}
 	],
+	"OnLoaded": "/SAPAssetManager/Rules/vanti/pagetestform1OnLoad.js",
 	"OnReturning": "/SAPAssetManager/Rules/OverviewPage/OverviewOnPageReturning.js",
 	"ToolBar": {
 		"Controls": [

@@ -37,7 +37,7 @@
 						{
 							"Caption": "Producto de servicio",
 							"IsEditable": false,
-							"IsVisible": false,
+							"IsVisible": true,
 							"KeyboardType": "Default",
 							"Value": "{ServiceProduct}",
 							"_Name": "FormCellSimpleProperty3",

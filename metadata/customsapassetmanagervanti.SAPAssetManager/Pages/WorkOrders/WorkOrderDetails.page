@@ -90,7 +90,7 @@
 						"SubstatusText": "/SAPAssetManager/Rules/WorkOrders/WorkOrderPriorityFormat.js",
 						"Tags": "/SAPAssetManager/Rules/WorkOrders/Details/WorkOrderDetailsObjectHeaderTags.js",
 						"Target": {
-							"EntitySet": "{{#Property:@odata.readLink}}/Activities",
+							"EntitySet": "{{#Property:@odata.readLink}}",
 							"QueryOptions": "$expand=MobileStatus,Equipment,FunctionalLocation,Equipment/MeasuringPoints,Equipment/MeasuringPoints/MeasurementDocs,MarkedJob,WOPriority&$orderby=OrderId,ObjectKey,Priority",
 							"Service": "/SAPAssetManager/Services/AssetManager.service"
 						}
@@ -104,7 +104,7 @@
 						"FooterVisible": false
 					},
 					"Header": {
-						"Caption": "$(L,Ubicacion)",
+						"Caption": "$(L,location)",
 						"UseTopPadding": true
 					},
 					"ObjectCells": [
@@ -119,35 +119,6 @@
 					],
 					"_Name": "WorkOrderLocationSection",
 					"_Type": "Section.Type.ObjectTable"
-				},
-				{
-					"EmptySection": {
-						"FooterVisible": false
-					},
-					"Layout": {
-						"MinimumInteritemSpacing": 66,
-						"NumberOfColumns": 1
-					},
-					"SimplePropertyCells": [
-						{
-							"SimplePropertyCell": {
-								"AccessoryType": "disclosureIndicator",
-								"KeyName": "Datos clientes",
-								"OnPress": "/SAPAssetManager/Actions/vanti/Open_form_1_datos_cliente.action",
-								"Value": "Value"
-							}
-						},
-						{
-							"SimplePropertyCell": {
-								"AccessoryType": "disclosureIndicator",
-								"KeyName": "Datos técnicos",
-								"OnPress": "/SAPAssetManager/Actions/vanti/Open_form_1_datos_tecnicos.action",
-								"Value": "Value"
-							}
-						}
-					],
-					"_Name": "SectionSimplePropertyCollection0",
-					"_Type": "Section.Type.SimplePropertyCollection"
 				},
 				{
 					"DataSubscriptions": [
@@ -339,7 +310,7 @@
 							}
 						}
 					],
-					"_Name": "SectionSimplePropertyCollection1",
+					"_Name": "SectionSimplePropertyCollection0",
 					"_Type": "Section.Type.SimplePropertyCollection"
 				}
 			],
