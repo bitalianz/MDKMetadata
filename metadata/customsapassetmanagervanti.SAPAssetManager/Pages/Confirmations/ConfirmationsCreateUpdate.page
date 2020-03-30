@@ -213,7 +213,6 @@
 		}
 	],
 	"OnLoaded": "/SAPAssetManager/Rules/Confirmations/CreateUpdate/ConfirmationCreateUpdateOnPageLoad.js",
-	"OnReturning": "/SAPAssetManager/Rules/vanti/SalirdePaginas.js",
 	"_Name": "ConfirmationsCreateUpdatePage",
 	"_Type": "Page"
 }
