@@ -56,7 +56,7 @@
 						{
 							"Caption": "$(L, date)",
 							"DateTimeEntryMode": "date",
-							"IsEditable": "{IsDateChangable}",
+							"IsEditable": false,
 							"Mode": "Date",
 							"Value": "{_Start}",
 							"_Name": "StartDatePicker",
@@ -65,7 +65,7 @@
 						{
 							"Caption": "$(L, start_time)",
 							"DateTimeEntryMode": "time",
-							"IsEditable": true,
+							"IsEditable": false,
 							"Mode": "Time",
 							"Value": "{_Start}",
 							"_Name": "StartTimePicker",

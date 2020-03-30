@@ -4,5 +4,5 @@
  */
 export default function WorkOrdersListViewFooter(context) {
 
-	return context.binding.Municipio + ' - ' + context.binding.UnidadLectura + ' - ' + context.binding.RutaLectura; 
+	return context.binding.Municipio + ' - ' + context.binding.UnidadLectura + ' - ' + context.binding.CodOrdLectura; 
 }

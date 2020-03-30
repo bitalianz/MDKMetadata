@@ -1,80 +1,86 @@
 {
-    "ActionBar": {
-        "Items": [
-            {
-                "Position": "left",
-                "SystemItem": "Cancel",
-                "OnPress": "/SAPAssetManager/Actions/Page/CancelPage.action"
-            },
-            {
-                "Position": "right",
-                "SystemItem": "/SAPAssetManager/Rules/Filter/FilterSystemItem.js",
-                "Text": "/SAPAssetManager/Rules/Filter/FilterText.js",
-                "OnPress": "/SAPAssetManager/Rules/Filter/FilterDone.js"
-            }
-        ]
-    },
-    "Caption":"$(L,filter)",
-    "Result":
-    [
-        "#Page:WorkOrderFilterPage/#Control:SortFilter/#Value"
-    ],
-    "Controls":
-    [{
-        "Sections":
-        [{
-            "Controls":
-            [{
-                "AllowEmptySelection":false,
-                "Caption":"$(L,sort_by)",
-                "SortByItems":
-                [{
-                    "ReturnValue":"Priority",
-                    "DisplayValue":"Prioridad"
-                },
-                {
-                    "ReturnValue":"",
-                    "DisplayValue":"Dirección"
-                },
-                {
-                    "ReturnValue":"",
-                    "DisplayValue":"Barrio"
-                },
-                {
-                    "ReturnValue":"",
-                    "DisplayValue":"Fecha vistia concertada"
-                },
-                {
-                	"ReturnValue": "",
-                	"DisplayValue": "Código municipio"
-                },
-                {
-                	"ReturnValue": "",
-                	"DisplayValue": "Unidad de lectura"
-                },
-                {
-                	"ReturnValue": "",
-                	"DisplayValue": "Orden de recorrido"
-                }],
-                "_Name":"SortFilter",
-                "_Type":"Control.Type.FormCell.Sorter",
-                "IsEditable":true
-            }]
-        },
-        {
-            "Controls": [
-                {
-                    "Title": "$(L,reset_all)",
-                    "OnPress": "/SAPAssetManager/Rules/Filter/FilterReset.js",
-                    "_Type": "Control.Type.FormCell.Button",
-                    "_Name": "ResetButton"
-                }
-            ]
-        }],
-        "_Name":"FormCellContainer",
-        "_Type":"Control.Type.FormCellContainer"
-    }],
-    "_Type":"Page",
-    "_Name":"WorkOrderFilterPage",
-    "OnLoaded": "/SAPAssetManager/Rules/Filter/FilterOnLoaded.js"
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/SAPAssetManager/Actions/Page/CancelPage.action",
+				"Position": "left",
+				"SystemItem": "Cancel"
+			},
+			{
+				"OnPress": "/SAPAssetManager/Rules/Filter/FilterDone.js",
+				"Position": "right",
+				"SystemItem": "/SAPAssetManager/Rules/Filter/FilterSystemItem.js",
+				"Text": "/SAPAssetManager/Rules/Filter/FilterText.js"
+			}
+		]
+	},
+	"Caption": "$(L,filter)",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"AllowEmptySelection": false,
+							"Caption": "$(L,sort_by)",
+							"IsEditable": true,
+							"SortByItems": [
+								{
+									"DisplayValue": "Prioridad",
+									"ReturnValue": "Priority"
+								},
+								{
+									"DisplayValue": "Dirección",
+									"ReturnValue": "Direccion"
+								},
+								{
+									"DisplayValue": "Barrio",
+									"ReturnValue": "Barrio"
+								},
+								{
+									"DisplayValue": "Fecha vistia concertada",
+									"ReturnValue": ""
+								},
+								{
+									"DisplayValue": "Código municipio",
+									"ReturnValue": "Municipio"
+								},
+								{
+									"DisplayValue": "Unidad de lectura",
+									"ReturnValue": "UnidadLectura"
+								},
+								{
+									"DisplayValue": "Orden de recorrido",
+									"ReturnValue": "CodOrdLectura"
+								}
+							],
+							"_Name": "SortFilter",
+							"_Type": "Control.Type.FormCell.Sorter"
+						}
+					],
+					"Visible": true
+				},
+				{
+					"Controls": [
+						{
+							"OnPress": "/SAPAssetManager/Rules/Filter/FilterReset.js",
+							"TextAlignment": "center",
+							"Title": "$(L,reset_all)",
+							"_Name": "ResetButton",
+							"_Type": "Control.Type.FormCell.Button"
+						}
+					],
+					"Visible": true
+				}
+			],
+			"_Name": "FormCellContainer",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"OnLoaded": "/SAPAssetManager/Rules/Filter/FilterOnLoaded.js",
+	"Result": [
+		"#Page:WorkOrderFilterPage/#Control:SortFilter/#Value"
+	],
+	"_Name": "WorkOrderFilterPage",
+	"_Type": "Page"
 }

@@ -51,9 +51,7 @@ export default class {
             }
 
             return confirmationsCreateUpdateNav(context, overrides, startDate, endDate).then(() => {
-            	return context.executeAction('/SAPAssetManager/Actions/Page/ClosePage.action').then(() => {
-	                return Promise.resolve();
-				});
+                return Promise.resolve();
             }, error => {
                 context.dismissActivityIndicator();
                 Logger.error(context.getGlobalDefinition('/SAPAssetManager/Globals/Logs/CategoryOperations.global').getValue(), error);
