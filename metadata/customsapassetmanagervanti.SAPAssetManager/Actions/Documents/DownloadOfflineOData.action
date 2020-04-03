@@ -52,10 +52,6 @@
 			"Query": "MyEquipments"
 		},
 		{
-			"Name": "MyEquipDocuments",
-			"Query": "MyEquipDocuments"
-		},
-		{
 			"Name": "MyFunctionalLocations",
 			"Query": "MyFunctionalLocations"
 		},
@@ -242,10 +238,6 @@
 		{
 			"Name": "GISMapParameters",
 			"Query": "GISMapParameters"
-		},
-		{
-			"Name": "Documents",
-			"Query": "Documents"
 		},
 		{
 			"Name": "CatsTimesheetTexts",
