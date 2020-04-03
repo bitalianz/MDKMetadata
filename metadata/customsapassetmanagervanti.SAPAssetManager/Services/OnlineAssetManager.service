@@ -1,7 +1,7 @@
 {
-	"AppId": "com.sap.vanti.asset.full2",
+	"AppId": "com.sap.customsamvanti",
 	"DestinationName": "DEST_SAM1911_ONLINE_PPROP",
 	"LanguageURLParam": "sap-language",
-	"OfflineEnabled": true,
+	"OfflineEnabled": false,
 	"ServiceUrl": "/destinations/mobileservices"
 }
