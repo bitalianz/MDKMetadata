@@ -121,6 +121,33 @@
 					"_Type": "Section.Type.ObjectTable"
 				},
 				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"MinimumInteritemSpacing": 66,
+						"NumberOfColumns": 1
+					},
+					"SimplePropertyCells": [
+						{
+							"SimplePropertyCell": {
+								"AccessoryType": "disclosureIndicator",
+								"KeyName": "Datos clientes",
+								"OnPress": "/SAPAssetManager/Actions/vanti/Open_form_1_datos_cliente.action"
+							}
+						},
+						{
+							"SimplePropertyCell": {
+								"AccessoryType": "disclosureIndicator",
+								"KeyName": "Datos técnicos",
+								"OnPress": "/SAPAssetManager/Actions/vanti/Open_form_1_datos_tecnicos.action"
+							}
+						}
+					],
+					"_Name": "SectionSimplePropertyCollection0",
+					"_Type": "Section.Type.SimplePropertyCollection"
+				},
+				{
 					"DataSubscriptions": [
 						"Confirmations",
 						"MobileStatuses"

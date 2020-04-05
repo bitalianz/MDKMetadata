@@ -21,6 +21,7 @@
 							"IsEditable": false,
 							"IsVisible": true,
 							"KeyboardType": "Number",
+							"Value": "/SAPAssetManager/Rules/vanti/DatosClienteBinding.js",
 							"_Name": "FormCellSimpleProperty0",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},

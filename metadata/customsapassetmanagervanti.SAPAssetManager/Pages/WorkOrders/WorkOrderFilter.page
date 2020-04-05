@@ -35,7 +35,7 @@
 								},
 								{
 									"DisplayValue": "Barrio",
-									"ReturnValue": "Barrio"
+									"ReturnValue": "Address/Barrio"
 								},
 								{
 									"DisplayValue": "Fecha vistia concertada",
