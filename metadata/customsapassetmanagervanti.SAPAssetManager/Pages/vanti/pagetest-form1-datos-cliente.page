@@ -21,7 +21,7 @@
 							"IsEditable": false,
 							"IsVisible": true,
 							"KeyboardType": "Number",
-							"Value": "/SAPAssetManager/Rules/vanti/DatosClienteBinding.js",
+							"Value": "{CuentaContrato}",
 							"_Name": "FormCellSimpleProperty0",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
@@ -30,7 +30,7 @@
 							"IsEditable": false,
 							"IsVisible": true,
 							"KeyboardType": "Email",
-							"Value": "{FirstName} {LastName}",
+							"Value": "/SAPAssetManager/Rules/vanti/NombreCliente.js",
 							"_Name": "FormCellSimpleProperty1",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
@@ -39,6 +39,7 @@
 							"IsEditable": false,
 							"IsVisible": true,
 							"KeyboardType": "Default",
+							"Value": "/SAPAssetManager/Rules/vanti/DescServCliente.js",
 							"_Name": "FormCellSimpleProperty3",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
@@ -47,6 +48,7 @@
 							"IsEditable": false,
 							"IsVisible": true,
 							"KeyboardType": "Default",
+							"Value": "{DescServhogar}",
 							"_Name": "FormCellSimpleProperty4",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}

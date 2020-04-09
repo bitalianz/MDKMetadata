@@ -112,7 +112,8 @@ export class WorkOrderLibrary {
     }
 
     static getWorkOrderDetailsNavQueryOption() {
-        return '$select=CostCenter,OrderId,Priority,OrderDescription,ObjectKey,OrderType,DueDate,MainWorkCenter,MainWorkCenterPlant,ControllingArea,MaintenancePlant,FunctionalLocation/FuncLocDesc,MobileStatus/MobileStatus,Operations/MobileStatus/MobileStatus,Operations/SubOperations/MobileStatus/MobileStatus,HeaderEquipment,HeaderFunctionLocation,MarkedJob&$expand=WODocuments,MobileStatus,FunctionalLocation,Operations,Operations/MobileStatus,Operations/SubOperations,Operations/SubOperations/MobileStatus,WOGeometries/Geometry,MarkedJob,Confirmations';
+        return '$select=WOUserStatus/Status,WOUserStatus/StatusProfile,WOUserStatus/UserStatus,WOUserStatus/UserStatusText,BPFirma,NumCuotas,CuentaContrato,CostCenter,OrderId,Priority,OrderDescription,ObjectKey,OrderType,DueDate,MainWorkCenter,MainWorkCenterPlant,ControllingArea,MaintenancePlant,FunctionalLocation/FuncLocDesc,MobileStatus/MobileStatus,Operations/MobileStatus/MobileStatus,Operations/SubOperations/MobileStatus/MobileStatus,HeaderEquipment,HeaderFunctionLocation,MarkedJob,WOPartners/PartnerFunction,DescServhogar,WOSales_Nav/ProductDesc'
+        + '&$expand=WOUserStatus,WOSales_Nav,WODocuments,MobileStatus,FunctionalLocation,Operations,Operations/MobileStatus,Operations/SubOperations,Operations/SubOperations/MobileStatus,WOGeometries/Geometry,MarkedJob,Confirmations,Address,WOPartners/Address_Nav';
     }
 
     /**

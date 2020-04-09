@@ -32,14 +32,7 @@
 							"IsSearchCancelledAfterSelection": false,
 							"IsSelectedSectionEnabled": false,
 							"IsVisible": true,
-							"PickerItems": {
-								"DisplayValue": "{Name1}",
-								"ReturnValue": "{Customer}",
-								"Target": {
-									"EntitySet": "Customers",
-									"Service": "/SAPAssetManager/Services/AssetManager.service"
-								}
-							},
+							"PickerItems": "/SAPAssetManager/Rules/vanti/PageForm1ZUserStatus_QueryOptions.js",
 							"PickerPrompt": "Please select one single item",
 							"_Name": "FormCellListPicker0",
 							"_Type": "Control.Type.FormCell.ListPicker"

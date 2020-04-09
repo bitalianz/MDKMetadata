@@ -337,7 +337,7 @@
 							}
 						}
 					],
-					"_Name": "SectionSimplePropertyCollection0",
+					"_Name": "SectionSimplePropertyCollection1",
 					"_Type": "Section.Type.SimplePropertyCollection"
 				}
 			],
@@ -347,7 +347,8 @@
 	],
 	"DataSubscriptions": [
 		"MyWorkOrderOperations",
-		"MyWorkOrderDocuments"
+		"MyWorkOrderDocuments",
+		"MyWorkOrderSales"
 	],
 	"OnLoaded": "/SAPAssetManager/Rules/WorkOrders/Details/WorkOrderDetailsOnPageLoad.js",
 	"ToolBar": {

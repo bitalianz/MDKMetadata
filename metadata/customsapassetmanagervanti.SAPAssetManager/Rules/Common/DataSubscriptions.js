@@ -29,7 +29,9 @@ export default function DataSubscriptions(context) {
             	'Addresses',
                 'Priorities', 
                 'MobileStatuses', 
-                'MyWorkOrderHeaderLongTexts'
+                'MyWorkOrderHeaderLongTexts',
+                'MyWorkOrderSales',
+                'ZZUserStatuses'
             ];
         default:
             break;

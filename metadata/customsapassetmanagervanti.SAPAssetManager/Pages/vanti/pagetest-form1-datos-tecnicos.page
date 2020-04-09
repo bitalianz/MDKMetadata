@@ -39,7 +39,7 @@
 							"IsEditable": false,
 							"IsVisible": true,
 							"KeyboardType": "Default",
-							"Value": "{ServiceProduct}",
+							"Value": "/SAPAssetManager/Rules/vanti/DescServTecnico.js",
 							"_Name": "FormCellSimpleProperty3",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
@@ -48,7 +48,7 @@
 							"IsEditable": false,
 							"IsVisible": true,
 							"KeyboardType": "Default",
-							"Value": "{ProductDesc}",
+							"Value": "/SAPAssetManager/Rules/vanti/DescServCliente.js",
 							"_Name": "FormCellSimpleProperty4",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
