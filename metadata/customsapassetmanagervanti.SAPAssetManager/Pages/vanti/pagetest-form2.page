@@ -1,0 +1,152 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/SAPAssetManager/Actions/vanti/Open_adjuntos.action",
+				"Position": "right",
+				"SystemItem": "Camera",
+				"Text": "Item",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Instalación / Sustitucion",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "Motivo de Instalación/Sustitución",
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": false,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": true,
+							"PickerItems": [
+								"A",
+								"B",
+								"C"
+							],
+							"PickerPrompt": "Please select one single item",
+							"_Name": "FormCellListPicker0",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						},
+						{
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "Destino del medidor",
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": false,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": true,
+							"PickerItems": [
+							],
+							"PickerPrompt": "Please select one single item",
+							"_Name": "FormCellListPicker1",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						},
+						{
+							"Caption": "Fecha Laboratorio",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Mode": "date",
+							"Value": "Enter Date",
+							"_Name": "FormCellDatePicker0",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Caption": "N° Precinto Tula",
+							"IsEditable": true,
+							"IsVisible": true,
+							"_Name": "FormCellSimpleProperty0",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					],
+					"Visible": true
+				},
+				{
+					"Caption": "Marque el medidor a sustituir",
+					"Controls": [
+						{
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "Elija uno",
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": false,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": true,
+							"PickerItems": [
+							],
+							"PickerPrompt": "Please select one single item",
+							"_Name": "FormCellListPicker3",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						}
+					],
+					"Visible": true
+				},
+				{
+					"Caption": "Registre el medidor a Instalar / Sustituir",
+					"Controls": [
+						{
+							"Caption": "Numero de serie",
+							"IsEditable": true,
+							"IsVisible": true,
+							"_Name": "FormCellSimpleProperty1",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Material",
+							"IsEditable": true,
+							"IsVisible": true,
+							"_Name": "FormCellSimpleProperty2",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					],
+					"Visible": true
+				},
+				{
+					"Caption": "Registre las lecturas",
+					"Controls": [
+						{
+							"Caption": "Lectura medidor retirado",
+							"IsEditable": true,
+							"IsVisible": true,
+							"_Name": "FormCellSimpleProperty3",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Lectura medidor instalado",
+							"IsEditable": true,
+							"IsVisible": true,
+							"_Name": "FormCellSimpleProperty4",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					],
+					"Visible": true
+				}
+			],
+			"_Name": "FormCellContainer0",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"ToolBar": {
+		"Controls": [
+			{
+				"Caption": "Siguente",
+				"Clickable": true,
+				"Enabled": true,
+				"OnPress": "/SAPAssetManager/Actions/vanti/Open_form_3.action",
+				"Visible": true,
+				"_Name": "ToolbarItem0",
+				"_Type": "Control.Type.ToolbarItem"
+			}
+		]
+	},
+	"_Name": "pageTestForm2",
+	"_Type": "Page"
+}
