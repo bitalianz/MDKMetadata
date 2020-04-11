@@ -31,12 +31,16 @@ export default function DataSubscriptions(context) {
                 'MobileStatuses', 
                 'MyWorkOrderHeaderLongTexts',
                 'MyWorkOrderSales',
+<<<<<<< HEAD
                 'ZZUserStatuses',
                 'ZZAnomaliass',
                 'ZZEquipos',
                 'ZZFieldParamss',
                 'ZZFormParamss',
                 'ZZTipoCortes'
+=======
+                'ZZUserStatuses'
+>>>>>>> refs/heads/master
             ];
         default:
             break;
