@@ -8,8 +8,7 @@ export default function PageForm1ZAnomalias_QueryOptions(context) {
 		let cmbAnomalias = formCellContainer.getControl('lstPickAnomalias');
 
 		var anomSpecifier = cmbAnomalias.getTargetSpecifier();
-		anomSpecifier.setQueryOptions("$filter=OrderId eq '" + context.getPageProxy().binding.OrderId + "' and StatusUsr eq '" + cmbStatus.getValue()[0].ReturnValue + 
-		"'&$orderby=Descripcion&$select=Codigo, Descripcion");
+		anomSpecifier.setQueryOptions("$filter=OrderId eq '" + context.getPageProxy().binding.OrderId + "' and StatusUsr eq '" + cmbStatus.getValue()[0].ReturnValue + "'");
 			
 		cmbAnomalias.setTargetSpecifier(anomSpecifier);
 		cmbAnomalias.redraw();
