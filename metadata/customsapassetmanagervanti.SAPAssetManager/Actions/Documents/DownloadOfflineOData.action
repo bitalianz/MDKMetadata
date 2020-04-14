@@ -576,6 +576,26 @@
 			"AutomaticallyRetrievesStreams": false,
 			"Name": "ZZAnomaliass",
 			"Query": "ZZAnomaliass"
+		},
+		{
+			"AutomaticallyRetrievesStreams": false,
+			"Name": "ZZVinculos",
+			"Query": "ZZVinculos"
+		},
+		{
+			"AutomaticallyRetrievesStreams": false,
+			"Name": "ZZMotivosSustituciones",
+			"Query": "ZZMotivosSustituciones"
+		},
+		{
+			"AutomaticallyRetrievesStreams": false,
+			"Name": "ZZDestinosMedidores",
+			"Query": "ZZDestinosMedidores"
+		},
+		{
+			"AutomaticallyRetrievesStreams": false,
+			"Name": "ZZPrecintos",
+			"Query": "ZZPrecintos"
 		}
 	],
 	"OnFailure": "/SAPAssetManager/Rules/Sync/CheckForSyncErrorsAfterDownloadFailure.js",

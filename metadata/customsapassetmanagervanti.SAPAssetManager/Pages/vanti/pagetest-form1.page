@@ -2,13 +2,6 @@
 	"ActionBar": {
 		"Items": [
 			{
-				"OnPress": "/SAPAssetManager/Actions/vanti/Open_form_1.action",
-				"Position": "right",
-				"SystemItem": "Refresh",
-				"Text": "",
-				"Visible": true
-			},
-			{
 				"OnPress": "/SAPAssetManager/Actions/vanti/Open_adjuntos.action",
 				"Position": "right",
 				"SystemItem": "Camera",
@@ -32,9 +25,9 @@
 							"IsSearchCancelledAfterSelection": false,
 							"IsSelectedSectionEnabled": false,
 							"IsVisible": true,
-							"OnValueChange": "/SAPAssetManager/Rules/vanti/PageForm1ZAnomalias_QueryOptions.js",
+							"OnValueChange": "/SAPAssetManager/Rules/vanti/PageForm1OnChangeStatus.js",
 							"PickerItems": "/SAPAssetManager/Rules/vanti/PageForm1ZUserStatus_QueryOptions.js",
-							"PickerPrompt": "Please select one single item",
+							"PickerPrompt": "Por favor seleccione una sola opción",
 							"_Name": "lstPickStatus",
 							"_Type": "Control.Type.FormCell.ListPicker"
 						},
@@ -44,7 +37,7 @@
 							"Caption": "Anomalía",
 							"IsEditable": true,
 							"IsSelectedSectionEnabled": false,
-							"IsVisible": true,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm1/#Property:lstPickAnomalias/#Property:visible}}",
 							"PickerItems": {
 								"DisplayValue": "{Descripcion}",
 								"ReturnValue": "{Codigo}",
@@ -54,7 +47,7 @@
 									"Service": "/SAPAssetManager/Services/AssetManager.service"
 								}
 							},
-							"PickerPrompt": "Please select multiple items",
+							"PickerPrompt": "Por favor seleccione una o varias opciones",
 							"_Name": "lstPickAnomalias",
 							"_Type": "Control.Type.FormCell.ListPicker"
 						},
@@ -66,7 +59,7 @@
 							"IsPickerDismissedOnSelection": false,
 							"IsSearchCancelledAfterSelection": false,
 							"IsSelectedSectionEnabled": false,
-							"IsVisible": true,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm1/#Property:lstPickTipoLectura/#Property:visible}}",
 							"PickerItems": [
 								{
 									"DisplayValue": "Lectura de Suspensión",
@@ -81,17 +74,17 @@
 									"ReturnValue": "3"
 								}
 							],
-							"PickerPrompt": "Please select one single item",
-							"_Name": "FormCellListPicker4",
+							"PickerPrompt": "Por favor seleccione una sola opción",
+							"_Name": "lstPickTipoLectura",
 							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
 							"AlternateInput": "None",
 							"Caption": "Lectura",
 							"IsEditable": true,
-							"IsVisible": true,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm1/#Property:txtLectura/#Property:visible}}",
 							"KeyboardType": "Number",
-							"_Name": "FormCellSimpleProperty2",
+							"_Name": "txtLectura",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
@@ -102,22 +95,25 @@
 							"IsPickerDismissedOnSelection": false,
 							"IsSearchCancelledAfterSelection": false,
 							"IsSelectedSectionEnabled": false,
-							"IsVisible": true,
-							"PickerItems": [
-							],
-							"PickerPrompt": "Please select one single item",
-							"Value": [
-								"Two"
-							],
-							"_Name": "FormCellListPicker5",
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm1/#Property:lstPickTipoCorte/#Property:visible}}",
+							"PickerItems": {
+								"DisplayValue": "{Descripcion}",
+								"ReturnValue": "{Codigo}",
+								"Target": {
+									"EntitySet": "ZZTipoCortes",
+									"Service": "/SAPAssetManager/Services/AssetManager.service"
+								}
+							},
+							"PickerPrompt": "Por favor seleccione una sola opción",
+							"_Name": "lstPickTipoCorte",
 							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
 							"Caption": "Instalación/Sustitución Medidor",
 							"IsEditable": true,
-							"IsVisible": true,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm1/#Property:swInstalacion/#Property:visible}}",
 							"Value": false,
-							"_Name": "FormCellSwitch1",
+							"_Name": "swInstalacion",
 							"_Type": "Control.Type.FormCell.Switch"
 						},
 						{
@@ -128,7 +124,7 @@
 							"IsPickerDismissedOnSelection": false,
 							"IsSearchCancelledAfterSelection": false,
 							"IsSelectedSectionEnabled": false,
-							"IsVisible": true,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm1/#Property:lstPagadores/#Property:visible}}",
 							"PickerItems": [
 								"2",
 								"3",
@@ -155,8 +151,8 @@
 								"24",
 								"25"
 							],
-							"PickerPrompt": "Please select one single item",
-							"_Name": "FormCellListPicker6",
+							"PickerPrompt": "Por favor seleccione una sola opción",
+							"_Name": "lstPagadores",
 							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
@@ -167,39 +163,42 @@
 							"IsPickerDismissedOnSelection": false,
 							"IsSearchCancelledAfterSelection": false,
 							"IsSelectedSectionEnabled": false,
-							"IsVisible": true,
-							"PickerItems": [
-							],
-							"PickerPrompt": "Please select one single item",
-							"Value": [
-								"Two"
-							],
-							"_Name": "FormCellListPicker7",
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm1/#Property:lstPickVinculo/#Property:visible}}",
+							"PickerItems": {
+								"DisplayValue": "{Descripcion}",
+								"ReturnValue": "{Codigo}",
+								"Target": {
+									"EntitySet": "ZZVinculos",
+									"Service": "/SAPAssetManager/Services/AssetManager.service"
+								}
+							},
+							"PickerPrompt": "Por favor seleccione una sola opción",
+							"_Name": "lstPickVinculo",
 							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
 							"Caption": "Celular",
 							"IsEditable": true,
-							"IsVisible": true,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm1/#Property:txtCelular/#Property:visible}}",
 							"KeyboardType": "Number",
-							"_Name": "FormCellSimpleProperty0",
+							"_Name": "txtCelular",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "Email",
 							"IsEditable": true,
-							"IsVisible": true,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm1/#Property:txtEmail/#Property:visible}}",
 							"KeyboardType": "Email",
 							"OnPress": "/SAPAssetManager/Actions/vanti/Open_form_1_datos_cliente.action",
-							"_Name": "FormCellSimpleProperty1",
+							"_Name": "txtEmail",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"IsEditable": true,
-							"IsVisible": true,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm1/#Property:txtFirma/#Property:visible}}",
 							"PlaceHolder": "PlaceHolder",
 							"Value": "Firma",
-							"_Name": "FormCellNote0",
+							"_Name": "txtFirma",
 							"_Type": "Control.Type.FormCell.Note"
 						}
 					],
@@ -218,7 +217,7 @@
 				"Caption": "Siguente",
 				"Clickable": true,
 				"Enabled": true,
-				"OnPress": "/SAPAssetManager/Rules/vanti/instalacionSustitucion.js",
+				"OnPress": "/SAPAssetManager/Rules/vanti/PageForm1OnNextPress.js",
 				"Visible": true,
 				"_Name": "ToolbarItem0",
 				"_Type": "Control.Type.ToolbarItem"

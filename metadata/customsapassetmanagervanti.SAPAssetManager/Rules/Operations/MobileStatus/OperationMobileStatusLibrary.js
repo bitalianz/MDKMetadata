@@ -1,3 +1,4 @@
+import libPages from '../../vanti/PagesConfigurationLibrary';
 import libMobile from '../../MobileStatus/MobileStatusLibrary';
 import libWOMobile from '../../WorkOrders/MobileStatus/WorkOrderMobileStatusLibrary';
 import libCommon from '../../Common/Library/CommonLibrary';
@@ -90,6 +91,12 @@ export default class {
             context.setToolbarItemCaption('IssuePartTbI', context.localizeText('end_operation'));
             //return context.executeAction('/SAPAssetManager/Actions/WorkOrders/MobileStatus/OperationMobileStatusSuccessMessage.action');
             context.dismissActivityIndicator();
+            
+            var oPages = new libPages();
+            
+            context.binding.sUserStatus = "";
+            context.binding.sMsg = "";
+            context.binding.oPages = oPages.conf;
             return context.executeAction('/SAPAssetManager/Actions/vanti/Open_form_1.action');
         },
         () => {

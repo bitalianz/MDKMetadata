@@ -753,10 +753,10 @@ export class PrivateMethodLibrary {
 
 export class OperationConstants {
     static get FromWOrkOrderOperationListQueryOptions() {
-        return '$select=OrderId,OperationNo,OperationShortText,ControlKey,ObjectKey,MainWorkCenter,MainWorkCenterPlant,OperationFunctionLocation,OperationEquipment,MobileStatus/MobileStatus,WOHeader/MainWorkCenter,WOHeader/CostCenter,WOHeader/DueDate,WOHeader/OrderId&$expand=MobileStatus,OperationLongText,WOHeader&$orderby=OrderId,OperationNo';
+        return '$select=OrderId,OperationNo,OperationShortText,ControlKey,ObjectKey,MainWorkCenter,MainWorkCenterPlant,OperationFunctionLocation,OperationEquipment,MobileStatus/MobileStatus,WOHeader/MainWorkCenter,WOHeader/CostCenter,WOHeader/DueDate,WOHeader/OrderId,WOHeader/MaintenanceActivityType,WOHeader/OrderType,WOPrecintos/SerieActual,WOPrecintos/EstadoActual,WOPrecintos/Caracteristica,WOprecintos/CaractEstado&$expand=MobileStatus,OperationLongText,WOHeader,WOPrecintos&$orderby=OrderId,OperationNo';
     }
 
     static get OperationListQueryOptions() {
-        return '$select=OrderId,OperationNo,OperationShortText,ControlKey,ObjectKey,MainWorkCenter,MainWorkCenterPlant,OperationFunctionLocation,OperationEquipment,MobileStatus/MobileStatus,WOHeader/MainWorkCenter,WOHeader/CostCenter,WOHeader/DueDate,WOHeader/OrderId&$expand=MobileStatus,OperationLongText,WOHeader&$orderby=OperationNo,OrderId,ObjectKey';
+        return '$select=OrderId,OperationNo,OperationShortText,ControlKey,ObjectKey,MainWorkCenter,MainWorkCenterPlant,OperationFunctionLocation,OperationEquipment,MobileStatus/MobileStatus,WOHeader/MainWorkCenter,WOHeader/CostCenter,WOHeader/DueDate,WOHeader/OrderId,WOHeader/MaintenanceActivityType,WOHeader/OrderType,WOPrecintos/SerieActual,WOPrecintos/EstadoActual,WOPrecintos/Caracteristica,WOprecintos/CaractEstado&$expand=MobileStatus,OperationLongText,WOHeader,WOPrecintos&$orderby=OperationNo,OrderId,ObjectKey';
     }
 }

@@ -96,8 +96,8 @@ export class WorkOrderLibrary {
      * Gets the query options for work order list view.
      */
     static getWorkOrdersListViewQueryOptions() {
-        return '$select=WOExtOrder/Direccion,CostCenter,WODocuments/DocumentID,ObjectKey,OrderType,Priority,DueDate,HeaderEquipment,OrderDescription,OrderId,MainWorkCenter,MainWorkCenterPlant,MobileStatus/MobileStatus,Operations/MobileStatus/MobileStatus,Operations/SubOperations/MobileStatus/MobileStatus,WOPriority/PriorityDescription,MarkedJob/PreferenceValue&' 
-        + '$expand=WOExtOrder,WODocuments,MobileStatus,Operations,Operations/MobileStatus,Operations/SubOperations,Operations/SubOperations/MobileStatus,WOPriority,MarkedJob&' 
+        return '$select=CostCenter,WODocuments/DocumentID,ObjectKey,OrderType,Priority,DueDate,HeaderEquipment,OrderDescription,OrderId,MainWorkCenter,MainWorkCenterPlant,MobileStatus/MobileStatus,Operations/MobileStatus/MobileStatus,Operations/SubOperations/MobileStatus/MobileStatus,WOPriority/PriorityDescription,MarkedJob/PreferenceValue&' 
+        + '$expand=WODocuments,MobileStatus,Operations,Operations/MobileStatus,Operations/SubOperations,Operations/SubOperations/MobileStatus,WOPriority,MarkedJob&' 
         + '$orderby=Priority,DueDate,OrderId,WODocuments/DocumentID,MobileStatus/MobileStatus,Operations/MobileStatus/MobileStatus,Operations/SubOperations/MobileStatus/MobileStatus';
     }
 
@@ -105,16 +105,16 @@ export class WorkOrderLibrary {
      * Gets the High and Very High Workorders for the List view.
      */
     static getHighPriorityWorkOrdersQueryOptions() {
-        return '$select=WOExtOrder/Direccion,CostCenter,WODocuments/DocumentID,ObjectKey,OrderType,Priority,DueDate,HeaderEquipment,OrderDescription,OrderId,MainWorkCenter,MainWorkCenterPlant,MobileStatus/MobileStatus,Operations/MobileStatus/MobileStatus,Operations/SubOperations/MobileStatus/MobileStatus,WOPriority/PriorityDescription,MarkedJob/PreferenceValue&' 
+        return '$select=CostCenter,WODocuments/DocumentID,ObjectKey,OrderType,Priority,DueDate,HeaderEquipment,OrderDescription,OrderId,MainWorkCenter,MainWorkCenterPlant,MobileStatus/MobileStatus,Operations/MobileStatus/MobileStatus,Operations/SubOperations/MobileStatus/MobileStatus,WOPriority/PriorityDescription,MarkedJob/PreferenceValue&' 
         + libWo.getFilterForHighPriorityWorkorders()
-        + '&$expand=WOExtOrder,WODocuments,MobileStatus,Operations,Operations/MobileStatus,Operations/SubOperations,Operations/SubOperations/MobileStatus,WOPriority,MarkedJob,WOGeometries,WOGeometries/Geometry,HeaderLongText&' 
+        + '&$expand=WODocuments,MobileStatus,Operations,Operations/MobileStatus,Operations/SubOperations,Operations/SubOperations/MobileStatus,WOPriority,MarkedJob,WOGeometries,WOGeometries/Geometry,HeaderLongText&' 
         + '$orderby=Priority,DueDate,OrderId';
     }
 
     static getWorkOrderDetailsNavQueryOption() {
         return '$select=WOFormParams/OrdesClass,WOFormParams/ActivityClass,WOFormParams/UserStatus,WOFormParams/CurrPage,WOFormParams/NextPage,WOAnomalias/ClasOrd,WOAnomalias/StatusUsr,' + 
         	   'WOAnomalias/Codigo,WOAnomalias/Descripcion,WOEquipos/Equipment,WOEquipos/MaterialNo,WOEquipos/SerialNo,WOEquipos/MaterialDesc,WOUserStatus/Status,WOUserStatus/StatusProfile,' + 
-        	   'WOUserStatus/UserStatus,WOUserStatus/UserStatusText,BPFirma,NumCuotas,CuentaContrato,CostCenter,' + 
+        	   'WOUserStatus/UserStatus,WOUserStatus/UserStatusText,BPFirma,NumCuotas,CuentaContrato,CostCenter, MaintenanceActivityType,' + 
         	   'OrderId,Priority,OrderDescription,ObjectKey,OrderType,DueDate,MainWorkCenter,MainWorkCenterPlant,ControllingArea,MaintenancePlant,FunctionalLocation/FuncLocDesc,' + 
         	   'MobileStatus/MobileStatus,Operations/MobileStatus/MobileStatus,Operations/SubOperations/MobileStatus/MobileStatus,HeaderEquipment,HeaderFunctionLocation,MarkedJob,' + 
         	   'WOPartners/PartnerFunction,DescServhogar,WOSales_Nav/ProductDesc' +
