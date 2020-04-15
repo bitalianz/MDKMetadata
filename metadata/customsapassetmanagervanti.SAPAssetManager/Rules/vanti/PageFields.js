@@ -71,8 +71,18 @@ export default class PageFields {
 					oBinding.oPages[sPageName][oResult.ComponentId].mandatory = oResult.Obligatorio === 'X';
 				}
 			}
+			
 			if(sPageName == "pageTestForm1")
 				that.setFieldsProperties(oContext, "pageTestForm1");
+			else if(sPageName == "pageTestForm7a") {
+				if(oBinding.WOPrecintos[0].IsInd !== 'X'){
+					let oPage = oContext.getPageProxy().binding.oPages[sPageName];
+					Object.keys(oPage).forEach(	oField => {
+						if(oPage[oField].IsOnlyInd)
+							oPage[oField].visible = false;
+					});
+				}
+			}
 		});
 	}
 	
