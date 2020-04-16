@@ -1,6 +1,18 @@
 export default class PagesConfigurationLibrary {
 	constructor() {
 		this.conf = {
+			"WorkOrderDetailsPage": {
+				"LinkDatosCliente": {
+					"mandatory": true,
+					"visible": false,
+					"editable": true,
+				},
+				"LinkDatosTecnicos": {
+					"mandatory": true,
+					"visible": false,
+					"editable": true,
+				}
+			},
 			"pageTestForm1": {
 				"lstPickStatus": {
 					"container": 'frmContResODS',
@@ -152,753 +164,978 @@ export default class PagesConfigurationLibrary {
 			"pageTestForm7a": {
 				"txtSerActCepo": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Serie Actual Cepo",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : false
+					"IsOnlyInd" : false,
+					"IsSerial" : true,
+					"CaractName" : 'NRO_SERIE_CEPO',
+					"value": ""
 				},
 				"txtEstActCepo": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Estado Actual Cepo",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : false
+					"IsOnlyInd" : false,
+					"IsSerial" : false,
+					"CaractName" : 'ESTADO_CEPO',
+					"value": ""
 				},
 				"txtSerNewCepo": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": true,
 					"fieldDescription": "Serie Nuevo Cepo",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : false
+					"IsOnlyInd" : false,
+					"IsSerial" : true,
+					"CaractName" : '',
+					"value": ""
 				},
 				"txtSerActVisor": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
-					"fieldDescription": "Serie Actual Visualizador",
+					"fieldDescription": "Serie Actual Visor 1",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : false
+					"IsOnlyInd" : false,
+					"IsSerial" : true,
+					"CaractName" : 'NRO_SERIE_MARCO_VISOR_1',
+					"value": ""
 				},
 				"txtEstActVisor": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
-					"fieldDescription": "Estado Actual Visualizador",
+					"fieldDescription": "Estado Actual Visor 1",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : false
+					"IsOnlyInd" : false,
+					"IsSerial" : false,
+					"CaractName" : 'ESTADO_MARCO_VISOR_1',
+					"value": ""
 				},
 				"txtSerNewVisor": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": true,
-					"fieldDescription": "Serie Nuevo Visualizador",
+					"fieldDescription": "Serie Nuevo Visor 1",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : false
+					"IsOnlyInd" : false,
+					"IsSerial" : true,
+					"CaractName" : '',
+					"value": ""
 				},
 				"txtSerActConector": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Serie Actual Contenedor",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : false
+					"IsOnlyInd" : false,
+					"IsSerial" : true,
+					"CaractName" : 'NROSERIE_CONECTOR_TOMA_PRESION',
+					"value": ""
 				},
 				"txtEstActConector": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Estado Actual Contenedor",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : false
+					"IsOnlyInd" : false,
+					"IsSerial" : false,
+					"CaractName" : 'ESTADO_CONECTOR_TOMA_PRESION',
+					"value": ""
 				},
 				"txtSerNewConector": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": true,
 					"fieldDescription": "Serie Nuevo Contenedor",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : false
+					"IsOnlyInd" : false,
+					"IsSerial" : true,
+					"CaractName" : '',
+					"value": ""
 				},
 				"txtSerActRegulador": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Serie Actual Regulador",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : false
+					"IsOnlyInd" : false,
+					"IsSerial" : true,
+					"CaractName" : 'NRO_SERIE_REGULADOR',
+					"value": ""
 				},
 				"txtEstActRegulador": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Estado Actual Regulador",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : false
+					"IsOnlyInd" : false,
+					"IsSerial" : false,
+					"CaractName" : 'ESTADO_REGULADOR',
+					"value": ""
 				},
 				"txtSerNewRegulador": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": true,
 					"fieldDescription": "Serie Nuevo Regulador",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : false
+					"IsOnlyInd" : false,
+					"IsSerial" : true,
+					"CaractName" : '',
+					"value": ""
 				},
 				"txtSerTapaUndCorr": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Serie Actual Tapa Unidad Correctora",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : 'NRO_SERIE_TAPA_UNIDAD_CORREC',
+					"value": ""
 				},
 				"txtEstActTapaUndCorr": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Estado Actual Tapa Unidad Correctora",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : false,
+					"CaractName" : 'ESTADO_TAPA_UNIDAD_CORRECTORA',
+					"value": ""
 				},
 				"txtSerNewTapaUndCorr": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": true,
 					"fieldDescription": "Serie Nuevo Tapa Unidad Correctora",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : '',
+					"value": ""
 				},
 				"txtSerActBase": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Serie Actual Base Unidad Correctora",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : 'NRO_SERIE_BASE_UNI_CORRECTORA',
+					"value": ""
 				},
 				"txtEstActBase": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Estado Actual Base Unidad Correctora",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : false,
+					"CaractName" : 'ESTADO_BASE_UNIDAD_CORRECTORA',
+					"value": ""
 				},
 				"txtSerNewBase": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": true,
 					"fieldDescription": "Serie Nuevo Base Unidad Correctora",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : '',
+					"value": ""
 				},
 				"txtSerActValPres": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Serie Actual Valvula Toma Presion",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : 'NRO_SERIE_VALVULA_TOMA_PRESION',
+					"value": ""
 				},
 				"txtEstActValPres": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Estado Actual Valvula Toma Presion",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : false,
+					"CaractName" : 'ESTADO_VALVULA_TOMA_PRESION',
+					"value": ""
 				},
 				"txtSerNewValPres": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": true,
 					"fieldDescription": "Serie Nuevo Valvula Toma Presion",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : '',
+					"value": ""
 				},
 				"txtSerActVisorDos": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Serie Actual Marco Visor 2",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : 'NRO_SERIE_MARCO_VISOR_2',
+					"value": ""
 				},
 				"txtEstActVisorDos": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Estado Actual Marco Visor 2",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : false,
+					"CaractName" : 'ESTADO_MARCO_VISOR_2',
+					"value": ""
 				},
 				"txtSerNewVisorDos": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": true,
 					"fieldDescription": "Serie Nuevo Marco Visor 2",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : '',
+					"value": ""
 				},
 				"txtSerActBrida": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Serie Actual Brida Medidor 1",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : 'NRO_SERIE_BRIDA_MEDIDOR_1',
+					"value": ""
 				},
 				"txtEstActBrida": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Estado Actual Brida Medidor 1",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : false,
+					"CaractName" : 'ESTADO_BRIDA_MEDIDOR_1',
+					"value": ""
 				},
 				"txtSerNewBrida": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": true,
 					"fieldDescription": "Serie Nuevo Brida Medidor 1",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : '',
+					"value": ""
 				},
 				"txtSerActBridaDos": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Serie Actual Brida Medidor 2",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : 'NRO_BRIDA_MEDIDOR_2',
+					"value": ""
 				},
 				"txtEstActBridaDos": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Estado Actual Brida Medidor 2",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : false,
+					"CaractName" : 'ESTADO_BRIDA_MEDIDOR_2',
+					"value": ""
 				},
 				"txtSerNewBridaDos": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": true,
 					"fieldDescription": "Serie Nuevo Brida Medidor 2",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : '',
+					"value": ""
 				},
 				"txtSerActManome": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Serie Actual Manometro De Ref",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : 'NRO_SERIE_MANOMETRO_DE_REF',
+					"value": ""
 				},
 				"txtEstActManome": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Estado Actual Manometro De Ref",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : false,
+					"CaractName" : 'ESTADO_MANOMETRO_DE_REFERENCIA',
+					"value": ""
 				},
 				"txtSerNewManome": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": true,
 					"fieldDescription": "Serie Nuevo Manometro De Ref",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : '',
+					"value": ""
 				},
 				"txtSerActBridaFilUno": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Serie Actual Brida Filtro 1",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : 'NRO_SERIE_BRIDA_FILTRO_1',
+					"value": ""
 				},
 				"txtEstActBridaFilUno": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Estado Actual Brida Filtro 1",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : false,
+					"CaractName" : 'ESTADO_BRIDA_FILTRO_1',
+					"value": ""
 				},
 				"txtSerNewBridaFilUno": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": true,
 					"fieldDescription": "Serie Nuevo Brida Filtro 1",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : '',
+					"value": ""
 				},
 				"txtSerActBridaFilDos": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Serie Actual Brida Filtro 2",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : 'NRO_SERIE_BRIDA_FILTRO_2',
+					"value": ""
 				},
 				"txtEstActBridaFilDos": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Estado Actual Brida Filtro 2",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : false,
+					"CaractName" : 'ESTADO_BRIDA_FILTRO_2',
+					"value": ""
 				},
 				"txtSernewBridaFilDos": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": true,
 					"fieldDescription": "Serie Nuevo Brida Filtro 2",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : '',
+					"value": ""
 				},
 				"txtSerActTapaMed": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Serie Actual Tapa Medidor 1",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : 'NRO_SERIE_TAPA_MEDIDOR_1',
+					"value": ""
 				},
 				"txtEstActTapaMed": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Estado Actual Tapa Medidor 1",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : false,
+					"CaractName" : 'ESTADO_TAPA_MEDIDOR_1',
+					"value": ""
 				},
 				"txtSerNewTapaMed": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": true,
 					"fieldDescription": "Serie Nuevo Tapa Medidor 1",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : '',
+					"value": ""
 				},
 				"txtSerActTapaMedDos": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Serie Actual Tapa Medidor 2",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : 'NRO_SERIE_TAPA_MEDIDOR_2',
+					"value": ""
 				},
 				"txtEstActTapaMedDos": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Estado Actual Tapa Medidor 2",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : false,
+					"CaractName" : 'ESTADO_TAPA_MEDIDOR_2',
+					"value": ""
 				},
 				"txtSerNewTapaMedDos": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": true,
 					"fieldDescription": "Serie Nuevo Tapa Medidor 2",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : '',
+					"value": ""
 				},
 				"txtSerActSensor": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Serie Actual Sensor Temperatura",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : 'NRO_SERIE_SENSOR_TEMPERATURA',
+					"value": ""
 				},
 				"txtEstActSensor": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Estado Actual Sensor Temperatura",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : false,
+					"CaractName" : 'ESTADO_SENSOR_TEMPERATURA',
+					"value": ""
 				},
 				"txtSerNewSensor": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": true,
 					"fieldDescription": "Serie Nuevo Sensor Temperatura",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : '',
+					"value": ""
 				},
 				"txtSerActPlaca": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Serie Actual Placa ciega",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : 'NRO_SERIE_PLACA_CIEGA',
+					"value": ""
 				},
 				"txtEstActPlaca": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Estado Actual Placa ciega",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : false,
+					"CaractName" : 'ESTADO_PLACA_CIEGA',
+					"value": ""
 				},
 				"txtSerNewPlaca": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": true,
 					"fieldDescription": "Serie Nuevo Placa ciega",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : '',
+					"value": ""
 				},
 				"txtSerActBridaCie": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Serie Actual Brida ciega",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : 'NRO_SERIE_BRIDA_CIEGA',
+					"value": ""
 				},
 				"txtEstActBridaCie": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Estado Actual Brida ciega",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : false,
+					"CaractName" : 'ESTADO_BRIDA_CIEGA',
+					"value": ""
 				},
 				"txtSerNewBridaCie": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": true,
 					"fieldDescription": "Serie Nuevo Brida ciega",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : '',
+					"value": ""
 				},
 				"txtSerActManifoldQ1": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Serie Actual Manifold Brida Valblo Q1",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : 'NSERIE_MANIFOLD_BRIDA_VALBLOQ1',
+					"value": ""
 				},
 				"txtEstActManifoldQ1": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Estado Actual Manifold Brida Valblo Q1",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : false,
+					"CaractName" : 'ESTADO_MANIFOLD_BRIDA_VALBLOQ1',
+					"value": ""
 				},
 				"txtSerNewManifoldQ1": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": true,
 					"fieldDescription": "Serie Nuevo Manifold Brida Valblo Q1",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : '',
+					"value": ""
 				},
 				"txtSerActManifoldQ2": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Serie Actual Manifold Brida Valblo Q2",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : 'NSERIE_MANIFOLD_BRIDA_VALBLOQ2',
+					"value": ""
 				},
 				"txtEstActManifoldQ2": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Estado Actual Manifold Brida Valblo Q2",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : false,
+					"CaractName" : 'ESTADO_MANIFOLD_BRIDA_VALBLOQ2',
+					"value": ""
 				},
 				"txtSerNewManifoldQ2": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": true,
 					"fieldDescription": "Serie Nuevo Manifold Brida Valblo Q2",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : '',
+					"value": ""
 				},
 				"txtSerActPorta": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Serie Actual Porta Placa",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : 'NRO_SERIE_PORTA_PLACA',
+					"value": ""
 				},
 				"txtEstActPorta": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Estado Actual Porta Placa",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : false,
+					"CaractName" : 'ESTADO_PORTA_PLACA',
+					"value": ""
 				},
 				"txtSerNewPorta": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": true,
 					"fieldDescription": "Serie Nuevo Porta Placa",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : '',
+					"value": ""
 				},
 				"txtSerActPlacaFilt": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Serie Actual Placa Filtro Gen Puls",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : 'NROSERIE_PLACA_FILTRO_GEN_PULS',
+					"value": ""
 				},
 				"txtEstActPlacaFilt": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Estado Actual Placa Filtro Gen Puls",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : false,
+					"CaractName" : 'ESTADO_PLACA_FILTRO_GEN_PULSOS',
+					"value": ""
 				},
 				"txtSerNewPlacaFilt": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": true,
 					"fieldDescription": "Serie Nuevo Placa Filtro Gen Puls",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : '',
+					"value": ""
 				},
 				"txtSerActValBy": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Serie Actual Valvula By-Pass",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : 'NRO_SERIE_VALVULA_BY-PASS',
+					"value": ""
 				},
 				"txtEstActValBy": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Estado Actual Valvula By-Pass",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : false,
+					"CaractName" : 'ESTADO_VALVULA_BY-PASS',
+					"value": ""
 				},
 				"txtSerNewValBy": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": true,
 					"fieldDescription": "Serie Nuevo Valvula By-Pass",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : '',
+					"value": ""
 				},
 				"txtSerActTornillo": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Serie Tornillo Ajustew Pre Reg",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : 'NSERIE_TORNILLO_AJUSTE_PRE_REG',
+					"value": ""
 				},
 				"txtEstActTornillo": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Estado Actual Tornillo Ajustew Pre Reg",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : false,
+					"CaractName" : 'ESTADO_TORNILLO_AJUSTE_PRE_REG',
+					"value": ""
 				},
 				"txtSerNewTornillo": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": true,
 					"fieldDescription": "Serie Nuevo Tornillo Ajustew Pre Reg",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : '',
+					"value": ""
 				},
 				"txtSerActTapaPro": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Serie Actual Tapa Propulsor",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : 'NRO_SERIE_TAPA_PROPULSOR',
+					"value": ""
 				},
 				"txtEstActTapaPro": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": false,
 					"fieldDescription": "Estado Actual Tapa Propulsor",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : false,
+					"CaractName" : 'ESTADO_TAPA_PROPULSOR',
+					"value": ""
 				},
 				"txtSerNewTapaPro": {
 					"container": 'FormCellContainer0',
-					"mandatory": true,
+					"mandatory": false,
 					"visible": true,
 					"editable": true,
 					"fieldDescription": "Serie Nuevo Tapa Propulsor",
 					"CarSerie" : '',
 					"CarEstado" : '',
-					"IsOnlyInd" : true
+					"IsOnlyInd" : true,
+					"IsSerial" : true,
+					"CaractName" : '',
+					"value": ""
 				}
 			}
 		};

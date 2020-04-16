@@ -61,19 +61,6 @@
 		}
 	],
 	"OnReturning": "/SAPAssetManager/Rules/OverviewPage/OverviewOnPageReturning.js",
-	"ToolBar": {
-		"Controls": [
-			{
-				"Caption": "Siguente",
-				"Clickable": true,
-				"Enabled": true,
-				"OnPress": "/SAPAssetManager/Actions/vanti/Open_form_1_datos_tecnicos.action",
-				"Visible": true,
-				"_Name": "ToolbarItem0",
-				"_Type": "Control.Type.ToolbarItem"
-			}
-		]
-	},
 	"_Name": "pageTestForm1_datos_cliente",
 	"_Type": "Page"
 }

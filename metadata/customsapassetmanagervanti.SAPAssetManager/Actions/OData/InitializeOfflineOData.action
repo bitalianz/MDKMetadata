@@ -253,10 +253,6 @@
 			"Query": "Confirmations"
 		},
 		{
-			"Name": "ConfirmationOverviewRows",
-			"Query": "ConfirmationOverviewRows"
-		},
-		{
 			"Name": "MaterialDocItems",
 			"Query": "MaterialDocItems"
 		},
@@ -553,6 +549,10 @@
 			"Query": "FormBusObjects"
 		},
 		{
+			"Name": "MyWorkOrderSales",
+			"Query": "MyWorkOrderSales"
+		},
+		{
 			"AutomaticallyRetrievesStreams": false,
 			"Name": "ZZUserStatuses",
 			"Query": "ZZUserStatuses"
@@ -601,6 +601,11 @@
 			"AutomaticallyRetrievesStreams": false,
 			"Name": "ZZPrecintos",
 			"Query": "ZZPrecintos"
+		},
+		{
+			"AutomaticallyRetrievesStreams": false,
+			"Name": "ZZMaterialsNon",
+			"Query": "ZZMaterialsNon"
 		}
 	],
 	"OnFailure": "/SAPAssetManager/Actions/OData/InitializeOfflineODataCreateFailureMessage.action",

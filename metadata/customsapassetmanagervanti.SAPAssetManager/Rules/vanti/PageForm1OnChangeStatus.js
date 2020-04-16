@@ -7,7 +7,8 @@ export default function PageForm1OnChangeStatus(context) {
 	try {
 		var aPages = [
 			"pageTestForm1", 
-			"pageTestForm2"
+			"pageTestForm2",
+			"pageTestForm7a"
 		];
 
 		let formCellContainer = context.getPageProxy().getControl('frmContResODS');
@@ -29,7 +30,7 @@ export default function PageForm1OnChangeStatus(context) {
             
 		//var pageFields = new PageFields();
 		aPages.forEach(pageName => {
-			PageFields.getFieldProperties(context, pageName, context.getPageProxy().binding.WOHeader.MaintenanceActivityType , aStatusValue[1]);
+			PageFields.getFieldProperties(context, context.getPageProxy().binding, pageName, context.getPageProxy().binding.WOHeader.MaintenanceActivityType , aStatusValue[1]);
 		});
 
 		cmbAnomalias.redraw();

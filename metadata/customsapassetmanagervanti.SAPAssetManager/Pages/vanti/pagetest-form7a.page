@@ -10,7 +10,7 @@
 			}
 		]
 	},
-	"Caption": "Precintos residencial y pyme",
+	"Caption": "Precintos",
 	"Controls": [
 		{
 			"Sections": [
@@ -18,14 +18,14 @@
 					"Controls": [
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActCepo/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActCepo/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActCepo/#Property:visible}}",
 							"_Name": "txtSerActCepo",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActCepo/#Property:fieldDescription}}",
-							"IsEditable": true,
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActCepo/#Property:visible}}",
 							"_Name": "txtEstActCepo",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
@@ -45,14 +45,14 @@
 					"Controls": [
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActVisor/#Property:fieldDescription}}",
-							"IsEditable": true,
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActVisor/#Property:visible}}",
 							"_Name": "txtSerActVisor",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActVisor/#Property:fieldDescription}}",
-							"IsEditable": true,
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActVisor/#Property:visible}}",
 							"_Name": "txtEstActVisor",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
@@ -72,21 +72,21 @@
 					"Controls": [
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActConector/#Property:fieldDescription}}",
-							"IsEditable": true,
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActRegulador/#Property:visible}}",
 							"_Name": "txtSerActConector",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActConector/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActConector/#Property:visible}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActRegulador/#Property:visible}}",
 							"_Name": "txtEstActConector",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewConector/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewRegulador/#Property:visible}}",
+							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewConector/#Property:visible}}",
 							"_Name": "txtSerNewConector",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
@@ -99,14 +99,14 @@
 					"Controls": [
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActRegulador/#Property:fieldDescription}}",
-							"IsEditable": true,
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActConector/#Property:visible}}",
 							"_Name": "txtSerActRegulador",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActRegulador/#Property:fieldDescription}}",
-							"IsEditable": true,
+							"IsEditable": false,
 							"IsVisible": true,
 							"_Name": "txtEstActRegulador",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
@@ -126,21 +126,21 @@
 					"Controls": [
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerTapaUndCorr/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerTapaUndCorr/#Property:editable}}",
-							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActConector/#Property:visible}}",
+							"IsEditable": false,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerTapaUndCorr/#Property:visible}}",
 							"_Name": "txtSerTapaUndCorr",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActTapaUndCorr/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActTapaUndCorr/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActTapaUndCorr/#Property:visible}}",
 							"_Name": "txtEstActTapaUndCorr",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewTapaUndCorr/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewTapaUndCorr/#Property:editable}}",
+							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewTapaUndCorr/#Property:visible}}",
 							"_Name": "txtSerNewTapaUndCorr",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
@@ -153,21 +153,21 @@
 					"Controls": [
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActBase/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActBase/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActBase/#Property:visible}}",
 							"_Name": "txtSerActBase",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActBase/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActBase/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActBase/#Property:visible}}",
 							"_Name": "txtEstActBase",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewBase/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewBase/#Property:editable}}",
+							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewBase/#Property:visible}}",
 							"_Name": "txtSerNewBase",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
@@ -180,21 +180,21 @@
 					"Controls": [
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActValPres/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActValPres/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActValPres/#Property:visible}}",
 							"_Name": "txtSerActValPres",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActValPres/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActValPres/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActValPres/#Property:visible}}",
 							"_Name": "txtEstActValPres",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewValPres/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewValPres/#Property:editable}}",
+							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewValPres/#Property:visible}}",
 							"_Name": "txtSerNewValPres",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
@@ -207,21 +207,21 @@
 					"Controls": [
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActVisorDos/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActVisorDos/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActVisorDos/#Property:visible}}",
 							"_Name": "txtSerActVisorDos",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActVisorDos/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActVisorDos/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActVisorDos/#Property:visible}}",
 							"_Name": "txtEstActVisorDos",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewVisorDos/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewVisorDos/#Property:editable}}",
+							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewVisorDos/#Property:visible}}",
 							"_Name": "txtSerNewVisorDos",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
@@ -234,21 +234,21 @@
 					"Controls": [
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActBrida/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActBrida/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActBrida/#Property:visible}}",
 							"_Name": "txtSerActBrida",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActBrida/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActBrida/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActBrida/#Property:visible}}",
 							"_Name": "txtEstActBrida",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewBrida/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewBrida/#Property:editable}}",
+							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewBrida/#Property:visible}}",
 							"_Name": "txtSerNewBrida",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
@@ -261,21 +261,21 @@
 					"Controls": [
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActBridaDos/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActBridaDos/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActBridaDos/#Property:visible}}",
 							"_Name": "txtSerActBridaDos",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActBridaDos/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActBridaDos/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActBridaDos/#Property:visible}}",
 							"_Name": "txtEstActBridaDos",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewBridaDos/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewBridaDos/#Property:editable}}",
+							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewBridaDos/#Property:visible}}",
 							"_Name": "txtSerNewBridaDos",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
@@ -288,21 +288,21 @@
 					"Controls": [
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActManome/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActManome/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActManome/#Property:visible}}",
 							"_Name": "txtSerActManome",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActManome/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActManome/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActManome/#Property:visible}}",
 							"_Name": "txtEstActManome",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewManome/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewManome/#Property:editable}}",
+							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewManome/#Property:visible}}",
 							"_Name": "txtSerNewManome",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
@@ -315,21 +315,21 @@
 					"Controls": [
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActBridaFilUno/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActBridaFilUno/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActBridaFilUno/#Property:visible}}",
 							"_Name": "txtSerActBridaFilUno",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActBridaFilUno/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActBridaFilUno/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActBridaFilUno/#Property:visible}}",
 							"_Name": "txtEstActBridaFilUno",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewBridaFilUno/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewBridaFilUno/#Property:editable}}",
+							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewBridaFilUno/#Property:visible}}",
 							"_Name": "txtSerNewBridaFilUno",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
@@ -342,21 +342,21 @@
 					"Controls": [
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActBridaFilDos/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActBridaFilDos/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActBridaFilDos/#Property:visible}}",
 							"_Name": "txtSerActBridaFilDos",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActBridaFilDos/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActBridaFilDos/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActBridaFilDos/#Property:visible}}",
 							"_Name": "txtEstActBridaFilDos",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSernewBridaFilDos/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSernewBridaFilDos/#Property:editable}}",
+							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSernewBridaFilDos/#Property:visible}}",
 							"_Name": "txtSernewBridaFilDos",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
@@ -369,21 +369,21 @@
 					"Controls": [
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActTapaMed/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActTapaMed/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActTapaMed/#Property:visible}}",
 							"_Name": "txtSerActTapaMed",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActTapaMed/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActTapaMed/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActTapaMed/#Property:visible}}",
 							"_Name": "txtEstActTapaMed",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewTapaMed/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewTapaMed/#Property:editable}}",
+							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewTapaMed/#Property:visible}}",
 							"_Name": "txtSerNewTapaMed",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
@@ -396,21 +396,21 @@
 					"Controls": [
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActTapaMedDos/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActTapaMedDos/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActTapaMedDos/#Property:visible}}",
 							"_Name": "txtSerActTapaMedDos",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActTapaMedDos/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActTapaMedDos/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActTapaMedDos/#Property:visible}}",
 							"_Name": "txtEstActTapaMedDos",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewTapaMedDos/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewTapaMedDos/#Property:editable}}",
+							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewTapaMedDos/#Property:visible}}",
 							"_Name": "txtSerNewTapaMedDos",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
@@ -421,23 +421,23 @@
 				{
 					"Caption": "   ",
 					"Controls": [
-					{
+						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActSensor/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActSensor/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActSensor/#Property:visible}}",
 							"_Name": "txtSerActSensor",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActSensor/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActSensor/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActSensor/#Property:visible}}",
 							"_Name": "txtEstActSensor",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewSensor/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewSensor/#Property:editable}}",
+							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewSensor/#Property:visible}}",
 							"_Name": "txtSerNewSensor",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
@@ -450,21 +450,21 @@
 					"Controls": [
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActPlaca/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActPlaca/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActPlaca/#Property:visible}}",
 							"_Name": "txtSerActPlaca",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActPlaca/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActPlaca/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActPlaca/#Property:visible}}",
 							"_Name": "txtEstActPlaca",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewPlaca/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewPlaca/#Property:editable}}",
+							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewPlaca/#Property:visible}}",
 							"_Name": "txtSerNewPlaca",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
@@ -477,21 +477,21 @@
 					"Controls": [
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActBridaCie/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActBridaCie/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActBridaCie/#Property:visible}}",
 							"_Name": "txtSerActBridaCie",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActBridaCie/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActBridaCie/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActBridaCie/#Property:visible}}",
 							"_Name": "txtEstActBridaCie",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewBridaCie/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewBridaCie/#Property:editable}}",
+							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewBridaCie/#Property:visible}}",
 							"_Name": "txtSerNewBridaCie",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
@@ -504,21 +504,21 @@
 					"Controls": [
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActManifoldQ1/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActManifoldQ1/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActManifoldQ1/#Property:visible}}",
 							"_Name": "txtSerActManifoldQ1",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActManifoldQ1/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActManifoldQ1/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActManifoldQ1/#Property:visible}}",
 							"_Name": "txtEstActManifoldQ1",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewManifoldQ1/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewManifoldQ1/#Property:editable}}",
+							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewManifoldQ1/#Property:visible}}",
 							"_Name": "txtSerNewManifoldQ1",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
@@ -531,21 +531,21 @@
 					"Controls": [
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActManifoldQ2/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActManifoldQ2/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActManifoldQ2/#Property:visible}}",
 							"_Name": "txtSerActManifoldQ2",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActManifoldQ2/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActManifoldQ2/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActManifoldQ2/#Property:visible}}",
 							"_Name": "txtEstActManifoldQ2",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewManifoldQ2/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewManifoldQ2/#Property:editable}}",
+							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewManifoldQ2/#Property:visible}}",
 							"_Name": "txtSerNewManifoldQ2",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
@@ -558,21 +558,21 @@
 					"Controls": [
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActPorta/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActPorta/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActPorta/#Property:visible}}",
 							"_Name": "txtSerActPorta",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActPorta/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActPorta/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActPorta/#Property:visible}}",
 							"_Name": "txtEstActPorta",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewPorta/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewPorta/#Property:editable}}",
+							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewPorta/#Property:visible}}",
 							"_Name": "txtSerNewPorta",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
@@ -585,21 +585,21 @@
 					"Controls": [
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActPlacaFilt/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActPlacaFilt/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActPlacaFilt/#Property:visible}}",
 							"_Name": "txtSerActPlacaFilt",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActPlacaFilt/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActPlacaFilt/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActPlacaFilt/#Property:visible}}",
 							"_Name": "txtEstActPlacaFilt",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewPlacaFilt/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewPlacaFilt/#Property:editable}}",
+							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewPlacaFilt/#Property:visible}}",
 							"_Name": "txtSerNewPlacaFilt",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
@@ -612,21 +612,21 @@
 					"Controls": [
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActValBy/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActValBy/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActValBy/#Property:visible}}",
 							"_Name": "txtSerActValBy",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActValBy/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActValBy/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActValBy/#Property:visible}}",
 							"_Name": "txtEstActValBy",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewValBy/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewValBy/#Property:editable}}",
+							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewValBy/#Property:visible}}",
 							"_Name": "txtSerNewValBy",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
@@ -639,21 +639,21 @@
 					"Controls": [
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActTornillo/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActTornillo/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActTornillo/#Property:visible}}",
 							"_Name": "txtSerActTornillo",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActTornillo/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActTornillo/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActTornillo/#Property:visible}}",
 							"_Name": "txtEstActTornillo",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewTornillo/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewTornillo/#Property:editable}}",
+							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewTornillo/#Property:visible}}",
 							"_Name": "txtSerNewTornillo",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
@@ -666,21 +666,21 @@
 					"Controls": [
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActTapaPro/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActTapaPro/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerActTapaPro/#Property:visible}}",
 							"_Name": "txtSerActTapaPro",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActTapaPro/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActTapaPro/#Property:editable}}",
+							"IsEditable": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActTapaPro/#Property:visible}}",
 							"_Name": "txtEstActTapaPro",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewTapaPro/#Property:fieldDescription}}",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewTapaPro/#Property:editable}}",
+							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewTapaPro/#Property:visible}}",
 							"_Name": "txtSerNewTapaPro",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
@@ -704,13 +704,14 @@
 			"_Type": "Control.Type.FormCellContainer"
 		}
 	],
+	"OnLoaded": "/SAPAssetManager/Rules/vanti/PageForm7aOnLoaded.js",
 	"ToolBar": {
 		"Controls": [
 			{
 				"Caption": "Siguente",
 				"Clickable": true,
 				"Enabled": true,
-				"OnPress": "/SAPAssetManager/Actions/vanti/Open_Form_7b.action",
+				"OnPress": "/SAPAssetManager/Rules/vanti/PageForm7OnNextPress.js",
 				"Visible": true,
 				"_Name": "ToolbarItem0",
 				"_Type": "Control.Type.ToolbarItem"

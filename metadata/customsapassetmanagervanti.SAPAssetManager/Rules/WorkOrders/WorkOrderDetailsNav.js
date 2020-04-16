@@ -1,5 +1,7 @@
 import {WorkOrderLibrary as libWo} from '../WorkOrders/WorkOrderLibrary';
 import libCom from '../Common/Library/CommonLibrary';
+import libPagesConf from '../vanti/PagesConfigurationLibrary';
+import PageFields from '../vanti/PageFields';
 
 export default function WorkOrderDetailsNav(context) {
 
@@ -23,6 +25,12 @@ export default function WorkOrderDetailsNav(context) {
     
     return context.read('/SAPAssetManager/Services/AssetManager.service', actionBinding['@odata.readLink'], [], libWo.getWorkOrderDetailsNavQueryOption()).then(function(result) {
         context.getPageProxy().setActionBinding(result.getItem(0));
-        return context.executeAction('/SAPAssetManager/Actions/WorkOrders/WorkOrderDetailsNav.action');
+		
+        let oPages = new libPagesConf();
+        let oBinding = context.getPageProxy().getActionBinding();
+        oBinding.oPages = oPages.conf;
+        
+        return PageFields.getFieldProperties(context, oBinding, "WorkOrderDetailsPage", result.getItem(0).MaintenanceActivityType, "", context.executeAction);
+        //return context.executeAction('/SAPAssetManager/Actions/WorkOrders/WorkOrderDetailsNav.action');
     });
 }

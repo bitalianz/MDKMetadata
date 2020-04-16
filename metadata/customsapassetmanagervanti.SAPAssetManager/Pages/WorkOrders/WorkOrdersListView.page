@@ -47,7 +47,7 @@
 					},
 					"Target": {
 						"EntitySet": "MyWorkOrderHeaders",
-						"QueryOptions": "$expand=Address,WOPriority",
+						"QueryOptions": "$expand=WOPriority",
 						"Service": "/SAPAssetManager/Services/AssetManager.service"
 					},
 					"Visible": true,
