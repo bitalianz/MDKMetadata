@@ -12,10 +12,8 @@
 						"UseTopPadding": false
 					},
 					"ObjectCell": {
-						"AccessoryType": "none",
 						"OnPress": "/SAPAssetManager/Actions/Parts/NavToPartCreateSummary.action",
-						"Subhead": "{{#Property:MaterialNum}} - {{#Property:Material/#Property:Description}}",
-						"Title": "Object Cell"
+						"Subhead": "/SAPAssetManager/Rules/vanti/PartsOfflinePickerListViewSubHead.js"
 					},
 					"Search": {
 						"BarcodeScanner": true,
@@ -25,7 +23,7 @@
 						"Placeholder": "$(L,search)"
 					},
 					"Target": {
-						"EntitySet": "MaterialPlants",
+						"EntitySet": "/SAPAssetManager/Rules/vanti/PartListQueryOptionsEntity.js",
 						"QueryOptions": "/SAPAssetManager/Rules/vanti/PartListQueryOptionsNonStock.js",
 						"Service": "/SAPAssetManager/Services/AssetManager.service"
 					},

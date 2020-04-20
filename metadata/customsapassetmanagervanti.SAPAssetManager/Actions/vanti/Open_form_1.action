@@ -1,4 +1,5 @@
 {
+	"ClearHistory": false,
 	"PageToOpen": "/SAPAssetManager/Pages/vanti/pagetest-form1.page",
 	"_Type": "Action.Type.Navigation"
 }

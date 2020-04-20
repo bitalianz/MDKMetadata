@@ -1,0 +1,13 @@
+{
+	"OnSuccess": "/SAPAssetManager/Actions/vanti/Open_Overview.action",
+	"Properties": {
+		"IniEjecucion": "{{#Property:oPages/#Property:IniEjecucion}}"
+	},
+	"Target": {
+		"EntitySet": "MyWorkOrderHeaders",
+		"QueryOptions": "$filter=OrderId eq '{{#Property:OrderId}}'",
+		"ReadLink": "",
+		"Service": "/SAPAssetManager/Services/AssetManager.service"
+	},
+	"_Type": "Action.Type.ODataService.UpdateEntity"
+}

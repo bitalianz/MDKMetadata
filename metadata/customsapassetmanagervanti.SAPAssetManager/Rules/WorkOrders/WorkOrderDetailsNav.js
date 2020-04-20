@@ -26,11 +26,11 @@ export default function WorkOrderDetailsNav(context) {
     return context.read('/SAPAssetManager/Services/AssetManager.service', actionBinding['@odata.readLink'], [], libWo.getWorkOrderDetailsNavQueryOption()).then(function(result) {
         context.getPageProxy().setActionBinding(result.getItem(0));
 		
-        let oPages = new libPagesConf();
-        let oBinding = context.getPageProxy().getActionBinding();
-        oBinding.oPages = oPages.conf;
+        //let oPages = new libPagesConf();
+        //let oBinding = context.getPageProxy().getActionBinding();
+        //oBinding.oPages = oPages.conf;
         
-        return PageFields.getFieldProperties(context, oBinding, "WorkOrderDetailsPage", result.getItem(0).MaintenanceActivityType, "", context.executeAction);
-        //return context.executeAction('/SAPAssetManager/Actions/WorkOrders/WorkOrderDetailsNav.action');
+        //return PageFields.getFieldProperties(context, oBinding, "WorkOrderDetailsPage", result.getItem(0).MaintenanceActivityType, "", context.executeAction);
+        return context.executeAction('/SAPAssetManager/Actions/WorkOrders/WorkOrderDetailsNav.action');
     });
 }
