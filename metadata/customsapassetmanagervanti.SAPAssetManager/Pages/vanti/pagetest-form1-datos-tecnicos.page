@@ -17,21 +17,75 @@
 				{
 					"Controls": [
 						{
-							"Caption": "Número de cuotas",
+							"Caption": "Número de ODS",
 							"IsEditable": false,
 							"IsVisible": true,
 							"KeyboardType": "Number",
-							"Value": "{NumCuotas}",
+							"Value": "{OrderId}",
 							"_Name": "FormCellSimpleProperty0",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "BP Firma ",
+							"Caption": "Clase de actividad",
+							"IsEditable": false,
+							"IsVisible": true,
+							"KeyboardType": "Number",
+							"Value": "{MaintenanceActivityType}",
+							"_Name": "FormCellSimpleProperty0",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Fecha inicio extremo",
+							"IsEditable": false,
+							"IsVisible": true,
+							"KeyboardType": "Number",
+							"Value": "{RequestStartDate}",
+							"_Name": "FormCellSimpleProperty0",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Hora inicial",
+							"IsEditable": false,
+							"IsVisible": true,
+							"KeyboardType": "Number",
+							"Value": "{HoraIniExtremo}",
+							"_Name": "FormCellSimpleProperty0",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Hora final",
+							"IsEditable": false,
+							"IsVisible": true,
+							"KeyboardType": "Number",
+							"Value": "{HoraFinExtremo}",
+							"_Name": "FormCellSimpleProperty0",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BP firma ",
 							"IsEditable": false,
 							"IsVisible": true,
 							"KeyboardType": "Email",
 							"Value": "{BPFirma}",
 							"_Name": "FormCellSimpleProperty1",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Teléfono BP firma",
+							"IsEditable": false,
+							"IsVisible": true,
+							"KeyboardType": "Number",
+							"Value": "/SAPAssetManager/Rules/vanti/TelefonoBPCliente.js",
+							"_Name": "FormCellSimpleProperty0",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Tipo de corte",
+							"IsEditable": false,
+							"IsVisible": true,
+							"KeyboardType": "Number",
+							"Value": "{TipoCorte2}",
+							"_Name": "FormCellSimpleProperty0",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
@@ -50,6 +104,24 @@
 							"KeyboardType": "Default",
 							"Value": "/SAPAssetManager/Rules/vanti/DescServCliente.js",
 							"_Name": "FormCellSimpleProperty4",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Defectos del punto de suministro",
+							"IsEditable": false,
+							"IsVisible": true,
+							"KeyboardType": "Number",
+							"Value": "",
+							"_Name": "FormCellSimpleProperty0",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Motivo de suspensión",
+							"IsEditable": false,
+							"IsVisible": true,
+							"KeyboardType": "Number",
+							"Value": "",
+							"_Name": "FormCellSimpleProperty0",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
 					],

@@ -19,6 +19,7 @@ export default function ConfirmationCreateUpdateNav(context, override, defaultSt
         'Description': '',
         'Operation': '',
         'OrderID': '',
+        'oPages': '',
         'Plant': '',
         'IsFinal': false,
         'WorkOrderHeader': undefined,

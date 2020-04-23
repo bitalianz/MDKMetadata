@@ -194,6 +194,15 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
+							"AlternateInput": "None",
+							"Caption": "Numero de Cuotas",
+							"IsEditable": true,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm1/#Property:txtCuotas/#Property:visible}}",
+							"KeyboardType": "Number",
+							"_Name": "txtCuotas",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
 							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm1/#Property:txtFirma/#Property:visible}}",
 							"PlaceHolder": "PlaceHolder",

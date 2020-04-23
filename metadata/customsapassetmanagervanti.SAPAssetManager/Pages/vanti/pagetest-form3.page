@@ -19,85 +19,138 @@
 					"Controls": [
 						{
 							"Caption": "Indice Odo. Analit.",
-							"IsEditable": true,
-							"IsVisible": true,
-							"_Name": "FormCellSimpleProperty0",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm3/#Property:IndiceOdoAnal/#editable}}",
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm3/#Property:IndiceOdoAnal/#Property:visible}}",
+							"KeyboardType": "Number",
+							"_Name": "IndiceOdoAnal",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "Indice Odo. Fisio %",
-							"IsEditable": true,
-							"IsVisible": true,
-							"_Name": "FormCellSimpleProperty1",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm3/#Property:IndiceOdoFisio/#Property:editable}}",
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm3/#Property:IndiceOdoFisio/#Property:visible}}",
+							"_Name": "IndiceOdoFisio",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
 					],
 					"Visible": true
 				},
 				{
-					"Caption": "Datos Presión de red",
+					"Caption": "Datos Presión Red",
 					"Controls": [
 						{
 							"AllowEmptySelection": false,
 							"AllowMultipleSelection": false,
 							"Caption": "Unidad de medida",
-							"IsEditable": true,
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm3/#Property:UnidadPres/#Property:editable}}",
 							"IsPickerDismissedOnSelection": false,
 							"IsSearchCancelledAfterSelection": false,
 							"IsSelectedSectionEnabled": false,
-							"IsVisible": true,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm3/#Property:UnidadPres/#Property:visible}}",
 							"PickerItems": [
-								"mbar",
-								"atm",
-								"Pa"
+								{
+									"DisplayValue": "PSI",
+									"ReturnValue": "01"
+								},
+								{
+									"DisplayValue": "Mbar",
+									"ReturnValue": "02"
+								},
+								{
+									"DisplayValue": "Columna de agua",
+									"ReturnValue": "03"
+								}
 							],
 							"PickerPrompt": "Please select one single item",
-							"_Name": "FormCellListPicker3",
+							"_Name": "UnidadPres",
 							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
 							"Caption": "Presión de red",
-							"IsEditable": true,
-							"IsVisible": true,
-							"_Name": "FormCellSimpleProperty2",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm3/#Property:PresRed/#Property:editable}}",
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm3/#Property:PresRed/#Property:visible}}",
+							"KeyboardType": "Number",
+							"_Name": "PresRed",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
 					],
 					"Visible": true
 				},
 				{
-					"Caption": "Datos Presión atmosférica",
+					"Caption": "Datos Presión Atmosférica",
 					"Controls": [
 						{
 							"AllowEmptySelection": false,
 							"AllowMultipleSelection": false,
 							"Caption": "Unidad de medida",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm3/#Property:UnidadPresAt/#Property:editable}}",
+							"IsPickerDismissedOnSelection": false,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm3/#Property:UnidadPresAt/#Property:visible}}",
+							"PickerItems": [
+								{
+									"DisplayValue": "PSI",
+									"ReturnValue": "01"
+								},
+								{
+									"DisplayValue": "Mbar",
+									"ReturnValue": "02"
+								},
+								{
+									"DisplayValue": "Columna de agua",
+									"ReturnValue": "03"
+								}
+							],
+							"PickerPrompt": "Please select one single item",
+							"_Name": "UnidadPresAt",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						},
+						{
+							"Caption": "Presión atmosférica",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm3/#Property:PresAtmo/#Property:editable}}",
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm3/#Property:PresAtmo/#Property:visible}}",
+							"KeyboardType": "Number",
+							"_Name": "PresAtmo",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					],
+					"Visible": true
+				},
+				{
+					"Caption": "Datos Temperatura",
+					"Controls": [
+						{
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "Choose Single",
 							"IsEditable": true,
 							"IsPickerDismissedOnSelection": false,
 							"IsSearchCancelledAfterSelection": false,
 							"IsSelectedSectionEnabled": false,
 							"IsVisible": true,
 							"PickerItems": [
-								"mbar",
-								"atm",
-								"Pa"
+								"One",
+								"Two",
+								"Three"
 							],
 							"PickerPrompt": "Please select one single item",
 							"Value": [
 								"Two"
 							],
-							"_Name": "FormCellListPicker7",
+							"_Name": "UnidadTemp",
 							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
-							"Caption": "Presión atmosférica",
+							"Caption": "Caption",
 							"IsEditable": false,
 							"IsVisible": true,
-							"_Name": "FormCellSimpleProperty6",
+							"PlaceHolder": "PlaceHolder",
+							"_Name": "Temperatura",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
 					],
-					"Visible": true
+					"Visible": false
 				}
 			],
 			"_Name": "FormCellContainer0",
@@ -110,7 +163,7 @@
 				"Caption": "Siguente",
 				"Clickable": true,
 				"Enabled": true,
-				"OnPress": "/SAPAssetManager/Actions/vanti/Open_form_4.action",
+				"OnPress": "/SAPAssetManager/Rules/vanti/PageForm3OnNextPress.js",
 				"Visible": true,
 				"_Name": "ToolbarItem0",
 				"_Type": "Control.Type.ToolbarItem"

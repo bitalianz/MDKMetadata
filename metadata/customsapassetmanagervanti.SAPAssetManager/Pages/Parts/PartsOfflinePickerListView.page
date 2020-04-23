@@ -12,8 +12,10 @@
 						"UseTopPadding": false
 					},
 					"ObjectCell": {
-						"OnPress": "/SAPAssetManager/Actions/Parts/NavToPartCreateSummary.action",
-						"Subhead": "/SAPAssetManager/Rules/vanti/PartsOfflinePickerListViewSubHead.js"
+						"AccessoryType": "none",
+						"OnPress": "/SAPAssetManager/Rules/vanti/OnPressPartsListView.js",
+						"Subhead": "/SAPAssetManager/Rules/vanti/PartsOfflinePickerListViewSubHead.js",
+						"Title": "      "
 					},
 					"Search": {
 						"BarcodeScanner": true,

@@ -8,6 +8,7 @@ export default function PageForm1OnChangeStatus(context) {
 		var aPages = [
 			"pageTestForm1", 
 			"pageTestForm2",
+			"pageTestForm3",
 			"pageTestForm7a"
 		];
 

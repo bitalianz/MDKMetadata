@@ -86,6 +86,14 @@ export default class PagesConfigurationLibrary {
 					"fieldDescription": "Celular",
 					"value": ""
 				},
+				"txtCuotas": {
+					"container": 'frmContResODS',
+					"mandatory": false,
+					"visible": false,
+					"editable": false,
+					"fieldDescription": "Numero de cuotas",
+					"value": ""
+				},
 				"txtEmail": {
 					"container": 'frmContResODS',
 					"mandatory": false,
@@ -1137,7 +1145,84 @@ export default class PagesConfigurationLibrary {
 					"CaractName" : '',
 					"value": ""
 				}
+			},
+			"PartCreateSummary": {
+				"MaterialUOMLstPkr": {
+					"container": 'FormCellContainer',
+					"mandatory": true,
+					"visible": true,
+					"editable": true,
+					"fieldDescription": "UM",
+					"value": ""	
+				}
+			},
+			"pageTestForm3": {
+				"IndiceOdoAnal": {
+					"container": 'FormCellContainer0',
+					"mandatory": true,
+					"visible": true,
+					"editable": true,
+					"fieldDescription": "Indice Odo. Analit.",
+					"value": ""	
+				},
+				"IndiceOdoFisio": {
+					"container": 'FormCellContainer0',
+					"mandatory": true,
+					"visible": true,
+					"editable": true,
+					"fieldDescription": "Indice Odo. Fisio %",
+					"value": ""	
+				},
+				"UnidadPres": {
+					"container": 'FormCellContainer0',
+					"mandatory": true,
+					"visible": true,
+					"editable": true,
+					"fieldDescription": "Unidad de medida",
+					"value": ""	
+				},
+				"PresRed": {
+					"container": 'FormCellContainer0',
+					"mandatory": true,
+					"visible": true,
+					"editable": true,
+					"fieldDescription": "Presión de red",
+					"value": ""	
+				},
+				"UnidadPresAt": {
+					"container": 'FormCellContainer0',
+					"mandatory": true,
+					"visible": true,
+					"editable": true,
+					"fieldDescription": "Unidad de medida",
+					"value": ""	
+				},
+				"PresAtmo": {
+					"container": 'FormCellContainer0',
+					"mandatory": true,
+					"visible": true,
+					"editable": true,
+					"fieldDescription": "Presión atmosférica",
+					"value": ""	
+				},
+				"UnidadTemp": {
+					"container": 'FormCellContainer0',
+					"mandatory": false,
+					"visible": false,
+					"editable": false,
+					"fieldDescription": "Unidad de medida (temperatura)",
+					"value": ""	
+				},
+				"Temperatura": {
+					"container": 'FormCellContainer0',
+					"mandatory": false,
+					"visible": false,
+					"editable": false,
+					"fieldDescription": "Temperatura",
+					"value": ""	
+				}
 			}
+			
 		};
 	}
 }

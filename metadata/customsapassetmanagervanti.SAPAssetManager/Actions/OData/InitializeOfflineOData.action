@@ -606,6 +606,11 @@
 			"AutomaticallyRetrievesStreams": false,
 			"Name": "ZZMaterialsNon",
 			"Query": "ZZMaterialsNon"
+		},
+		{
+			"AutomaticallyRetrievesStreams": false,
+			"Name": "ZZCamposAdicionales",
+			"Query": "ZZCamposAdicionales"
 		}
 	],
 	"OnFailure": "/SAPAssetManager/Actions/OData/InitializeOfflineODataCreateFailureMessage.action",

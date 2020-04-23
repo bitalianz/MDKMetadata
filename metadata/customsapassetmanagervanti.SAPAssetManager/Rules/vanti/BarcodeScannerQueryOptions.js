@@ -14,6 +14,12 @@ export default function BarcodeScannerQueryOptions(context) {
         queryBuilder.addFilter(`OperationNo eq '${context.binding.OperationNo}'`);
     }
 	
+	let sMatNum = context.binding.MaterialNum;
+	
+	if(sMatNum){
+		queryBuilder.addFilter(`MaterialNum eq '${sMatNum}'`);
+	} 
+	
     queryBuilder.addFilter('WithdrawnQuantity ne RequirementQuantity');
     queryBuilder.addExtra('orderby=ItemNumber');
 

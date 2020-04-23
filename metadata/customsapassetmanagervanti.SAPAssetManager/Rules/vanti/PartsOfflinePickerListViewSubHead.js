@@ -1,4 +1,4 @@
-export default function PartListQueryOptionsEntity(context) {
+export default function PartsOfflinePickerListViewSubHead(context) {
 	let materialCategory = context.evaluateTargetPath('#Page:PartCreatePage/#Control:PartCategoryLstPkr');
 	
 	let sVal = materialCategory.getValue()[0].ReturnValue;

@@ -1,12 +1,9 @@
 {
-	"OnSuccess": "/SAPAssetManager/Actions/vanti/Open_Overview.action",
-	"Properties": {
-		"IniEjecucion": "{{#Property:oPages/#Property:IniEjecucion}}"
-	},
+	"OnSuccess": "/SAPAssetManager/Actions/CreateUpdateDelete/CreateEntitySuccessMessage.action",
 	"Target": {
-		"EntitySet": "MyWorkOrderHeaders",
-		"QueryOptions": "$filter=OrderId eq '{{#Property:OrderId}}'",
-		"ReadLink": "",
+		"EntitySet": "ZZCamposAdicionales",
+		"QueryOptions": "",
+		"ReadLink": "{@odata.readLink}",
 		"Service": "/SAPAssetManager/Services/AssetManager.service"
 	},
 	"_Type": "Action.Type.ODataService.UpdateEntity"
