@@ -40,7 +40,6 @@ export default class {
                 'IsWorkOrderChangable': false,
                 'IsOperationChangable': false,
                 'OrderID': binding.OrderId,
-                'oPages' : binding.oPages,
                 'WorkOrderHeader': binding.WOHeader,
                 'Operation': binding.OperationNo,
                 'MobileStatus': binding.MobileStatus,

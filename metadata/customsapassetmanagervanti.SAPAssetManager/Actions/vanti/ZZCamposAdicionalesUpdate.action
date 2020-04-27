@@ -1,0 +1,16 @@
+{
+	"Headers": {
+		"OfflineOData.TransactionID": "#Property:OrderId"
+	},
+	"OnSuccess": "/SAPAssetManager/Actions/SyncInitializeProgressBannerMessage.action",
+	"Properties": {
+		"UltimaLectura": "{{#Property:oPages/#Property:pageTestForm1/#Property:txtLectura/#Property:value}}"
+	},
+	"Target": {
+		"EntitySet": "ZZCamposAdicionales",
+		"QueryOptions": "",
+		"ReadLink": "/SAPAssetManager/Rules/vanti/ZZCamposAdicionalesUpdate_ReadLink.js",
+		"Service": "/SAPAssetManager/Services/AssetManager.service"
+	},
+	"_Type": "Action.Type.ODataService.UpdateEntity"
+}

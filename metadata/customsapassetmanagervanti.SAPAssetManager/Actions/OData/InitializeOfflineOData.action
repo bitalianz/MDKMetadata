@@ -253,6 +253,10 @@
 			"Query": "Confirmations"
 		},
 		{
+			"Name": "ConfirmationOverviewRows",
+			"Query": "ConfirmationOverviewRows"
+		},
+		{
 			"Name": "MaterialDocItems",
 			"Query": "MaterialDocItems"
 		},

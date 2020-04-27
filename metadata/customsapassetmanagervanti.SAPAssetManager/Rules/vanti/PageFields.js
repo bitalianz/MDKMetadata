@@ -1,7 +1,6 @@
 export default class PageFields {
 
 	static getTecPageName(sPageName) {
-
 		var sTecPage = "";
 
 		var aTecPages = [{
@@ -25,7 +24,6 @@ export default class PageFields {
 		}];
 
 		for (var i = 0; i < aTecPages.length; i++) {
-
 			if (aTecPages[i].page === sPageName) {
 				sTecPage = aTecPages[i].tecPage;
 				break;
@@ -35,38 +33,30 @@ export default class PageFields {
 	}
 
 	static goNextActionPage(oContext, sPageName) {
-
 		var that = this;
 
-		var sPath = "";
-		
-		var sStatusValue = oContext.getPageProxy().binding.sUserStatus;
-		var aStatusValue = sStatusValue.split("/");
-
+		var aStatusValue = oContext.getPageProxy().binding.sUserStatus.split("/");
 		var sActClas = oContext.getPageProxy().binding.WOHeader.MaintenanceActivityType;
 		var sOrderType = oContext.getPageProxy().binding.WOHeader.OrderType;
 
-		oContext.read('/SAPAssetManager/Services/AssetManager.service', "ZZFormParamss" +
+		return oContext.read('/SAPAssetManager/Services/AssetManager.service', "ZZFormParamss" +
 			"(OrderId='" + oContext.getPageProxy().binding.OrderId + "',OrdesClass='" + sOrderType + "',ActivityClass='" + sActClas +
 			"',UserStatus='" + aStatusValue[1] + "',CurrPage='" + sPageName + "')", [], "").then(function (result) {
 
 			if (result) {
-
 				var sNextAction = that.getTecPageName(result.getItem(0).NextPage);
 
 				if (sNextAction) {
-					sPath = "/SAPAssetManager/Actions/vanti/" + sNextAction;
+					return oContext.executeAction("/SAPAssetManager/Actions/vanti/" + sNextAction);
 				} else {
-					//Llamar operaciones
-					sPath = "/SAPAssetManager/Actions/vanti/Open_Operation_Details.action";
+					//guardar los campos adicionales de la AUFK
+					return oContext.executeAction('/SAPAssetManager/Actions/vanti/ZZCamposAdicionalesUpdate.action').then(() => {
+						//Llamar operaciones
+						return oContext.executeAction("/SAPAssetManager/Actions/vanti/Open_Operation_Details.action");
+					});
 				}
-
-				oContext.executeAction(sPath);
-
 			}
-
 		});
-
 	}
 
 	static getFieldProperties(oContext, oBinding, sPageName, sActClas, sUserStat, fnCallBack = "") {
