@@ -2,7 +2,7 @@
 	"ActionBar": {
 		"Items": [
 			{
-				"OnPress": "/SAPAssetManager/Actions/vanti/Open_adjuntos.action",
+				"OnPress": "/SAPAssetManager/Rules/vanti/OpenCamera.js",
 				"Position": "right",
 				"SystemItem": "Camera",
 				"Text": "Item",

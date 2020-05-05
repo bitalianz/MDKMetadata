@@ -2,7 +2,7 @@
 	"ActionBar": {
 		"Items": [
 			{
-				"OnPress": "/SAPAssetManager/Actions/Open_adjuntos.action",
+				"OnPress": "/SAPAssetManager/Rules/vanti/OpenCamera.js",
 				"Position": "right",
 				"SystemItem": "Camera",
 				"Text": "Item",
@@ -15,7 +15,7 @@
 		{
 			"Sections": [
 				{
-					"Caption": "Recinto 1",
+					"Caption": "Recinto",
 					"Controls": [
 						{
 							"AllowEmptySelection": false,
@@ -66,57 +66,6 @@
 							"IsVisible": true,
 							"PlaceHolder": "XX",
 							"_Name": "FormCellSimpleProperty0",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
-						}
-					],
-					"Visible": true
-				},
-				{
-					"Caption": "Recinto 2",
-					"Controls": [
-						{
-							"AllowEmptySelection": false,
-							"AllowMultipleSelection": false,
-							"Caption": "Tipo de recinto",
-							"IsEditable": true,
-							"IsPickerDismissedOnSelection": false,
-							"IsSearchCancelledAfterSelection": false,
-							"IsSelectedSectionEnabled": false,
-							"IsVisible": true,
-							"PickerItems": [
-							],
-							"PickerPrompt": "Please select one single item",
-							"_Name": "FormCellListPicker2",
-							"_Type": "Control.Type.FormCell.ListPicker"
-						},
-						{
-							"Caption": "Volumen CO",
-							"IsEditable": true,
-							"IsVisible": true,
-							"_Name": "FormCellSimpleProperty3",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
-						},
-						{
-							"AllowEmptySelection": false,
-							"AllowMultipleSelection": false,
-							"Caption": "Cantidad de equipos",
-							"IsEditable": true,
-							"IsPickerDismissedOnSelection": false,
-							"IsSearchCancelledAfterSelection": false,
-							"IsSelectedSectionEnabled": false,
-							"IsVisible": true,
-							"PickerItems": [
-							],
-							"PickerPrompt": "Please select one single item",
-							"_Name": "FormCellListPicker3",
-							"_Type": "Control.Type.FormCell.ListPicker"
-						},
-						{
-							"Caption": "Carga recinto KW",
-							"IsEditable": false,
-							"IsVisible": true,
-							"PlaceHolder": "XX",
-							"_Name": "FormCellSimpleProperty1",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
 					],

@@ -2,7 +2,7 @@
 	"ActionBar": {
 		"Items": [
 			{
-				"OnPress": "/SAPAssetManager/Actions/vanti/Open_adjuntos.action",
+				"OnPress": "/SAPAssetManager/Rules/vanti/OpenCamera.js",
 				"Position": "right",
 				"SystemItem": "Camera",
 				"Text": "Item",
@@ -31,7 +31,7 @@
 							"IsVisible": true,
 							"KeyboardType": "Number",
 							"Value": "{MaintenanceActivityType}",
-							"_Name": "FormCellSimpleProperty0",
+							"_Name": "FormCellSimpleProperty1",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
@@ -40,7 +40,7 @@
 							"IsVisible": true,
 							"KeyboardType": "Number",
 							"Value": "{RequestStartDate}",
-							"_Name": "FormCellSimpleProperty0",
+							"_Name": "FormCellSimpleProperty2",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
@@ -49,7 +49,7 @@
 							"IsVisible": true,
 							"KeyboardType": "Number",
 							"Value": "{HoraIniExtremo}",
-							"_Name": "FormCellSimpleProperty0",
+							"_Name": "FormCellSimpleProperty3",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
@@ -58,7 +58,7 @@
 							"IsVisible": true,
 							"KeyboardType": "Number",
 							"Value": "{HoraFinExtremo}",
-							"_Name": "FormCellSimpleProperty0",
+							"_Name": "FormCellSimpleProperty4",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
@@ -67,7 +67,7 @@
 							"IsVisible": true,
 							"KeyboardType": "Email",
 							"Value": "{BPFirma}",
-							"_Name": "FormCellSimpleProperty1",
+							"_Name": "FormCellSimpleProperty5",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
@@ -76,7 +76,7 @@
 							"IsVisible": true,
 							"KeyboardType": "Number",
 							"Value": "/SAPAssetManager/Rules/vanti/TelefonoBPCliente.js",
-							"_Name": "FormCellSimpleProperty0",
+							"_Name": "FormCellSimpleProperty6",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
@@ -85,7 +85,7 @@
 							"IsVisible": true,
 							"KeyboardType": "Number",
 							"Value": "{TipoCorte2}",
-							"_Name": "FormCellSimpleProperty0",
+							"_Name": "FormCellSimpleProperty7",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
@@ -94,7 +94,7 @@
 							"IsVisible": true,
 							"KeyboardType": "Default",
 							"Value": "/SAPAssetManager/Rules/vanti/DescServTecnico.js",
-							"_Name": "FormCellSimpleProperty3",
+							"_Name": "FormCellSimpleProperty8",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
@@ -103,7 +103,7 @@
 							"IsVisible": true,
 							"KeyboardType": "Default",
 							"Value": "/SAPAssetManager/Rules/vanti/DescServCliente.js",
-							"_Name": "FormCellSimpleProperty4",
+							"_Name": "FormCellSimpleProperty9",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
@@ -111,8 +111,7 @@
 							"IsEditable": false,
 							"IsVisible": true,
 							"KeyboardType": "Number",
-							"Value": "",
-							"_Name": "FormCellSimpleProperty0",
+							"_Name": "FormCellSimpleProperty10",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
@@ -120,8 +119,7 @@
 							"IsEditable": false,
 							"IsVisible": true,
 							"KeyboardType": "Number",
-							"Value": "",
-							"_Name": "FormCellSimpleProperty0",
+							"_Name": "FormCellSimpleProperty11",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
 					],

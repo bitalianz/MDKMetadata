@@ -2,7 +2,7 @@
 	"ActionBar": {
 		"Items": [
 			{
-				"OnPress": "/SAPAssetManager/Actions/vanti/Open_adjuntos.action",
+				"OnPress": "/SAPAssetManager/Rules/vanti/OpenCamera.js",
 				"Position": "right",
 				"SystemItem": "Camera",
 				"Text": "Item",
@@ -19,7 +19,7 @@
 					"Controls": [
 						{
 							"Caption": "Indice Odo. Analit.",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm3/#Property:IndiceOdoAnal/#editable}}",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm3/#Property:IndiceOdoAnal/#Property:editable}}",
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm3/#Property:IndiceOdoAnal/#Property:visible}}",
 							"KeyboardType": "Number",
 							"_Name": "IndiceOdoAnal",

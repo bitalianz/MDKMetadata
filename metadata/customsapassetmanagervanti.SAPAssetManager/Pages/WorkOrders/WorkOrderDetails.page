@@ -135,7 +135,7 @@
 								"KeyName": "Datos clientes",
 								"OnPress": "/SAPAssetManager/Actions/vanti/Open_form_1_datos_cliente.action",
 								"Value": "  ",
-								"Visible": "/SAPAssetManager/Rules/vanti/LinkDatosClienteVisible.js"
+								"Visible": true
 							}
 						},
 						{
@@ -144,7 +144,7 @@
 								"KeyName": "Datos técnicos",
 								"OnPress": "/SAPAssetManager/Actions/vanti/Open_form_1_datos_tecnicos.action",
 								"Value": "  ",
-								"Visible": "/SAPAssetManager/Rules/vanti/LinkDatosTecnicosVisible.js"
+								"Visible": true
 							}
 						}
 					],

@@ -2,7 +2,7 @@
 	"ActionBar": {
 		"Items": [
 			{
-				"OnPress": "/SAPAssetManager/Actions/vanti/Open_adjuntos.action",
+				"OnPress": "/SAPAssetManager/Rules/vanti/OpenCamera.js",
 				"Position": "right",
 				"SystemItem": "Camera",
 				"Text": "Item",
@@ -126,6 +126,7 @@
 							"IsSelectedSectionEnabled": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm1/#Property:lstPagadores/#Property:visible}}",
 							"PickerItems": [
+								"No",
 								"2",
 								"3",
 								"4",

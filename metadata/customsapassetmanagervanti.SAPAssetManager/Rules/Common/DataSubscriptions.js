@@ -41,6 +41,7 @@ export default function DataSubscriptions(context) {
                 'ZZMotivosSustituciones',
                 'ZZDestinosMedidores',
                 'ZZPrecintos',
+                'ZZDefectos'
             ];
         default:
             break;

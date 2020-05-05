@@ -167,6 +167,104 @@ export default class PagesConfigurationLibrary {
 					"editable": false,
 					"fieldDescription": "Registre las lecturas",
 					"value": ""
+				},
+				"txtLectMedRetirado": {
+					"container": 'frmContSust',
+					"mandatory": false,
+					"visible": false,
+					"editable": false,
+					"fieldDescription": "Lectura medidor retirado",
+					"value": ""
+				},
+				"txtLectMedInstalado": {
+					"container": 'frmContSust',
+					"mandatory": false,
+					"visible": false,
+					"editable": false,
+					"fieldDescription": "Lectura medidor instalado",
+					"value": ""
+				}
+			},
+			"pageTestForm4": {
+				"txtPresContratada": {
+					"container": 'frmContInspCentMed',
+					"mandatory": false,
+					"visible": false,
+					"editable": false,
+					"fieldDescription": "",
+					"value": ""
+				},
+				"lstPickUM": {
+					"container": 'frmContInspCentMed',
+					"mandatory": false,
+					"visible": false,
+					"editable": false,
+					"fieldDescription": "",
+					"value": ""
+				},
+				"txtPresDinamica": {
+					"container": 'frmContInspCentMed',
+					"mandatory": false,
+					"visible": false,
+					"editable": false,
+					"fieldDescription": "",
+					"value": ""
+				},
+				"txtPresEstatica": {
+					"container": 'frmContInspCentMed',
+					"mandatory": false,
+					"visible": false,
+					"editable": false,
+					"fieldDescription": "",
+					"value": ""
+				},
+				"lstPickDefectos": {
+					"container": 'frmContInspCentMed',
+					"mandatory": false,
+					"visible": false,
+					"editable": false,
+					"fieldDescription": "",
+					"value": ""
+				},
+				"txtNroCertificado": {
+					"container": 'frmContInspCentMed',
+					"mandatory": false,
+					"visible": false,
+					"editable": false,
+					"fieldDescription": "",
+					"value": ""
+				},
+				"swVacio": {
+					"container": 'frmContInspCentMed',
+					"mandatory": false,
+					"visible": false,
+					"editable": false,
+					"fieldDescription": "",
+					"value": false
+				},
+				"swExepNorma": {
+					"container": 'frmContInspCentMed',
+					"mandatory": false,
+					"visible": false,
+					"editable": false,
+					"fieldDescription": "",
+					"value": false
+				},
+				"swLineaMatriz": {
+					"container": 'frmContInspCentMed',
+					"mandatory": false,
+					"visible": false,
+					"editable": false,
+					"fieldDescription": "",
+					"value": false
+				},
+				"lstPickNroRecintos": {
+					"container": 'frmContInspCentMed',
+					"mandatory": false,
+					"visible": false,
+					"editable": false,
+					"fieldDescription": "",
+					"value": ""
 				}
 			},
 			"pageTestForm7a": {
@@ -181,6 +279,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : false,
 					"IsSerial" : true,
 					"CaractName" : 'NRO_SERIE_CEPO',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtEstActCepo": {
@@ -194,6 +293,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : false,
 					"IsSerial" : false,
 					"CaractName" : 'ESTADO_CEPO',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerNewCepo": {
@@ -207,6 +307,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : false,
 					"IsSerial" : true,
 					"CaractName" : '',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerActVisor": {
@@ -220,6 +321,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : false,
 					"IsSerial" : true,
 					"CaractName" : 'NRO_SERIE_MARCO_VISOR_1',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtEstActVisor": {
@@ -233,6 +335,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : false,
 					"IsSerial" : false,
 					"CaractName" : 'ESTADO_MARCO_VISOR_1',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerNewVisor": {
@@ -246,6 +349,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : false,
 					"IsSerial" : true,
 					"CaractName" : '',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerActConector": {
@@ -259,6 +363,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : false,
 					"IsSerial" : true,
 					"CaractName" : 'NROSERIE_CONECTOR_TOMA_PRESION',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtEstActConector": {
@@ -272,6 +377,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : false,
 					"IsSerial" : false,
 					"CaractName" : 'ESTADO_CONECTOR_TOMA_PRESION',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerNewConector": {
@@ -285,6 +391,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : false,
 					"IsSerial" : true,
 					"CaractName" : '',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerActRegulador": {
@@ -298,6 +405,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : false,
 					"IsSerial" : true,
 					"CaractName" : 'NRO_SERIE_REGULADOR',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtEstActRegulador": {
@@ -311,6 +419,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : false,
 					"IsSerial" : false,
 					"CaractName" : 'ESTADO_REGULADOR',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerNewRegulador": {
@@ -324,6 +433,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : false,
 					"IsSerial" : true,
 					"CaractName" : '',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerTapaUndCorr": {
@@ -337,6 +447,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : 'NRO_SERIE_TAPA_UNIDAD_CORREC',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtEstActTapaUndCorr": {
@@ -350,6 +461,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : false,
 					"CaractName" : 'ESTADO_TAPA_UNIDAD_CORRECTORA',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerNewTapaUndCorr": {
@@ -363,6 +475,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : '',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerActBase": {
@@ -376,6 +489,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : 'NRO_SERIE_BASE_UNI_CORRECTORA',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtEstActBase": {
@@ -389,6 +503,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : false,
 					"CaractName" : 'ESTADO_BASE_UNIDAD_CORRECTORA',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerNewBase": {
@@ -402,6 +517,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : '',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerActValPres": {
@@ -415,6 +531,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : 'NRO_SERIE_VALVULA_TOMA_PRESION',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtEstActValPres": {
@@ -428,6 +545,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : false,
 					"CaractName" : 'ESTADO_VALVULA_TOMA_PRESION',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerNewValPres": {
@@ -441,6 +559,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : '',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerActVisorDos": {
@@ -454,6 +573,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : 'NRO_SERIE_MARCO_VISOR_2',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtEstActVisorDos": {
@@ -467,6 +587,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : false,
 					"CaractName" : 'ESTADO_MARCO_VISOR_2',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerNewVisorDos": {
@@ -480,6 +601,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : '',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerActBrida": {
@@ -493,6 +615,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : 'NRO_SERIE_BRIDA_MEDIDOR_1',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtEstActBrida": {
@@ -506,6 +629,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : false,
 					"CaractName" : 'ESTADO_BRIDA_MEDIDOR_1',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerNewBrida": {
@@ -519,6 +643,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : '',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerActBridaDos": {
@@ -532,6 +657,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : 'NRO_BRIDA_MEDIDOR_2',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtEstActBridaDos": {
@@ -545,6 +671,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : false,
 					"CaractName" : 'ESTADO_BRIDA_MEDIDOR_2',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerNewBridaDos": {
@@ -558,6 +685,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : '',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerActManome": {
@@ -571,6 +699,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : 'NRO_SERIE_MANOMETRO_DE_REF',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtEstActManome": {
@@ -584,6 +713,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : false,
 					"CaractName" : 'ESTADO_MANOMETRO_DE_REFERENCIA',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerNewManome": {
@@ -597,6 +727,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : '',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerActBridaFilUno": {
@@ -610,6 +741,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : 'NRO_SERIE_BRIDA_FILTRO_1',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtEstActBridaFilUno": {
@@ -623,6 +755,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : false,
 					"CaractName" : 'ESTADO_BRIDA_FILTRO_1',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerNewBridaFilUno": {
@@ -636,6 +769,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : '',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerActBridaFilDos": {
@@ -649,6 +783,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : 'NRO_SERIE_BRIDA_FILTRO_2',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtEstActBridaFilDos": {
@@ -662,6 +797,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : false,
 					"CaractName" : 'ESTADO_BRIDA_FILTRO_2',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSernewBridaFilDos": {
@@ -675,6 +811,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : '',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerActTapaMed": {
@@ -688,6 +825,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : 'NRO_SERIE_TAPA_MEDIDOR_1',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtEstActTapaMed": {
@@ -701,6 +839,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : false,
 					"CaractName" : 'ESTADO_TAPA_MEDIDOR_1',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerNewTapaMed": {
@@ -714,6 +853,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : '',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerActTapaMedDos": {
@@ -727,6 +867,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : 'NRO_SERIE_TAPA_MEDIDOR_2',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtEstActTapaMedDos": {
@@ -740,6 +881,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : false,
 					"CaractName" : 'ESTADO_TAPA_MEDIDOR_2',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerNewTapaMedDos": {
@@ -753,6 +895,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : '',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerActSensor": {
@@ -766,6 +909,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : 'NRO_SERIE_SENSOR_TEMPERATURA',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtEstActSensor": {
@@ -779,6 +923,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : false,
 					"CaractName" : 'ESTADO_SENSOR_TEMPERATURA',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerNewSensor": {
@@ -792,6 +937,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : '',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerActPlaca": {
@@ -805,6 +951,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : 'NRO_SERIE_PLACA_CIEGA',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtEstActPlaca": {
@@ -818,6 +965,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : false,
 					"CaractName" : 'ESTADO_PLACA_CIEGA',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerNewPlaca": {
@@ -831,6 +979,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : '',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerActBridaCie": {
@@ -844,6 +993,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : 'NRO_SERIE_BRIDA_CIEGA',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtEstActBridaCie": {
@@ -857,6 +1007,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : false,
 					"CaractName" : 'ESTADO_BRIDA_CIEGA',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerNewBridaCie": {
@@ -870,6 +1021,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : '',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerActManifoldQ1": {
@@ -883,6 +1035,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : 'NSERIE_MANIFOLD_BRIDA_VALBLOQ1',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtEstActManifoldQ1": {
@@ -896,6 +1049,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : false,
 					"CaractName" : 'ESTADO_MANIFOLD_BRIDA_VALBLOQ1',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerNewManifoldQ1": {
@@ -909,6 +1063,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : '',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerActManifoldQ2": {
@@ -922,6 +1077,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : 'NSERIE_MANIFOLD_BRIDA_VALBLOQ2',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtEstActManifoldQ2": {
@@ -935,6 +1091,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : false,
 					"CaractName" : 'ESTADO_MANIFOLD_BRIDA_VALBLOQ2',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerNewManifoldQ2": {
@@ -948,6 +1105,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : '',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerActPorta": {
@@ -961,6 +1119,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : 'NRO_SERIE_PORTA_PLACA',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtEstActPorta": {
@@ -974,6 +1133,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : false,
 					"CaractName" : 'ESTADO_PORTA_PLACA',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerNewPorta": {
@@ -987,6 +1147,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : '',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerActPlacaFilt": {
@@ -1000,6 +1161,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : 'NROSERIE_PLACA_FILTRO_GEN_PULS',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtEstActPlacaFilt": {
@@ -1013,6 +1175,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : false,
 					"CaractName" : 'ESTADO_PLACA_FILTRO_GEN_PULSOS',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerNewPlacaFilt": {
@@ -1026,6 +1189,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : '',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerActValBy": {
@@ -1039,6 +1203,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : 'NRO_SERIE_VALVULA_BY-PASS',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtEstActValBy": {
@@ -1052,6 +1217,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : false,
 					"CaractName" : 'ESTADO_VALVULA_BY-PASS',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerNewValBy": {
@@ -1065,6 +1231,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : '',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerActTornillo": {
@@ -1078,6 +1245,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : 'NSERIE_TORNILLO_AJUSTE_PRE_REG',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtEstActTornillo": {
@@ -1091,6 +1259,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : false,
 					"CaractName" : 'ESTADO_TORNILLO_AJUSTE_PRE_REG',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerNewTornillo": {
@@ -1104,6 +1273,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : '',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerActTapaPro": {
@@ -1117,6 +1287,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : 'NRO_SERIE_TAPA_PROPULSOR',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtEstActTapaPro": {
@@ -1130,6 +1301,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : false,
 					"CaractName" : 'ESTADO_TAPA_PROPULSOR',
+					"Indice" : '',
 					"value": ""
 				},
 				"txtSerNewTapaPro": {
@@ -1143,6 +1315,7 @@ export default class PagesConfigurationLibrary {
 					"IsOnlyInd" : true,
 					"IsSerial" : true,
 					"CaractName" : '',
+					"Indice" : '',
 					"value": ""
 				}
 			},

@@ -2,7 +2,7 @@
 	"ActionBar": {
 		"Items": [
 			{
-				"OnPress": "/SAPAssetManager/Actions/Open_adjuntos.action",
+				"OnPress": "/SAPAssetManager/Rules/vanti/OpenCamera.js",
 				"Position": "right",
 				"SystemItem": "Camera",
 				"Text": "Item",
@@ -15,7 +15,7 @@
 		{
 			"Sections": [
 				{
-					"Caption": "Equipo 1",
+					"Caption": "Equipo",
 					"Controls": [
 						{
 							"AllowEmptySelection": false,
@@ -62,53 +62,6 @@
 							"IsVisible": true,
 							"PlaceHolder": "XX",
 							"_Name": "FormCellSimpleProperty0",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
-						}
-					],
-					"Visible": true
-				},
-				{
-					"Caption": "Equipo 2",
-					"Controls": [
-						{
-							"AllowEmptySelection": false,
-							"AllowMultipleSelection": false,
-							"Caption": "Equipo",
-							"IsEditable": true,
-							"IsPickerDismissedOnSelection": false,
-							"IsSearchCancelledAfterSelection": false,
-							"IsSelectedSectionEnabled": false,
-							"IsVisible": true,
-							"PickerItems": [
-							],
-							"PickerPrompt": "Please select one single item",
-							"Search": {
-								"Enabled": true
-							},
-							"_Name": "FormCellListPicker2",
-							"_Type": "Control.Type.FormCell.ListPicker"
-						},
-						{
-							"AllowEmptySelection": false,
-							"AllowMultipleSelection": false,
-							"Caption": "Estado",
-							"IsEditable": true,
-							"IsPickerDismissedOnSelection": false,
-							"IsSearchCancelledAfterSelection": false,
-							"IsSelectedSectionEnabled": false,
-							"IsVisible": true,
-							"PickerItems": [
-							],
-							"PickerPrompt": "Please select one single item",
-							"_Name": "FormCellListPicker3",
-							"_Type": "Control.Type.FormCell.ListPicker"
-						},
-						{
-							"Caption": "KW",
-							"IsEditable": true,
-							"IsVisible": true,
-							"PlaceHolder": "XX",
-							"_Name": "FormCellSimpleProperty1",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
 					],

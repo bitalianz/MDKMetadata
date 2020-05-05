@@ -2,7 +2,7 @@
 	"ActionBar": {
 		"Items": [
 			{
-				"OnPress": "/SAPAssetManager/Actions/vanti/Open_adjuntos.action",
+				"OnPress": "/SAPAssetManager/Rules/vanti/OpenCamera.js",
 				"Position": "right",
 				"SystemItem": "Camera",
 				"Text": "",
@@ -17,11 +17,10 @@
 				{
 					"Controls": [
 						{
-							"Caption": "Presión contratada (bar)",
-							"IsEditable": false,
-							"IsVisible": true,
-							"PlaceHolder": "0,3",
-							"_Name": "FormCellSimpleProperty0",
+							"Caption": "/SAPAssetManager/Rules/vanti/PageForm4PresionContratadaCaption.js",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm4/#Property:txtPresContratada/#Property:editable}}",
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm4/#Property:txtPresContratada/#Property:visible}}",
+							"_Name": "txtPresContratada",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
 					],
@@ -34,32 +33,32 @@
 							"AllowEmptySelection": false,
 							"AllowMultipleSelection": false,
 							"Caption": "Unidad de medida",
-							"IsEditable": true,
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm4/#Property:lstPickUM/#Property:editable}}",
 							"IsPickerDismissedOnSelection": false,
 							"IsSearchCancelledAfterSelection": false,
-							"IsSelectedSectionEnabled": false,
-							"IsVisible": true,
+							"IsSelectedSectionEnabled": true,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm4/#Property:lstPickUM/#Property:visible}}",
 							"PickerItems": [
 								"PSI",
 								"Mbar",
 								"Col de agua"
 							],
 							"PickerPrompt": "Please select one single item",
-							"_Name": "FormCellListPicker3",
+							"_Name": "lstPickUM",
 							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
 							"Caption": "Presión dinámica",
-							"IsEditable": true,
-							"IsVisible": true,
-							"_Name": "FormCellSimpleProperty1",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm4/#Property:txtPresDinamica/#Property:editable}}",
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm4/#Property:txtPresDinamica/#Property:visible}}",
+							"_Name": "txtPresDinamica",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "Presión estática",
-							"IsEditable": true,
-							"IsVisible": true,
-							"_Name": "FormCellSimpleProperty2",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm4/#Property:txtPresEstatica/#Property:editable}}",
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm4/#Property:txtPresEstatica/#Property:visible}}",
+							"_Name": "txtPresEstatica",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
 					],
@@ -70,62 +69,64 @@
 					"Controls": [
 						{
 							"AllowEmptySelection": false,
-							"AllowMultipleSelection": false,
+							"AllowMultipleSelection": true,
 							"Caption": "Defectos",
-							"IsEditable": true,
-							"IsPickerDismissedOnSelection": false,
-							"IsSearchCancelledAfterSelection": false,
-							"IsSelectedSectionEnabled": false,
-							"IsVisible": true,
-							"PickerItems": [
-								"C",
-								"F",
-								"K"
-							],
-							"PickerPrompt": "Please select one single item",
-							"_Name": "FormCellListPicker4",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm4/#Property:lstPickDefectos/#Property:editable}}",
+							"IsSelectedSectionEnabled": true,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm4/#Property:lstPickDefectos/#Property:visible}}",
+							"PickerItems": {
+								"DisplayValue": "{Descripcion}",
+								"ReturnValue": "{Codigo}",
+								"Target": {
+									"EntitySet": "ZZDefectos",
+									"QueryOptions": "$filter=OrderId eq '{{#Property:OrderId}}' and UserStatus eq '{{#Property:sUserStatusChar}}'",
+									"Service": "/SAPAssetManager/Services/AssetManager.service"
+								}
+							},
+							"PickerPrompt": "Please select multiple items",
+							"_Name": "lstPickDefectos",
 							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
 							"Caption": "Nro certificado",
-							"IsEditable": true,
-							"IsVisible": true,
-							"_Name": "FormCellSimpleProperty3",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm4/#Property:txtNroCertificado/#Property:editable}}",
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm4/#Property:txtNroCertificado/#Property:visible}}",
+							"_Name": "txtNroCertificado",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "Vacío interno",
-							"IsEditable": true,
-							"IsVisible": true,
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm4/#Property:swVacio/#Property:editable}}",
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm4/#Property:swVacio/#Property:visible}}",
 							"Value": false,
-							"_Name": "FormCellSwitch4",
+							"_Name": "swVacio",
 							"_Type": "Control.Type.FormCell.Switch"
 						},
 						{
 							"Caption": "Aplica Exep. Norma",
-							"IsEditable": true,
-							"IsVisible": true,
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm4/#Property:swExepNorma/#Property:editable}}",
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm4/#Property:swExepNorma/#Property:visible}}",
 							"Value": false,
-							"_Name": "FormCellSwitch5",
+							"_Name": "swExepNorma",
 							"_Type": "Control.Type.FormCell.Switch"
 						},
 						{
 							"Caption": "Linea Matriz Susp.",
-							"IsEditable": true,
-							"IsVisible": true,
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm4/#Property:swLineaMatriz/#Property:editable}}",
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm4/#Property:swLineaMatriz/#Property:visible}}",
 							"Value": false,
-							"_Name": "FormCellSwitch2",
+							"_Name": "swLineaMatriz",
 							"_Type": "Control.Type.FormCell.Switch"
 						},
 						{
 							"AllowEmptySelection": false,
 							"AllowMultipleSelection": false,
 							"Caption": "Nro de recintos a inspeccionar",
-							"IsEditable": true,
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm4/#Property:lstPickNroRecintos/#Property:editable}}",
 							"IsPickerDismissedOnSelection": false,
 							"IsSearchCancelledAfterSelection": false,
-							"IsSelectedSectionEnabled": false,
-							"IsVisible": true,
+							"IsSelectedSectionEnabled": true,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm4/#Property:lstPickNroRecintos/#Property:visible}}",
 							"PickerItems": [
 								"1",
 								"2",
@@ -139,14 +140,14 @@
 								"10"
 							],
 							"PickerPrompt": "Please select one single item",
-							"_Name": "FormCellListPicker5",
+							"_Name": "lstPickNroRecintos",
 							"_Type": "Control.Type.FormCell.ListPicker"
 						}
 					],
 					"Visible": true
 				}
 			],
-			"_Name": "FormCellContainer0",
+			"_Name": "frmContInspCentMed",
 			"_Type": "Control.Type.FormCellContainer"
 		}
 	],
@@ -156,9 +157,9 @@
 				"Caption": "Siguente",
 				"Clickable": true,
 				"Enabled": true,
-				"OnPress": "/SAPAssetManager/Actions/vanti/Open_form_6.action",
+				"OnPress": "/SAPAssetManager/Rules/vanti/PageForm4OnNextPress.js",
 				"Visible": true,
-				"_Name": "ToolbarItem0",
+				"_Name": "btnNext",
 				"_Type": "Control.Type.ToolbarItem"
 			}
 		]

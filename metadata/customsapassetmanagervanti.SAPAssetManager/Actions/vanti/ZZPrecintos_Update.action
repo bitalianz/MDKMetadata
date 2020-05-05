@@ -1,0 +1,15 @@
+{
+	"Headers": {
+		"OfflineOData.TransactionID": "/SAPAssetManager/Rules/vanti/ZZPrecintosUpdate_TXID.js"
+	},
+	"Properties": {
+		"EstadoNuevo": "/SAPAssetManager/Rules/vanti/ZZPrecintosUpdate_EstadoNuevo.js",
+		"SerieNuevo": "/SAPAssetManager/Rules/vanti/ZZPrecintosUpdate_SerieNuevo.js"
+	},
+	"Target": {
+		"EntitySet": "ZZPrecintos",
+		"ReadLink": "/SAPAssetManager/Rules/vanti/ZZPrecintosUpdate_ReadLink.js",
+		"Service": "/SAPAssetManager/Services/AssetManager.service"
+	},
+	"_Type": "Action.Type.ODataService.UpdateEntity"
+}

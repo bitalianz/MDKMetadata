@@ -50,6 +50,9 @@ export default class PageFields {
 					return oContext.executeAction("/SAPAssetManager/Actions/vanti/" + sNextAction);
 				} else {
 					//guardar los campos adicionales de la AUFK
+					let dDate = new Date();
+					oContext.getPageProxy().binding.hFin = dDate.getHours().toString().padStart(2, "0") + ':' + dDate.getMinutes().toString().padStart(2, "0") + ':' + dDate.getSeconds().toString().padStart(2, "0");
+
 					return oContext.executeAction('/SAPAssetManager/Actions/vanti/ZZCamposAdicionalesUpdate.action').then(() => {
 						//Llamar operaciones
 						return oContext.executeAction("/SAPAssetManager/Actions/vanti/Open_Operation_Details.action");
@@ -95,6 +98,7 @@ export default class PageFields {
 										let oPrec = oPrecintos.getItem(i);
 									
 										if(oPrec[sKey] === oPage[oField].CaractName){
+											oPage[oField].Indice = oPrec[sValue];
 											oPage[oField].value = oPrec[sValue];
 											break;
 										}
@@ -128,12 +132,20 @@ export default class PageFields {
 				let oVal;
 
 				if (typeCtrl.includes("ListPicker")) {
-					oVal = [];
-					oControl.getValue().forEach(oValue => {
-						oVal.push(oValue.ReturnValue)
-					})
-				} else if (typeCtrl.includes("SimpleProperty") || typeCtrl.includes("Switch") || typeCtrl.includes("Note"))
+					if(oControl.getValue().length === 1) {
+						oVal = oControl.getValue()[0].ReturnValue;
+					} else {
+						oVal = [];
+						oControl.getValue().forEach(oValue => {
+							oVal.push(oValue.ReturnValue)
+						})
+					}
+				} else if (typeCtrl.includes("DatePicker")){
+					let dDate = oControl.getValue();
+					oVal = dDate.getFullYear() + "-" + ( dDate.getMonth() + 1 ).toString().padStart(2, "0") + "-" + dDate.getDate().toString().padStart(2, "0");
+				} else if (typeCtrl.includes("SimpleProperty") || typeCtrl.includes("Switch") || typeCtrl.includes("Note")){
 					oVal = oControl.getValue();
+				}
 
 				if (oPage[oField].mandatory && !sMsg && !oVal)
 					sMsg = oPage[oField].fieldDescription + " es un campo obligatorio";

@@ -23,6 +23,7 @@ export default function DocumentCreateBDS(context, attachmentList='') {
     let documentResult = Promise.resolve();
     libCom.setStateVariable(context, 'uploadedCount', 0);
     libCom.setStateVariable(context, 'mediaReadLinks', []);
+    
      if (libCom.IsOnCreate(context)) {
         documentCreateAction = '/SAPAssetManager/Actions/Documents/DocumentOnCreate.action';
     } else {

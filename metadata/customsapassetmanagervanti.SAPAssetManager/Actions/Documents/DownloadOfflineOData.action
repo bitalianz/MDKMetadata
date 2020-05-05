@@ -258,7 +258,7 @@
 		{
 			"Name": "ConfirmationOverviewRows",
 			"Query": "ConfirmationOverviewRows"
-		},		
+		},
 		{
 			"Name": "MaterialDocItems",
 			"Query": "MaterialDocItems"
@@ -606,6 +606,11 @@
 			"AutomaticallyRetrievesStreams": false,
 			"Name": "ZZCamposAdicionales",
 			"Query": "ZZCamposAdicionales"
+		},
+		{
+			"AutomaticallyRetrievesStreams": false,
+			"Name": "ZZDefectos",
+			"Query": "ZZDefectos"
 		}
 	],
 	"OnFailure": "/SAPAssetManager/Rules/Sync/CheckForSyncErrorsAfterDownloadFailure.js",
