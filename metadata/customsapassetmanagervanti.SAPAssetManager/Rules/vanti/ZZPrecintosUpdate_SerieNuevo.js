@@ -1,3 +1,3 @@
 export default function ZZPrecintosUpdate_SerieNuevo(context) {
-	return context.getActionBinding().SerieNuevo;
+	return context.getPageProxy().getActionBinding().SerieNuevo;
 }

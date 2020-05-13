@@ -1,3 +1,3 @@
 export default function ZZPrecintosUpdate_TXID(context) {
-	return context.getActionBinding().OrderId + "_" + context.getActionBinding().Indice;
+	return context.getPageProxy().getActionBinding().OrderId + "_" + context.getPageProxy().getActionBinding().Indice;
 }

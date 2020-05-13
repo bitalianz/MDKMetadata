@@ -1,3 +1,3 @@
 export default function ZZPrecintosUpdate_ReadLink(context) {
-	return context.getActionBinding().ReadLink;
+	return context.getPageProxy().getActionBinding().ReadLink;
 }

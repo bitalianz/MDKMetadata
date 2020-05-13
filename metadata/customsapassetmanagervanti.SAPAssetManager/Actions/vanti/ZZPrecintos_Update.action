@@ -3,7 +3,9 @@
 		"OfflineOData.TransactionID": "/SAPAssetManager/Rules/vanti/ZZPrecintosUpdate_TXID.js"
 	},
 	"Properties": {
+		"EstadoActual": "/SAPAssetManager/Rules/vanti/ZZPrecintosUpdate_EstadoActual.js",
 		"EstadoNuevo": "/SAPAssetManager/Rules/vanti/ZZPrecintosUpdate_EstadoNuevo.js",
+		"SerieActual": "/SAPAssetManager/Rules/vanti/ZZPrecintosUpdate_SerieActual.js",
 		"SerieNuevo": "/SAPAssetManager/Rules/vanti/ZZPrecintosUpdate_SerieNuevo.js"
 	},
 	"Target": {

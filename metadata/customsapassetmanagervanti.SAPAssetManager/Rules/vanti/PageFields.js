@@ -1,4 +1,93 @@
+import libCom from '../Common/Library/CommonLibrary';
+
 export default class PageFields {
+
+	static validateTextFields(oContext, sControlName) {
+
+		var oPageProxy = oContext.getPageProxy();
+		var oBinding = oPageProxy.binding;
+		var pageName = libCom.getPageName(oContext);
+		var bCorr = false, iLength = 0;
+		var sMsg = "";
+
+		let oPage = oBinding.oPages[pageName];
+
+		Object.keys(oPage).forEach(oField => {
+
+			if (oPage[oField].visible && !sMsg) {
+
+				let sVal = ""; 
+				let oControl = oPageProxy.getControl(oPage[oField].container).getControl(oField);
+				let typeCtrl = oControl.getType();
+
+				if (sControlName && sControlName !== oField) {
+					return;
+				}
+
+				if (typeCtrl.includes("SimpleProperty") || typeCtrl.includes("Note")) {
+
+					sVal = oControl.getValue();
+
+					//Valida formato
+					bCorr = this.validateFormat(sVal ? sVal : "", oPage[oField].format);
+
+					if (!bCorr && sVal) {
+						sMsg = "El campo " + oPage[oField].fieldDescription + " No tiene el formato correcto";
+					}
+
+					//Valida longitud
+					iLength = this.validateLength(sVal ? sVal : "", oPage[oField].length);
+					if (iLength > 0 && sVal) {
+						sMsg = "La longitud maxima para " + oPage[oField].fieldDescription + " es de " + iLength.toString() + " Caracteres";
+					}
+
+				}
+			}
+		});
+
+		return sMsg;
+
+	}
+
+	static validateFormat(sVal, sFormat) {
+
+		var regex = "";
+
+		switch (sFormat) {
+		case "email": //Correo electronico
+			regex =
+				/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+			break;
+		case "numbersOnly": //Solo numeros
+			regex = /^\d+$/;
+			break;
+		case "wordsOnly": //Solo letras
+			regex = /[A-Za-z ñ]+/;
+			break;
+		case "wordsNumbersOnly": //Solo numeros y letras
+			regex = /^([a-zA-Z0-9 ñ]+)$/;
+			break;
+		case "phoneNumber": //Celular y telefonos
+			regex = /^\d+$/;
+			break;
+		default:
+			// code block
+		}
+
+		return regex.test(sVal);
+
+	}
+
+	static validateLength(sVal, iLength) {
+		
+		var sLength = 0;
+		
+		if (sVal.length > iLength) {
+			sLength = iLength;
+		}
+		
+		return sLength;
+	}
 
 	static getTecPageName(sPageName) {
 		var sTecPage = "";
@@ -54,6 +143,10 @@ export default class PageFields {
 					oContext.getPageProxy().binding.hFin = dDate.getHours().toString().padStart(2, "0") + ':' + dDate.getMinutes().toString().padStart(2, "0") + ':' + dDate.getSeconds().toString().padStart(2, "0");
 
 					return oContext.executeAction('/SAPAssetManager/Actions/vanti/ZZCamposAdicionalesUpdate.action').then(() => {
+						let dDate = new Date();
+						oContext.getPageProxy().binding.hFin = dDate.getHours().toString().padStart(2, "0") + ':' + dDate.getMinutes().toString().padStart(
+							2, "0") + ':' + dDate.getSeconds().toString().padStart(2, "0");
+
 						//Llamar operaciones
 						return oContext.executeAction("/SAPAssetManager/Actions/vanti/Open_Operation_Details.action");
 					});
@@ -75,30 +168,30 @@ export default class PageFields {
 				}
 			}
 
-			if(sPageName == "WorkOrderDetailsPage") {
+			if (sPageName == "WorkOrderDetailsPage") {
 				return fnCallBack('/SAPAssetManager/Actions/WorkOrders/WorkOrderDetailsNav.action');
 			} else if (sPageName == "pageTestForm1") {
 				that.setFieldsProperties(oContext, oBinding, "pageTestForm1");
 			} else if (sPageName == "pageTestForm7a") {
 				oContext.read('/SAPAssetManager/Services/AssetManager.service', "ZZPrecintos", [], "$filter=OrderId eq '" + oBinding.OrderId + "'").then(
 					function (oPrecintos) {
-						if(oPrecintos.length > 0) {
+						if (oPrecintos.length > 0) {
 							let blHideInd = oPrecintos.getItem(0).IsInd !== 'X';
 
 							let oPage = oBinding.oPages[sPageName];
 							Object.keys(oPage).forEach(oField => {
 								if (oPage[oField].IsOnlyInd && blHideInd)
 									oPage[oField].visible = false;
-									
+
 								let sKey = oPage[oField].IsSerial ? 'Caracteristica' : 'CaractEstado';
 								let sValue = oPage[oField].IsSerial ? 'SerieActual' : 'EstadoActual';
 
-								if(!oPage[oField].editable){
-									for(let i = 0; i < oPrecintos.length; i++){
+								if (!oPage[oField].editable) {
+									for (let i = 0; i < oPrecintos.length; i++) {
 										let oPrec = oPrecintos.getItem(i);
-									
-										if(oPrec[sKey] === oPage[oField].CaractName){
-											oPage[oField].Indice = oPrec[sValue];
+
+										if (oPrec[sKey] === oPage[oField].CaractName) {
+											oPage[oField].Indice = oPrec.Indice;
 											oPage[oField].value = oPrec[sValue];
 											break;
 										}
@@ -132,7 +225,7 @@ export default class PageFields {
 				let oVal;
 
 				if (typeCtrl.includes("ListPicker")) {
-					if(oControl.getValue().length === 1) {
+					if (oControl.getValue().length === 1) {
 						oVal = oControl.getValue()[0].ReturnValue;
 					} else {
 						oVal = [];
@@ -140,10 +233,11 @@ export default class PageFields {
 							oVal.push(oValue.ReturnValue)
 						})
 					}
-				} else if (typeCtrl.includes("DatePicker")){
+				} else if (typeCtrl.includes("DatePicker")) {
 					let dDate = oControl.getValue();
-					oVal = dDate.getFullYear() + "-" + ( dDate.getMonth() + 1 ).toString().padStart(2, "0") + "-" + dDate.getDate().toString().padStart(2, "0");
-				} else if (typeCtrl.includes("SimpleProperty") || typeCtrl.includes("Switch") || typeCtrl.includes("Note")){
+					oVal = dDate.getFullYear() + "-" + (dDate.getMonth() + 1).toString().padStart(2, "0") + "-" + dDate.getDate().toString().padStart(2,
+						"0");
+				} else if (typeCtrl.includes("SimpleProperty") || typeCtrl.includes("Switch") || typeCtrl.includes("Note")) {
 					oVal = oControl.getValue();
 				}
 

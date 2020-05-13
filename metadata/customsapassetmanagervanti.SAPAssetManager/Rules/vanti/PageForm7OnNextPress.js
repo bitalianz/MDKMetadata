@@ -10,8 +10,8 @@ export default function PageForm7OnNextPress(context) {
 	} else {
 		let oBinding = context.getPageProxy().binding; 
 		let oPage = oBinding.oPages.pageTestForm7a;
-		let idx = 1, idx2 = 0;
-		
+		let oPage2 = oPage;
+
 		let oPrecinto = {
 			ReadLink : "",
 			OrderId : oBinding.OrderId,
@@ -25,39 +25,44 @@ export default function PageForm7OnNextPress(context) {
 			CaractEstado : ''
 		};
 		let oPrecintoClear = oPrecinto;
-		let aPrecintos = [];
 		
 		Object.keys(oPage).forEach(oField => {
-			if(idx === 1) {
-				oPrecinto = oPrecintoClear;
-				oPrecinto.IsInd = oPage[oField].IsOnlyInd;
-				oPrecinto.Indice = oPage[oField].Indice;
-				oPrecinto.SerieActual = oPage[oField].value;
-				oPrecinto.Caracteristica = oPage[oField].CaractName;
-				oPrecinto.ReadLink = "ZZPrecintos(OrderId='" + oPrecinto.OrderId + "',IsInd='" + oPrecinto.IsInd + "',Indice='" + oPrecinto.Indice + "',SerieActual='" + oPrecinto.SerieActual + "')";
-			} else if(idx === 2) {
-				oPrecinto.EstadoActual = oPage[oField].value;
-				oPrecinto.CaractEstado = oPage[oField].CaractName;
-			} else if(idx === 3) {
-				oPrecinto.SerieNuevo = oPage[oField].value;
-				oPrecinto.EstadoNuevo = '01';
-				
-				if(oPrecinto.SerieNuevo !== ""){
-					aPrecintos.push(oPrecinto);
-					p = p.then(() => new Promise(resolve => {
-						context.getPageProxy().setActionBinding(aPrecintos[idx2]);
-						context.executeAction('/SAPAssetManager/Actions/vanti/ZZPrecintos_Update.action').then(() => {
-						    resolve();
-						});
-				    }));
-				    idx2++;
+			p = p.then(() => new Promise(resolve => {
+				if(oPage[oField].idx === 3 && oPage[oField].value) {
+					Object.keys(oPage2).forEach(oField2 => {
+						if(oPage2[oField2].grupo === oPage[oField].grupo) {
+							if(oPage2[oField2].idx === 1) {
+								oPrecinto = oPrecintoClear;
+								oPrecinto.IsInd = oPage2[oField2].IsOnlyInd ? 'X' : '';
+								oPrecinto.Indice = oPage2[oField2].Indice;
+								oPrecinto.SerieActual = oPage2[oField2].value;
+								oPrecinto.Caracteristica = oPage2[oField2].CaractName;
+								oPrecinto.ReadLink = "ZZPrecintos(OrderId='" + oPrecinto.OrderId + "',IsInd='" + oPrecinto.IsInd + "',Indice='" + oPrecinto.Indice + "',SerieActual='" + oPrecinto.SerieActual + "')";
+							}
+
+							if(oPage2[oField2].idx === 2) {
+								oPrecinto.EstadoActual = oPage2[oField2].value;
+								oPrecinto.CaractEstado = oPage2[oField2].CaractName;
+							}
+						}
+					});		
+
+					oPrecinto.SerieNuevo = oPage[oField].value;
+					oPrecinto.EstadoNuevo = '01';
+
+					context.getPageProxy().setActionBinding(oPrecinto);
+					context.executeAction('/SAPAssetManager/Actions/vanti/ZZPrecintos_Update.action').then(() => {
+						resolve();
+					});
 				}
-			}
-			
-			idx = idx === 3 ? 1 : idx + 1;
+				else {
+					resolve();
+				}
+		    }));
 		})
 		
 		p = p.then(() => new Promise(resolve => {
+			context.getPageProxy().setActionBinding(context.getPageProxy().binding);
 			PageFields.goNextActionPage(context, "PRECINTOS");
 			resolve();
 	    }));

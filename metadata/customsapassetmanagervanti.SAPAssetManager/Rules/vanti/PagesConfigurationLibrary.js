@@ -44,7 +44,9 @@ export default class PagesConfigurationLibrary {
 					"visible": false,
 					"editable": false,
 					"fieldDescription": "Lectura",
-					"value": ""
+					"value": "",
+					"format": "wordsNumbersOnly",
+					"length": 10
 				},
 				"lstPickTipoCorte": {
 					"container": 'frmContResODS',
@@ -84,7 +86,9 @@ export default class PagesConfigurationLibrary {
 					"visible": false,
 					"editable": false,
 					"fieldDescription": "Celular",
-					"value": ""
+					"value": "",
+					"format": "phoneNumber",
+					"length": 10
 				},
 				"txtCuotas": {
 					"container": 'frmContResODS',
@@ -92,7 +96,9 @@ export default class PagesConfigurationLibrary {
 					"visible": false,
 					"editable": false,
 					"fieldDescription": "Numero de cuotas",
-					"value": ""
+					"value": "",
+					"format": "numbersOnly",
+					"length": 2
 				},
 				"txtEmail": {
 					"container": 'frmContResODS',
@@ -100,7 +106,9 @@ export default class PagesConfigurationLibrary {
 					"visible": false,
 					"editable": false,
 					"fieldDescription": "Email",
-					"value": ""
+					"value": "",
+					"format": "email",
+					"length": 40
 				},
 				"txtFirma": {
 					"container": 'frmContResODS',
@@ -108,7 +116,9 @@ export default class PagesConfigurationLibrary {
 					"visible": false,
 					"editable": false,
 					"fieldDescription": "Firma",
-					"value": ""
+					"value": "",
+					"format": "wordsNumbersOnly",
+					"length": 20
 				}
 			},
 			"pageTestForm2": {
@@ -269,6 +279,8 @@ export default class PagesConfigurationLibrary {
 			},
 			"pageTestForm7a": {
 				"txtSerActCepo": {
+					"grupo" : "Cepo",
+					"idx" : 1,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -283,6 +295,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtEstActCepo": {
+					"grupo" : "Cepo",
+					"idx" : 2,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -297,6 +311,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerNewCepo": {
+					"grupo" : "Cepo",
+					"idx" : 3,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -311,6 +327,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerActVisor": {
+					"grupo" : "Visor",
+					"idx" : 1,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -325,6 +343,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtEstActVisor": {
+					"grupo" : "Visor",
+					"idx" : 2,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -339,6 +359,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerNewVisor": {
+					"grupo" : "Visor",
+					"idx" : 3,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -353,6 +375,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerActConector": {
+					"grupo" : "Conector",
+					"idx" : 1,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -367,6 +391,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtEstActConector": {
+					"grupo" : "Conector",
+					"idx" : 2,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -381,6 +407,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerNewConector": {
+					"grupo" : "Conector",
+					"idx" : 3,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -395,6 +423,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerActRegulador": {
+					"grupo" : "Regulador",
+					"idx" : 1,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -409,6 +439,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtEstActRegulador": {
+					"grupo" : "Regulador",
+					"idx" : 2,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -423,6 +455,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerNewRegulador": {
+					"grupo" : "Regulador",
+					"idx" : 3,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -437,6 +471,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerTapaUndCorr": {
+					"grupo" : "TapaUndCorr",
+					"idx" : 1,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -451,6 +487,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtEstActTapaUndCorr": {
+					"grupo" : "TapaUndCorr",
+					"idx" : 2,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -465,6 +503,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerNewTapaUndCorr": {
+					"grupo" : "TapaUndCorr",
+					"idx" : 3,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -479,6 +519,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerActBase": {
+					"grupo" : "ActBase",
+					"idx" : 1,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -493,6 +535,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtEstActBase": {
+					"grupo" : "ActBase",
+					"idx" : 2,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -507,6 +551,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerNewBase": {
+					"grupo" : "ActBase",
+					"idx" : 3,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -521,6 +567,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerActValPres": {
+					"grupo" : "ActValPres",
+					"idx" : 1,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -535,6 +583,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtEstActValPres": {
+					"grupo" : "ActValPres",
+					"idx" : 2,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -549,6 +599,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerNewValPres": {
+					"grupo" : "ActValPres",
+					"idx" : 3,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -563,6 +615,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerActVisorDos": {
+					"grupo" : "ActVisorDos",
+					"idx" : 1,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -577,6 +631,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtEstActVisorDos": {
+					"grupo" : "ActVisorDos",
+					"idx" : 2,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -591,6 +647,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerNewVisorDos": {
+					"grupo" : "ActVisorDos",
+					"idx" : 3,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -605,6 +663,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerActBrida": {
+					"grupo" : "ActBrida",
+					"idx" : 1,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -619,6 +679,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtEstActBrida": {
+					"grupo" : "ActBrida",
+					"idx" : 2,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -633,6 +695,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerNewBrida": {
+					"grupo" : "ActBrida",
+					"idx" : 3,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -647,6 +711,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerActBridaDos": {
+					"grupo" : "ActBridaDos",
+					"idx" : 1,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -661,6 +727,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtEstActBridaDos": {
+					"grupo" : "ActBridaDos",
+					"idx" : 2,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -675,6 +743,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerNewBridaDos": {
+					"grupo" : "ActBridaDos",
+					"idx" : 3,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -689,6 +759,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerActManome": {
+					"grupo" : "ActManome",
+					"idx" : 1,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -703,6 +775,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtEstActManome": {
+					"grupo" : "ActManome",
+					"idx" : 2,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -717,6 +791,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerNewManome": {
+					"grupo" : "ActManome",
+					"idx" : 3,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -731,6 +807,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerActBridaFilUno": {
+					"grupo" : "ActBridaFilUno",
+					"idx" : 1,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -745,6 +823,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtEstActBridaFilUno": {
+					"grupo" : "ActBridaFilUno",
+					"idx" : 2,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -759,6 +839,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerNewBridaFilUno": {
+					"grupo" : "ActBridaFilUno",
+					"idx" : 3,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -773,6 +855,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerActBridaFilDos": {
+					"grupo" : "ActBridaFilDos",
+					"idx" : 1,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -787,6 +871,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtEstActBridaFilDos": {
+					"grupo" : "ActBridaFilDos",
+					"idx" : 2,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -801,6 +887,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSernewBridaFilDos": {
+					"grupo" : "ActBridaFilDos",
+					"idx" : 3,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -815,6 +903,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerActTapaMed": {
+					"grupo" : "ActTapaMed",
+					"idx" : 1,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -829,6 +919,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtEstActTapaMed": {
+					"grupo" : "ActTapaMed",
+					"idx" : 2,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -843,6 +935,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerNewTapaMed": {
+					"grupo" : "ActTapaMed",
+					"idx" : 3,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -857,6 +951,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerActTapaMedDos": {
+					"grupo" : "ActTapaMedDos",
+					"idx" : 1,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -871,6 +967,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtEstActTapaMedDos": {
+					"grupo" : "ActTapaMedDos",
+					"idx" : 2,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -885,6 +983,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerNewTapaMedDos": {
+					"grupo" : "ActTapaMedDos",
+					"idx" : 3,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -899,6 +999,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerActSensor": {
+					"grupo" : "ActSensor",
+					"idx" : 1,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -913,6 +1015,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtEstActSensor": {
+					"grupo" : "ActSensor",
+					"idx" : 2,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -927,6 +1031,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerNewSensor": {
+					"grupo" : "ActSensor",
+					"idx" : 3,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -941,6 +1047,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerActPlaca": {
+					"grupo" : "ActPlaca",
+					"idx" : 1,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -955,6 +1063,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtEstActPlaca": {
+					"grupo" : "ActPlaca",
+					"idx" : 2,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -969,6 +1079,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerNewPlaca": {
+					"grupo" : "ActPlaca",
+					"idx" : 3,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -983,6 +1095,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerActBridaCie": {
+					"grupo" : "BridaCie",
+					"idx" : 1,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -997,6 +1111,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtEstActBridaCie": {
+					"grupo" : "BridaCie",
+					"idx" : 2,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -1011,6 +1127,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerNewBridaCie": {
+					"grupo" : "BridaCie",
+					"idx" : 3,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -1025,6 +1143,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerActManifoldQ1": {
+					"grupo" : "ManifoldQ1",
+					"idx" : 1,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -1039,6 +1159,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtEstActManifoldQ1": {
+					"grupo" : "ManifoldQ1",
+					"idx" : 2,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -1053,6 +1175,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerNewManifoldQ1": {
+					"grupo" : "ManifoldQ1",
+					"idx" : 3,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -1067,6 +1191,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerActManifoldQ2": {
+					"grupo" : "ManifoldQ2",
+					"idx" : 1,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -1081,6 +1207,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtEstActManifoldQ2": {
+					"grupo" : "ManifoldQ2",
+					"idx" : 2,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -1095,6 +1223,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerNewManifoldQ2": {
+					"grupo" : "ManifoldQ2",
+					"idx" : 3,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -1109,6 +1239,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerActPorta": {
+					"grupo" : "Porta",
+					"idx" : 1,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -1123,6 +1255,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtEstActPorta": {
+					"grupo" : "Porta",
+					"idx" : 2,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -1137,6 +1271,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerNewPorta": {
+					"grupo" : "Porta",
+					"idx" : 3,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -1151,6 +1287,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerActPlacaFilt": {
+					"grupo" : "PlacaFilt",
+					"idx" : 1,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -1165,6 +1303,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtEstActPlacaFilt": {
+					"grupo" : "PlacaFilt",
+					"idx" : 2,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -1179,6 +1319,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerNewPlacaFilt": {
+					"grupo" : "PlacaFilt",
+					"idx" : 3,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -1193,6 +1335,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerActValBy": {
+					"grupo" : "ValBy",
+					"idx" : 1,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -1207,6 +1351,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtEstActValBy": {
+					"grupo" : "ValBy",
+					"idx" : 2,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -1221,6 +1367,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerNewValBy": {
+					"grupo" : "ValBy",
+					"idx" : 3,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -1235,6 +1383,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerActTornillo": {
+					"grupo" : "Tornillo",
+					"idx" : 1,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -1249,6 +1399,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtEstActTornillo": {
+					"grupo" : "Tornillo",
+					"idx" : 2,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -1263,6 +1415,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerNewTornillo": {
+					"grupo" : "Tornillo",
+					"idx" : 3,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -1277,6 +1431,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerActTapaPro": {
+					"grupo" : "TapaPro",
+					"idx" : 1,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -1291,6 +1447,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtEstActTapaPro": {
+					"grupo" : "TapaPro",
+					"idx" : 2,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
@@ -1305,6 +1463,8 @@ export default class PagesConfigurationLibrary {
 					"value": ""
 				},
 				"txtSerNewTapaPro": {
+					"grupo" : "TapaPro",
+					"idx" : 3,
 					"container": 'FormCellContainer0',
 					"mandatory": false,
 					"visible": true,
