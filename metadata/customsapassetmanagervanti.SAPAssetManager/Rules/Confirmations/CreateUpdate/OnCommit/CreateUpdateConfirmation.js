@@ -2,6 +2,7 @@ import ConfirmationCreateUpdateAction from './ConfirmationCreateUpdateAction';
 import OnSuccess from './OnSuccess';
 import libCom from '../../../Common/Library/CommonLibrary';
 import CascadingAction from '../../../Common/Action/CascadingAction';
+import MyWOComp from '../../../vanti/MyWOComponents_UpdateForDelete.js';
 
 export default function CreateUpdateConfirmation(context) {
 
@@ -39,6 +40,7 @@ export default function CreateUpdateConfirmation(context) {
     }
 
     return action.execute(context).then(() => {
+    	MyWOComp(context);
         return OnSuccess(context, isOnCreate);
     });
 }

@@ -1,0 +1,25 @@
+{
+	"Headers": {
+		"OfflineOData.RemoveAfterUpload": "true",
+		"OfflineOData.TransactionID": "/SAPAssetManager/Rules/vanti/ZZHistEquiposCreate_TXID.js"
+	},
+	"OnSuccess": "/SAPAssetManager/Actions/Page/ClosePage.action",
+	"Properties": {
+		"ConsecEquipo": "/SAPAssetManager/Rules/vanti/ZZHistEquiposCreate_ConsecEquipo.js",
+		"ConsecRecinto": "/SAPAssetManager/Rules/vanti/ZZHistEquiposCreate_ConsecRecinto.js",
+		"DescEquipo": "/SAPAssetManager/Rules/vanti/ZZHistEquiposCreate_DescEquipo.js",
+		"DescEstado": "/SAPAssetManager/Rules/vanti/ZZHistEquiposCreate_DescEstado.js",
+		"DescRecinto": "/SAPAssetManager/Rules/vanti/ZZHistRecintosCreate_Descripcion.js",
+		"Equipo": "/SAPAssetManager/Rules/vanti/ZZHistEquiposCreate_Equipo.js",
+		"Estado": "/SAPAssetManager/Rules/vanti/ZZHistEquiposCreate_Estado.js",
+		"Kw": "/SAPAssetManager/Rules/vanti/ZZHistEquiposCreate_Kw.js",
+		"OrderId": "#Property:OrderId",
+		"Recinto": "/SAPAssetManager/Rules/vanti/ZZHistRecintosCreate_Recinto.js",
+		"TipoRecinto": "/SAPAssetManager/Rules/vanti/ZZHistRecintosCreate_TipoRecinto.js"
+	},
+	"Target": {
+		"EntitySet": "ZZHistEquipos",
+		"Service": "/SAPAssetManager/Services/AssetManager.service"
+	},
+	"_Type": "Action.Type.ODataService.CreateEntity"
+}

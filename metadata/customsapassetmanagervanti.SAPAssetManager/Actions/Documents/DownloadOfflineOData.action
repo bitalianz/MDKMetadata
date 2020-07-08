@@ -611,6 +611,46 @@
 			"AutomaticallyRetrievesStreams": false,
 			"Name": "ZZDefectos",
 			"Query": "ZZDefectos"
+		},
+		{
+			"AutomaticallyRetrievesStreams": false,
+			"Name": "ZZRecintos",
+			"Query": "ZZRecintos"
+		},
+		{
+			"AutomaticallyRetrievesStreams": false,
+			"Name": "ZZTipoRecintos",
+			"Query": "ZZTipoRecintos"
+		},
+		{
+			"AutomaticallyRetrievesStreams": false,
+			"Name": "ZZHistRecintos",
+			"Query": "ZZHistRecintos"
+		},
+		{
+			"AutomaticallyRetrievesStreams": false,
+			"Name": "ZZCatEquipos",
+			"Query": "ZZCatEquipos"
+		},
+		{
+			"AutomaticallyRetrievesStreams": false,
+			"Name": "ZZEstEquipos",
+			"Query": "ZZEstEquipos"
+		},
+		{
+			"AutomaticallyRetrievesStreams": false,
+			"Name": "ZZHistEquipos",
+			"Query": "ZZHistEquipos"
+		},
+		{
+			"AutomaticallyRetrievesStreams": false,
+			"Name": "ZZRecEquipos",
+			"Query": "ZZRecEquipos"
+		},
+		{
+			"AutomaticallyRetrievesStreams": false,
+			"Name": "ZZEstPrecintos",
+			"Query": "ZZEstPrecintos"
 		}
 	],
 	"OnFailure": "/SAPAssetManager/Rules/Sync/CheckForSyncErrorsAfterDownloadFailure.js",

@@ -48,6 +48,33 @@ export default class PageFields {
 		return sMsg;
 
 	}
+	
+	static validateDuplicateRecinto(context,sNewRecinto, callBack = ""){
+		
+		context.read('/SAPAssetManager/Services/AssetManager.service', "ZZHistRecintos", [],
+			"$filter=OrderId eq '" + context.getPageProxy().binding.OrderId + "'").then(function (result) {
+
+			var sMsg = "";
+
+			if (result.length > 0) {
+				
+				for(var i = 0; i < result.length ; i++){
+					if(sNewRecinto === result.getItem(i).Recinto){
+						sMsg = "El recinto " + sNewRecinto + " ya existe";
+						break;
+					}
+				}
+				if(callBack){
+					callBack(sMsg);
+				}
+			}else{
+				if(callBack){
+					callBack(sMsg);
+				}
+			}
+		});
+		
+	}
 
 	static validateFormat(sVal, sFormat) {
 
@@ -68,7 +95,13 @@ export default class PageFields {
 			regex = /^([a-zA-Z0-9 ñ]+)$/;
 			break;
 		case "phoneNumber": //Celular y telefonos
-			regex = /^\d+$/;
+			regex = /^\d{10}$/;
+			break;
+		case "decimals": //enteros y decimales
+			regex = /^\d+(\.\d{1,6})?$/;
+			break;
+		case "serialNumber": //Seriales
+			regex = /[\d -]+/g;
 			break;
 		default:
 			// code block
@@ -109,7 +142,7 @@ export default class PageFields {
 			"tecPage": "Open_form_5.action"
 		}, {
 			"page": "PRECINTOS",
-			"tecPage": "Open_form_7a.action"
+			"tecPage": "Open_Form_7a.action"
 		}];
 
 		for (var i = 0; i < aTecPages.length; i++) {
@@ -139,7 +172,7 @@ export default class PageFields {
 					return oContext.executeAction("/SAPAssetManager/Actions/vanti/" + sNextAction);
 				} else {
 					//guardar los campos adicionales de la AUFK
-					let dDate = new Date();
+					/*let dDate = new Date();
 					oContext.getPageProxy().binding.hFin = dDate.getHours().toString().padStart(2, "0") + ':' + dDate.getMinutes().toString().padStart(2, "0") + ':' + dDate.getSeconds().toString().padStart(2, "0");
 
 					return oContext.executeAction('/SAPAssetManager/Actions/vanti/ZZCamposAdicionalesUpdate.action').then(() => {
@@ -149,7 +182,8 @@ export default class PageFields {
 
 						//Llamar operaciones
 						return oContext.executeAction("/SAPAssetManager/Actions/vanti/Open_Operation_Details.action");
-					});
+					});*/
+					return oContext.executeAction("/SAPAssetManager/Actions/vanti/Open_Operation_Details.action");
 				}
 			}
 		});
@@ -172,6 +206,7 @@ export default class PageFields {
 				return fnCallBack('/SAPAssetManager/Actions/WorkOrders/WorkOrderDetailsNav.action');
 			} else if (sPageName == "pageTestForm1") {
 				that.setFieldsProperties(oContext, oBinding, "pageTestForm1");
+				fnCallBack();
 			} else if (sPageName == "pageTestForm7a") {
 				oContext.read('/SAPAssetManager/Services/AssetManager.service', "ZZPrecintos", [], "$filter=OrderId eq '" + oBinding.OrderId + "'").then(
 					function (oPrecintos) {
@@ -193,6 +228,11 @@ export default class PageFields {
 										if (oPrec[sKey] === oPage[oField].CaractName) {
 											oPage[oField].Indice = oPrec.Indice;
 											oPage[oField].value = oPrec[sValue];
+											
+											if(sValue === "EstadoActual" && oPrec[sValue]){
+												oPage[oField].editable = true;	
+											}
+											
 											break;
 										}
 									}
@@ -227,7 +267,7 @@ export default class PageFields {
 				if (typeCtrl.includes("ListPicker")) {
 					if (oControl.getValue().length === 1) {
 						oVal = oControl.getValue()[0].ReturnValue;
-					} else {
+					} else if (oControl.getValue().length > 1){
 						oVal = [];
 						oControl.getValue().forEach(oValue => {
 							oVal.push(oValue.ReturnValue)

@@ -1,0 +1,15 @@
+{
+	"Headers": {
+		"OfflineOData.RemoveAfterUpload": "true",
+		"OfflineOData.TransactionID": "/SAPAssetManager/Rules/vanti/ZZCoordenadasCreate_TXTID.js"
+	},
+	"Properties": {
+		"Latitud": "/SAPAssetManager/Rules/vanti/ZZCoordenadasCreate_Latitud.js",
+		"Longitud": "/SAPAssetManager/Rules/vanti/ZZCoordenadasCreate_Longitud.js"
+	},
+	"Target": {
+		"EntitySet": "ZZCoordenadas",
+		"Service": "/SAPAssetManager/Services/OnlineAssetManager.service"
+	},
+	"_Type": "Action.Type.ODataService.CreateEntity"
+}

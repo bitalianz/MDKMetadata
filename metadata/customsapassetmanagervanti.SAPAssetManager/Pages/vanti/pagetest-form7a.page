@@ -24,16 +24,34 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActCepo/#Property:fieldDescription}}",
-							"IsEditable": false,
-							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActCepo/#Property:visible}}",
-							"_Name": "txtEstActCepo",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActCepo/#Property:fieldDescription}}",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActCepo/#Property:editable}}",
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActCepo/#Property:visible}}",
+							"OnValueChange": "/SAPAssetManager/Rules/vanti/PageForm7aSelectedValueList.js",
+							"PickerItems": {
+								"DisplayValue": "{Descripcion}",
+								"ReturnValue": "{Codigo}",
+								"Target": {
+									"EntitySet": "ZZEstPrecintos",
+									"QueryOptions": "$orderby=Codigo",
+									"Service": "/SAPAssetManager/Services/AssetManager.service"
+								}
+							},
+							"PickerPrompt": "Por favor seleccione una sola opción",
+							"_Name": "lstEstActCepo",
+							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
+							"AlternateInput": "Barcode",
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewCepo/#Property:fieldDescription}}",
 							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewCepo/#Property:visible}}",
+							"KeyboardType": "Number",
 							"_Name": "txtSerNewCepo",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
@@ -51,16 +69,34 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActVisor/#Property:fieldDescription}}",
-							"IsEditable": false,
-							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActVisor/#Property:visible}}",
-							"_Name": "txtEstActVisor",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActVisor/#Property:fieldDescription}}",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActVisor/#Property:editable}}",
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActVisor/#Property:visible}}",
+							"OnValueChange": "/SAPAssetManager/Rules/vanti/PageForm7aSelectedValueList.js",
+							"PickerItems": {
+								"DisplayValue": "{Descripcion}",
+								"ReturnValue": "{Codigo}",
+								"Target": {
+									"EntitySet": "ZZEstPrecintos",
+									"QueryOptions": "$orderby=Codigo",
+									"Service": "/SAPAssetManager/Services/AssetManager.service"
+								}
+							},
+							"PickerPrompt": "Por favor seleccione una sola opción",
+							"_Name": "lstEstActVisor",
+							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
+							"AlternateInput": "Barcode",
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewVisor/#Property:fieldDescription}}",
 							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewVisor/#Property:visible}}",
+							"KeyboardType": "Number",
 							"_Name": "txtSerNewVisor",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
@@ -78,16 +114,34 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActConector/#Property:fieldDescription}}",
-							"IsEditable": false,
-							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActRegulador/#Property:visible}}",
-							"_Name": "txtEstActConector",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActConector/#Property:fieldDescription}}",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActConector/#Property:editable}}",
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActConector/#Property:visible}}",
+							"OnValueChange": "/SAPAssetManager/Rules/vanti/PageForm7aSelectedValueList.js",
+							"PickerItems": {
+								"DisplayValue": "{Descripcion}",
+								"ReturnValue": "{Codigo}",
+								"Target": {
+									"EntitySet": "ZZEstPrecintos",
+									"QueryOptions": "$orderby=Codigo",
+									"Service": "/SAPAssetManager/Services/AssetManager.service"
+								}
+							},
+							"PickerPrompt": "Por favor seleccione una sola opción",
+							"_Name": "lstEstActConector",
+							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
+							"AlternateInput": "Barcode",
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewConector/#Property:fieldDescription}}",
 							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewConector/#Property:visible}}",
+							"KeyboardType": "Number",
 							"_Name": "txtSerNewConector",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
@@ -105,16 +159,34 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActRegulador/#Property:fieldDescription}}",
-							"IsEditable": false,
-							"IsVisible": true,
-							"_Name": "txtEstActRegulador",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActRegulador/#Property:fieldDescription}}",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActRegulador/#Property:editable}}",
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActRegulador/#Property:visible}}",
+							"OnValueChange": "/SAPAssetManager/Rules/vanti/PageForm7aSelectedValueList.js",
+							"PickerItems": {
+								"DisplayValue": "{Descripcion}",
+								"ReturnValue": "{Codigo}",
+								"Target": {
+									"EntitySet": "ZZEstPrecintos",
+									"QueryOptions": "$orderby=Codigo",
+									"Service": "/SAPAssetManager/Services/AssetManager.service"
+								}
+							},
+							"PickerPrompt": "Por favor seleccione una sola opción",
+							"_Name": "lstEstActRegulador",
+							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
+							"AlternateInput": "Barcode",
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewRegulador/#Property:fieldDescription}}",
 							"IsEditable": true,
 							"IsVisible": true,
+							"KeyboardType": "Number",
 							"_Name": "txtSerNewRegulador",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
@@ -132,16 +204,34 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActTapaUndCorr/#Property:fieldDescription}}",
-							"IsEditable": false,
-							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActTapaUndCorr/#Property:visible}}",
-							"_Name": "txtEstActTapaUndCorr",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActTapaUndCorr/#Property:fieldDescription}}",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActTapaUndCorr/#Property:editable}}",
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActTapaUndCorr/#Property:visible}}",
+							"OnValueChange": "/SAPAssetManager/Rules/vanti/PageForm7aSelectedValueList.js",
+							"PickerItems": {
+								"DisplayValue": "{Descripcion}",
+								"ReturnValue": "{Codigo}",
+								"Target": {
+									"EntitySet": "ZZEstPrecintos",
+									"QueryOptions": "$orderby=Codigo",
+									"Service": "/SAPAssetManager/Services/AssetManager.service"
+								}
+							},
+							"PickerPrompt": "Por favor seleccione una sola opción",
+							"_Name": "lstEstActTapaUndCorr",
+							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
+							"AlternateInput": "Barcode",
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewTapaUndCorr/#Property:fieldDescription}}",
 							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewTapaUndCorr/#Property:visible}}",
+							"KeyboardType": "Number",
 							"_Name": "txtSerNewTapaUndCorr",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
@@ -159,16 +249,34 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActBase/#Property:fieldDescription}}",
-							"IsEditable": false,
-							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActBase/#Property:visible}}",
-							"_Name": "txtEstActBase",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActBase/#Property:fieldDescription}}",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActBase/#Property:editable}}",
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActBase/#Property:visible}}",
+							"OnValueChange": "/SAPAssetManager/Rules/vanti/PageForm7aSelectedValueList.js",
+							"PickerItems": {
+								"DisplayValue": "{Descripcion}",
+								"ReturnValue": "{Codigo}",
+								"Target": {
+									"EntitySet": "ZZEstPrecintos",
+									"QueryOptions": "$orderby=Codigo",
+									"Service": "/SAPAssetManager/Services/AssetManager.service"
+								}
+							},
+							"PickerPrompt": "Por favor seleccione una sola opción",
+							"_Name": "lstEstActBase",
+							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
+							"AlternateInput": "Barcode",
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewBase/#Property:fieldDescription}}",
 							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewBase/#Property:visible}}",
+							"KeyboardType": "Number",
 							"_Name": "txtSerNewBase",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
@@ -186,16 +294,34 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActValPres/#Property:fieldDescription}}",
-							"IsEditable": false,
-							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActValPres/#Property:visible}}",
-							"_Name": "txtEstActValPres",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActValPres/#Property:fieldDescription}}",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActValPres/#Property:editable}}",
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActValPres/#Property:visible}}",
+							"OnValueChange": "/SAPAssetManager/Rules/vanti/PageForm7aSelectedValueList.js",
+							"PickerItems": {
+								"DisplayValue": "{Descripcion}",
+								"ReturnValue": "{Codigo}",
+								"Target": {
+									"EntitySet": "ZZEstPrecintos",
+									"QueryOptions": "$orderby=Codigo",
+									"Service": "/SAPAssetManager/Services/AssetManager.service"
+								}
+							},
+							"PickerPrompt": "Por favor seleccione una sola opción",
+							"_Name": "lstEstActValPres",
+							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
+							"AlternateInput": "Barcode",
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewValPres/#Property:fieldDescription}}",
 							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewValPres/#Property:visible}}",
+							"KeyboardType": "Number",
 							"_Name": "txtSerNewValPres",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
@@ -213,16 +339,34 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActVisorDos/#Property:fieldDescription}}",
-							"IsEditable": false,
-							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActVisorDos/#Property:visible}}",
-							"_Name": "txtEstActVisorDos",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActVisorDos/#Property:fieldDescription}}",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActVisorDos/#Property:editable}}",
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActVisorDos/#Property:visible}}",
+							"OnValueChange": "/SAPAssetManager/Rules/vanti/PageForm7aSelectedValueList.js",
+							"PickerItems": {
+								"DisplayValue": "{Descripcion}",
+								"ReturnValue": "{Codigo}",
+								"Target": {
+									"EntitySet": "ZZEstPrecintos",
+									"QueryOptions": "$orderby=Codigo",
+									"Service": "/SAPAssetManager/Services/AssetManager.service"
+								}
+							},
+							"PickerPrompt": "Por favor seleccione una sola opción",
+							"_Name": "lstEstActVisorDos",
+							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
+							"AlternateInput": "Barcode",
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewVisorDos/#Property:fieldDescription}}",
 							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewVisorDos/#Property:visible}}",
+							"KeyboardType": "Number",
 							"_Name": "txtSerNewVisorDos",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
@@ -240,16 +384,34 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActBrida/#Property:fieldDescription}}",
-							"IsEditable": false,
-							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActBrida/#Property:visible}}",
-							"_Name": "txtEstActBrida",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActBrida/#Property:fieldDescription}}",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActBrida/#Property:editable}}",
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActBrida/#Property:visible}}",
+							"OnValueChange": "/SAPAssetManager/Rules/vanti/PageForm7aSelectedValueList.js",
+							"PickerItems": {
+								"DisplayValue": "{Descripcion}",
+								"ReturnValue": "{Codigo}",
+								"Target": {
+									"EntitySet": "ZZEstPrecintos",
+									"QueryOptions": "$orderby=Codigo",
+									"Service": "/SAPAssetManager/Services/AssetManager.service"
+								}
+							},
+							"PickerPrompt": "Por favor seleccione una sola opción",
+							"_Name": "lstEstActBrida",
+							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
+							"AlternateInput": "Barcode",
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewBrida/#Property:fieldDescription}}",
 							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewBrida/#Property:visible}}",
+							"KeyboardType": "Number",
 							"_Name": "txtSerNewBrida",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
@@ -267,16 +429,34 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActBridaDos/#Property:fieldDescription}}",
-							"IsEditable": false,
-							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActBridaDos/#Property:visible}}",
-							"_Name": "txtEstActBridaDos",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActBridaDos/#Property:fieldDescription}}",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActBridaDos/#Property:editable}}",
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActBridaDos/#Property:visible}}",
+							"OnValueChange": "/SAPAssetManager/Rules/vanti/PageForm7aSelectedValueList.js",
+							"PickerItems": {
+								"DisplayValue": "{Descripcion}",
+								"ReturnValue": "{Codigo}",
+								"Target": {
+									"EntitySet": "ZZEstPrecintos",
+									"QueryOptions": "$orderby=Codigo",
+									"Service": "/SAPAssetManager/Services/AssetManager.service"
+								}
+							},
+							"PickerPrompt": "Por favor seleccione una sola opción",
+							"_Name": "lstEstActBridaDos",
+							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
+							"AlternateInput": "Barcode",
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewBridaDos/#Property:fieldDescription}}",
 							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewBridaDos/#Property:visible}}",
+							"KeyboardType": "Number",
 							"_Name": "txtSerNewBridaDos",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
@@ -294,16 +474,34 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActManome/#Property:fieldDescription}}",
-							"IsEditable": false,
-							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActManome/#Property:visible}}",
-							"_Name": "txtEstActManome",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActManome/#Property:fieldDescription}}",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActManome/#Property:editable}}",
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActManome/#Property:visible}}",
+							"OnValueChange": "/SAPAssetManager/Rules/vanti/PageForm7aSelectedValueList.js",
+							"PickerItems": {
+								"DisplayValue": "{Descripcion}",
+								"ReturnValue": "{Codigo}",
+								"Target": {
+									"EntitySet": "ZZEstPrecintos",
+									"QueryOptions": "$orderby=Codigo",
+									"Service": "/SAPAssetManager/Services/AssetManager.service"
+								}
+							},
+							"PickerPrompt": "Por favor seleccione una sola opción",
+							"_Name": "lstEstActManome",
+							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
+							"AlternateInput": "Barcode",
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewManome/#Property:fieldDescription}}",
 							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewManome/#Property:visible}}",
+							"KeyboardType": "Number",
 							"_Name": "txtSerNewManome",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
@@ -321,16 +519,34 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActBridaFilUno/#Property:fieldDescription}}",
-							"IsEditable": false,
-							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActBridaFilUno/#Property:visible}}",
-							"_Name": "txtEstActBridaFilUno",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActBridaFilUno/#Property:fieldDescription}}",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActBridaFilUno/#Property:editable}}",
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActBridaFilUno/#Property:visible}}",
+							"OnValueChange": "/SAPAssetManager/Rules/vanti/PageForm7aSelectedValueList.js",
+							"PickerItems": {
+								"DisplayValue": "{Descripcion}",
+								"ReturnValue": "{Codigo}",
+								"Target": {
+									"EntitySet": "ZZEstPrecintos",
+									"QueryOptions": "$orderby=Codigo",
+									"Service": "/SAPAssetManager/Services/AssetManager.service"
+								}
+							},
+							"PickerPrompt": "Por favor seleccione una sola opción",
+							"_Name": "lstEstActBridaFilUno",
+							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
+							"AlternateInput": "Barcode",
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewBridaFilUno/#Property:fieldDescription}}",
 							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewBridaFilUno/#Property:visible}}",
+							"KeyboardType": "Number",
 							"_Name": "txtSerNewBridaFilUno",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
@@ -348,16 +564,34 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActBridaFilDos/#Property:fieldDescription}}",
-							"IsEditable": false,
-							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActBridaFilDos/#Property:visible}}",
-							"_Name": "txtEstActBridaFilDos",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActBridaFilDos/#Property:fieldDescription}}",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActBridaFilDos/#Property:editable}}",
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActBridaFilDos/#Property:visible}}",
+							"OnValueChange": "/SAPAssetManager/Rules/vanti/PageForm7aSelectedValueList.js",
+							"PickerItems": {
+								"DisplayValue": "{Descripcion}",
+								"ReturnValue": "{Codigo}",
+								"Target": {
+									"EntitySet": "ZZEstPrecintos",
+									"QueryOptions": "$orderby=Codigo",
+									"Service": "/SAPAssetManager/Services/AssetManager.service"
+								}
+							},
+							"PickerPrompt": "Por favor seleccione una sola opción",
+							"_Name": "lstEstActBridaFilDos",
+							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
+							"AlternateInput": "Barcode",
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSernewBridaFilDos/#Property:fieldDescription}}",
 							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSernewBridaFilDos/#Property:visible}}",
+							"KeyboardType": "Number",
 							"_Name": "txtSernewBridaFilDos",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
@@ -375,16 +609,34 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActTapaMed/#Property:fieldDescription}}",
-							"IsEditable": false,
-							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActTapaMed/#Property:visible}}",
-							"_Name": "txtEstActTapaMed",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActTapaMed/#Property:fieldDescription}}",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActTapaMed/#Property:editable}}",
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActTapaMed/#Property:visible}}",
+							"OnValueChange": "/SAPAssetManager/Rules/vanti/PageForm7aSelectedValueList.js",
+							"PickerItems": {
+								"DisplayValue": "{Descripcion}",
+								"ReturnValue": "{Codigo}",
+								"Target": {
+									"EntitySet": "ZZEstPrecintos",
+									"QueryOptions": "$orderby=Codigo",
+									"Service": "/SAPAssetManager/Services/AssetManager.service"
+								}
+							},
+							"PickerPrompt": "Por favor seleccione una sola opción",
+							"_Name": "lstEstActTapaMed",
+							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
+							"AlternateInput": "Barcode",
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewTapaMed/#Property:fieldDescription}}",
 							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewTapaMed/#Property:visible}}",
+							"KeyboardType": "Number",
 							"_Name": "txtSerNewTapaMed",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
@@ -402,16 +654,34 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActTapaMedDos/#Property:fieldDescription}}",
-							"IsEditable": false,
-							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActTapaMedDos/#Property:visible}}",
-							"_Name": "txtEstActTapaMedDos",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActTapaMedDos/#Property:fieldDescription}}",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActTapaMedDos/#Property:editable}}",
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActTapaMedDos/#Property:visible}}",
+							"OnValueChange": "/SAPAssetManager/Rules/vanti/PageForm7aSelectedValueList.js",
+							"PickerItems": {
+								"DisplayValue": "{Descripcion}",
+								"ReturnValue": "{Codigo}",
+								"Target": {
+									"EntitySet": "ZZEstPrecintos",
+									"QueryOptions": "$orderby=Codigo",
+									"Service": "/SAPAssetManager/Services/AssetManager.service"
+								}
+							},
+							"PickerPrompt": "Por favor seleccione una sola opción",
+							"_Name": "lstEstActTapaMedDos",
+							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
+							"AlternateInput": "Barcode",
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewTapaMedDos/#Property:fieldDescription}}",
 							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewTapaMedDos/#Property:visible}}",
+							"KeyboardType": "Number",
 							"_Name": "txtSerNewTapaMedDos",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
@@ -429,16 +699,34 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActSensor/#Property:fieldDescription}}",
-							"IsEditable": false,
-							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActSensor/#Property:visible}}",
-							"_Name": "txtEstActSensor",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActSensor/#Property:fieldDescription}}",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActSensor/#Property:editable}}",
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActSensor/#Property:visible}}",
+							"OnValueChange": "/SAPAssetManager/Rules/vanti/PageForm7aSelectedValueList.js",
+							"PickerItems": {
+								"DisplayValue": "{Descripcion}",
+								"ReturnValue": "{Codigo}",
+								"Target": {
+									"EntitySet": "ZZEstPrecintos",
+									"QueryOptions": "$orderby=Codigo",
+									"Service": "/SAPAssetManager/Services/AssetManager.service"
+								}
+							},
+							"PickerPrompt": "Por favor seleccione una sola opción",
+							"_Name": "lstEstActSensor",
+							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
+							"AlternateInput": "Barcode",
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewSensor/#Property:fieldDescription}}",
 							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewSensor/#Property:visible}}",
+							"KeyboardType": "Number",
 							"_Name": "txtSerNewSensor",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
@@ -456,16 +744,34 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActPlaca/#Property:fieldDescription}}",
-							"IsEditable": false,
-							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActPlaca/#Property:visible}}",
-							"_Name": "txtEstActPlaca",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActPlaca/#Property:fieldDescription}}",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActPlaca/#Property:editable}}",
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActPlaca/#Property:visible}}",
+							"OnValueChange": "/SAPAssetManager/Rules/vanti/PageForm7aSelectedValueList.js",
+							"PickerItems": {
+								"DisplayValue": "{Descripcion}",
+								"ReturnValue": "{Codigo}",
+								"Target": {
+									"EntitySet": "ZZEstPrecintos",
+									"QueryOptions": "$orderby=Codigo",
+									"Service": "/SAPAssetManager/Services/AssetManager.service"
+								}
+							},
+							"PickerPrompt": "Por favor seleccione una sola opción",
+							"_Name": "lstEstActPlaca",
+							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
+							"AlternateInput": "Barcode",
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewPlaca/#Property:fieldDescription}}",
 							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewPlaca/#Property:visible}}",
+							"KeyboardType": "Number",
 							"_Name": "txtSerNewPlaca",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
@@ -483,16 +789,34 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActBridaCie/#Property:fieldDescription}}",
-							"IsEditable": false,
-							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActBridaCie/#Property:visible}}",
-							"_Name": "txtEstActBridaCie",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActBridaCie/#Property:fieldDescription}}",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActBridaCie/#Property:editable}}",
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActBridaCie/#Property:visible}}",
+							"OnValueChange": "/SAPAssetManager/Rules/vanti/PageForm7aSelectedValueList.js",
+							"PickerItems": {
+								"DisplayValue": "{Descripcion}",
+								"ReturnValue": "{Codigo}",
+								"Target": {
+									"EntitySet": "ZZEstPrecintos",
+									"QueryOptions": "$orderby=Codigo",
+									"Service": "/SAPAssetManager/Services/AssetManager.service"
+								}
+							},
+							"PickerPrompt": "Por favor seleccione una sola opción",
+							"_Name": "lstEstActBridaCie",
+							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
+							"AlternateInput": "Barcode",
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewBridaCie/#Property:fieldDescription}}",
 							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewBridaCie/#Property:visible}}",
+							"KeyboardType": "Number",
 							"_Name": "txtSerNewBridaCie",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
@@ -510,16 +834,34 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActManifoldQ1/#Property:fieldDescription}}",
-							"IsEditable": false,
-							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActManifoldQ1/#Property:visible}}",
-							"_Name": "txtEstActManifoldQ1",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActManifoldQ1/#Property:fieldDescription}}",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActManifoldQ1/#Property:editable}}",
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActManifoldQ1/#Property:visible}}",
+							"OnValueChange": "/SAPAssetManager/Rules/vanti/PageForm7aSelectedValueList.js",
+							"PickerItems": {
+								"DisplayValue": "{Descripcion}",
+								"ReturnValue": "{Codigo}",
+								"Target": {
+									"EntitySet": "ZZEstPrecintos",
+									"QueryOptions": "$orderby=Codigo",
+									"Service": "/SAPAssetManager/Services/AssetManager.service"
+								}
+							},
+							"PickerPrompt": "Por favor seleccione una sola opción",
+							"_Name": "lstEstActManifoldQ1",
+							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
+							"AlternateInput": "Barcode",
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewManifoldQ1/#Property:fieldDescription}}",
 							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewManifoldQ1/#Property:visible}}",
+							"KeyboardType": "Number",
 							"_Name": "txtSerNewManifoldQ1",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
@@ -537,16 +879,34 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActManifoldQ2/#Property:fieldDescription}}",
-							"IsEditable": false,
-							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActManifoldQ2/#Property:visible}}",
-							"_Name": "txtEstActManifoldQ2",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActManifoldQ2/#Property:fieldDescription}}",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActManifoldQ2/#Property:editable}}",
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActManifoldQ2/#Property:visible}}",
+							"OnValueChange": "/SAPAssetManager/Rules/vanti/PageForm7aSelectedValueList.js",
+							"PickerItems": {
+								"DisplayValue": "{Descripcion}",
+								"ReturnValue": "{Codigo}",
+								"Target": {
+									"EntitySet": "ZZEstPrecintos",
+									"QueryOptions": "$orderby=Codigo",
+									"Service": "/SAPAssetManager/Services/AssetManager.service"
+								}
+							},
+							"PickerPrompt": "Por favor seleccione una sola opción",
+							"_Name": "lstEstActManifoldQ2",
+							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
+							"AlternateInput": "Barcode",
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewManifoldQ2/#Property:fieldDescription}}",
 							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewManifoldQ2/#Property:visible}}",
+							"KeyboardType": "Number",
 							"_Name": "txtSerNewManifoldQ2",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
@@ -564,16 +924,34 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActPorta/#Property:fieldDescription}}",
-							"IsEditable": false,
-							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActPorta/#Property:visible}}",
-							"_Name": "txtEstActPorta",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActPorta/#Property:fieldDescription}}",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActPorta/#Property:editable}}",
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActPorta/#Property:visible}}",
+							"OnValueChange": "/SAPAssetManager/Rules/vanti/PageForm7aSelectedValueList.js",
+							"PickerItems": {
+								"DisplayValue": "{Descripcion}",
+								"ReturnValue": "{Codigo}",
+								"Target": {
+									"EntitySet": "ZZEstPrecintos",
+									"QueryOptions": "$orderby=Codigo",
+									"Service": "/SAPAssetManager/Services/AssetManager.service"
+								}
+							},
+							"PickerPrompt": "Por favor seleccione una sola opción",
+							"_Name": "lstEstActPorta",
+							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
+							"AlternateInput": "Barcode",
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewPorta/#Property:fieldDescription}}",
 							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewPorta/#Property:visible}}",
+							"KeyboardType": "Number",
 							"_Name": "txtSerNewPorta",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
@@ -591,16 +969,34 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActPlacaFilt/#Property:fieldDescription}}",
-							"IsEditable": false,
-							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActPlacaFilt/#Property:visible}}",
-							"_Name": "txtEstActPlacaFilt",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActPlacaFilt/#Property:fieldDescription}}",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActPlacaFilt/#Property:editable}}",
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActPlacaFilt/#Property:visible}}",
+							"OnValueChange": "/SAPAssetManager/Rules/vanti/PageForm7aSelectedValueList.js",
+							"PickerItems": {
+								"DisplayValue": "{Descripcion}",
+								"ReturnValue": "{Codigo}",
+								"Target": {
+									"EntitySet": "ZZEstPrecintos",
+									"QueryOptions": "$orderby=Codigo",
+									"Service": "/SAPAssetManager/Services/AssetManager.service"
+								}
+							},
+							"PickerPrompt": "Por favor seleccione una sola opción",
+							"_Name": "lstEstActPlacaFilt",
+							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
+							"AlternateInput": "Barcode",
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewPlacaFilt/#Property:fieldDescription}}",
 							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewPlacaFilt/#Property:visible}}",
+							"KeyboardType": "Number",
 							"_Name": "txtSerNewPlacaFilt",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
@@ -618,16 +1014,34 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActValBy/#Property:fieldDescription}}",
-							"IsEditable": false,
-							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActValBy/#Property:visible}}",
-							"_Name": "txtEstActValBy",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActValBy/#Property:fieldDescription}}",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActValBy/#Property:editable}}",
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActValBy/#Property:visible}}",
+							"OnValueChange": "/SAPAssetManager/Rules/vanti/PageForm7aSelectedValueList.js",
+							"PickerItems": {
+								"DisplayValue": "{Descripcion}",
+								"ReturnValue": "{Codigo}",
+								"Target": {
+									"EntitySet": "ZZEstPrecintos",
+									"QueryOptions": "$orderby=Codigo",
+									"Service": "/SAPAssetManager/Services/AssetManager.service"
+								}
+							},
+							"PickerPrompt": "Por favor seleccione una sola opción",
+							"_Name": "lstEstActValBy",
+							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
+							"AlternateInput": "Barcode",
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewValBy/#Property:fieldDescription}}",
 							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewValBy/#Property:visible}}",
+							"KeyboardType": "Number",
 							"_Name": "txtSerNewValBy",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
@@ -645,16 +1059,34 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActTornillo/#Property:fieldDescription}}",
-							"IsEditable": false,
-							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActTornillo/#Property:visible}}",
-							"_Name": "txtEstActTornillo",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActTornillo/#Property:fieldDescription}}",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActTornillo/#Property:editable}}",
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActTornillo/#Property:visible}}",
+							"OnValueChange": "/SAPAssetManager/Rules/vanti/PageForm7aSelectedValueList.js",
+							"PickerItems": {
+								"DisplayValue": "{Descripcion}",
+								"ReturnValue": "{Codigo}",
+								"Target": {
+									"EntitySet": "ZZEstPrecintos",
+									"QueryOptions": "$orderby=Codigo",
+									"Service": "/SAPAssetManager/Services/AssetManager.service"
+								}
+							},
+							"PickerPrompt": "Por favor seleccione una sola opción",
+							"_Name": "lstEstActTornillo",
+							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
+							"AlternateInput": "Barcode",
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewTornillo/#Property:fieldDescription}}",
 							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewTornillo/#Property:visible}}",
+							"KeyboardType": "Number",
 							"_Name": "txtSerNewTornillo",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
@@ -672,16 +1104,34 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActTapaPro/#Property:fieldDescription}}",
-							"IsEditable": false,
-							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtEstActTapaPro/#Property:visible}}",
-							"_Name": "txtEstActTapaPro",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActTapaPro/#Property:fieldDescription}}",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActTapaPro/#Property:editable}}",
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:lstEstActTapaPro/#Property:visible}}",
+							"OnValueChange": "/SAPAssetManager/Rules/vanti/PageForm7aSelectedValueList.js",
+							"PickerItems": {
+								"DisplayValue": "{Descripcion}",
+								"ReturnValue": "{Codigo}",
+								"Target": {
+									"EntitySet": "ZZEstPrecintos",
+									"QueryOptions": "$orderby=Codigo",
+									"Service": "/SAPAssetManager/Services/AssetManager.service"
+								}
+							},
+							"PickerPrompt": "Por favor seleccione una sola opción",
+							"_Name": "lstEstActTapaPro",
+							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
+							"AlternateInput": "Barcode",
 							"Caption": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewTapaPro/#Property:fieldDescription}}",
 							"IsEditable": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm7a/#Property:txtSerNewTapaPro/#Property:visible}}",
+							"KeyboardType": "Number",
 							"_Name": "txtSerNewTapaPro",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}

@@ -7,7 +7,8 @@ export default function PageForm4PresionContratada(context) {
 
 			var sPressCont = result.getItem(0).PresionContratada;
 
-			return "Presión contratada (bar) " + sPressCont;
+//			return "Presión contratada (bar) " + sPressCont;
+			return sPressCont;
 
 		}
 	});

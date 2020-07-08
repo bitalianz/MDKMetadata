@@ -17,9 +17,10 @@
 				{
 					"Controls": [
 						{
-							"Caption": "/SAPAssetManager/Rules/vanti/PageForm4PresionContratadaCaption.js",
+							"Caption": "Presión contratada (bar)",
 							"IsEditable": "{{#Property:oPages/#Property:pageTestForm4/#Property:txtPresContratada/#Property:editable}}",
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm4/#Property:txtPresContratada/#Property:visible}}",
+							"Value": "/SAPAssetManager/Rules/vanti/PageForm4PresionContratadaCaption.js",
 							"_Name": "txtPresContratada",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
@@ -39,11 +40,20 @@
 							"IsSelectedSectionEnabled": true,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm4/#Property:lstPickUM/#Property:visible}}",
 							"PickerItems": [
-								"PSI",
-								"Mbar",
-								"Col de agua"
+								{
+									"DisplayValue": "PSI",
+									"ReturnValue": "01"
+								},
+								{
+									"DisplayValue": "MBar",
+									"ReturnValue": "02"
+								},
+								{
+									"DisplayValue": "Col. Agua",
+									"ReturnValue": "03"
+								}
 							],
-							"PickerPrompt": "Please select one single item",
+							"PickerPrompt": "Por favor, seleccione una unidad de medida",
 							"_Name": "lstPickUM",
 							"_Type": "Control.Type.FormCell.ListPicker"
 						},
@@ -51,6 +61,7 @@
 							"Caption": "Presión dinámica",
 							"IsEditable": "{{#Property:oPages/#Property:pageTestForm4/#Property:txtPresDinamica/#Property:editable}}",
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm4/#Property:txtPresDinamica/#Property:visible}}",
+							"KeyboardType": "Number",
 							"_Name": "txtPresDinamica",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
@@ -58,6 +69,7 @@
 							"Caption": "Presión estática",
 							"IsEditable": "{{#Property:oPages/#Property:pageTestForm4/#Property:txtPresEstatica/#Property:editable}}",
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm4/#Property:txtPresEstatica/#Property:visible}}",
+							"KeyboardType": "Number",
 							"_Name": "txtPresEstatica",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
@@ -79,18 +91,23 @@
 								"ReturnValue": "{Codigo}",
 								"Target": {
 									"EntitySet": "ZZDefectos",
-									"QueryOptions": "$filter=OrderId eq '{{#Property:OrderId}}' and UserStatus eq '{{#Property:sUserStatusChar}}'",
+									"QueryOptions": "$filter=OrderId eq '{{#Property:OrderId}}' and UserStatus eq '{{#Property:sUserStatusChar}}'&$orderby=Codigo",
 									"Service": "/SAPAssetManager/Services/AssetManager.service"
 								}
 							},
 							"PickerPrompt": "Please select multiple items",
+							"Search": {
+								"Enabled": true
+							},
 							"_Name": "lstPickDefectos",
 							"_Type": "Control.Type.FormCell.ListPicker"
 						},
 						{
+							"AlternateInput": "Barcode",
 							"Caption": "Nro certificado",
 							"IsEditable": "{{#Property:oPages/#Property:pageTestForm4/#Property:txtNroCertificado/#Property:editable}}",
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm4/#Property:txtNroCertificado/#Property:visible}}",
+							"KeyboardType": "Number",
 							"_Name": "txtNroCertificado",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
@@ -103,7 +120,7 @@
 							"_Type": "Control.Type.FormCell.Switch"
 						},
 						{
-							"Caption": "Aplica Exep. Norma",
+							"Caption": "Aplica Excep. Norma",
 							"IsEditable": "{{#Property:oPages/#Property:pageTestForm4/#Property:swExepNorma/#Property:editable}}",
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm4/#Property:swExepNorma/#Property:visible}}",
 							"Value": false,
@@ -117,31 +134,6 @@
 							"Value": false,
 							"_Name": "swLineaMatriz",
 							"_Type": "Control.Type.FormCell.Switch"
-						},
-						{
-							"AllowEmptySelection": false,
-							"AllowMultipleSelection": false,
-							"Caption": "Nro de recintos a inspeccionar",
-							"IsEditable": "{{#Property:oPages/#Property:pageTestForm4/#Property:lstPickNroRecintos/#Property:editable}}",
-							"IsPickerDismissedOnSelection": true,
-							"IsSearchCancelledAfterSelection": false,
-							"IsSelectedSectionEnabled": true,
-							"IsVisible": "{{#Property:oPages/#Property:pageTestForm4/#Property:lstPickNroRecintos/#Property:visible}}",
-							"PickerItems": [
-								"1",
-								"2",
-								"3",
-								"4",
-								"5",
-								"6",
-								"7",
-								"8",
-								"9",
-								"10"
-							],
-							"PickerPrompt": "Please select one single item",
-							"_Name": "lstPickNroRecintos",
-							"_Type": "Control.Type.FormCell.ListPicker"
 						}
 					],
 					"Visible": true

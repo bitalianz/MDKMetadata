@@ -5,7 +5,7 @@ export default function OnPressPartsListView(context) {
 	let oPages = new libPagesConf();
     let oBinding = context.getPageProxy().getActionBinding();
     oBinding.oPages = oPages.conf;
-	
+    
 	let materialCategory = context.evaluateTargetPath('#Page:PartCreatePage/#Control:PartCategoryLstPkr');
 	
 	//let valueMaterialUOMLstPkr = context.evaluateTargetPath('#Page:PartCreateSummary/#Control:MaterialUOMLstPkr');

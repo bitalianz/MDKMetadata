@@ -1,7 +1,7 @@
 export default function PageForm1ZUserStatus_QueryOptions(context) {
 
 	return context.read('/SAPAssetManager/Services/AssetManager.service', "ZZUserStatuses", [],
-		"$filter=OrderId eq '" + context.getPageProxy().binding.OrderId + "'&$select=UserStatus,Status,StatusProfile,UserStatusText").then(function (result) {
+		"$filter=OrderId eq '" + context.getPageProxy().binding.OrderId + "'&$select=UserStatus,Status,StatusProfile,UserStatusText&$orderby=UserStatusText").then(function (result) {
 
 		let aData = [];
 

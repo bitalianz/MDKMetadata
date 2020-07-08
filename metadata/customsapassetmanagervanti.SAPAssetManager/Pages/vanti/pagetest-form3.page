@@ -29,6 +29,7 @@
 							"Caption": "Indice Odo. Fisio %",
 							"IsEditable": "{{#Property:oPages/#Property:pageTestForm3/#Property:IndiceOdoFisio/#Property:editable}}",
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm3/#Property:IndiceOdoFisio/#Property:visible}}",
+							"KeyboardType": "Number",
 							"_Name": "IndiceOdoFisio",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
@@ -61,7 +62,7 @@
 									"ReturnValue": "03"
 								}
 							],
-							"PickerPrompt": "Please select one single item",
+							"PickerPrompt": "Por favor, seleccione una unidad de medida",
 							"_Name": "UnidadPres",
 							"_Type": "Control.Type.FormCell.ListPicker"
 						},
@@ -102,7 +103,7 @@
 									"ReturnValue": "03"
 								}
 							],
-							"PickerPrompt": "Please select one single item",
+							"PickerPrompt": "Por favor, seleccione una unidad de medida",
 							"_Name": "UnidadPresAt",
 							"_Type": "Control.Type.FormCell.ListPicker"
 						},

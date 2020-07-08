@@ -61,9 +61,11 @@
 							"_Type": "Control.Type.FormCell.DatePicker"
 						},
 						{
+							"AlternateInput": "Barcode",
 							"Caption": "N° Precinto Tula",
 							"IsEditable": "{{#Property:oPages/#Property:pageTestForm2/#Property:txPrecTula/#Property:editable}}",
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm2/#Property:txPrecTula/#Property:visible}}",
+							"KeyboardType": "Number",
 							"_Name": "txPrecTula",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
@@ -79,11 +81,11 @@
 							"Caption": "Elija uno",
 							"IsEditable": "{{#Property:oPages/#Property:pageTestForm2/#Property:lstPickMedidores/#Property:editable}}",
 							"IsPickerDismissedOnSelection": true,
-							"IsSearchCancelledAfterSelection": false,
+							"IsSearchCancelledAfterSelection": true,
 							"IsSelectedSectionEnabled": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm2/#Property:lstPickMedidores/#Property:visible}}",
 							"PickerItems": {
-								"DisplayValue": "{MaterialDesc}",
+								"DisplayValue": "/SAPAssetManager/Rules/vanti/PageForm2_lstSerieMaterialDesc.js",
 								"ReturnValue": "{Equipment}",
 								"Target": {
 									"EntitySet": "ZZEquipos",
@@ -91,7 +93,10 @@
 									"Service": "/SAPAssetManager/Services/AssetManager.service"
 								}
 							},
-							"PickerPrompt": "Please select one single item",
+							"PickerPrompt": "Seleccione un medidor a sustituir (Nº serie - Descripción)",
+							"Search": {
+								"Enabled": true
+							},
 							"_Name": "lstPickMedidores",
 							"_Type": "Control.Type.FormCell.ListPicker"
 						}
@@ -102,9 +107,11 @@
 					"Caption": "Registre el medidor a Instalar / Sustituir",
 					"Controls": [
 						{
+							"AlternateInput": "Barcode",
 							"Caption": "Numero de serie",
 							"IsEditable": "{{#Property:oPages/#Property:pageTestForm2/#Property:txtNumSerie/#Property:editable}}",
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm2/#Property:txtNumSerie/#Property:visible}}",
+							"KeyboardType": "Phone",
 							"_Name": "txtNumSerie",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
@@ -112,8 +119,22 @@
 							"Caption": "Material",
 							"IsEditable": "{{#Property:oPages/#Property:pageTestForm2/#Property:txtMaterial/#Property:editable}}",
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm2/#Property:txtMaterial/#Property:visible}}",
+							"KeyboardType": "Number",
+							"PlaceHolder": "Material de 7 dígitos",
+							"ValidationProperties": {
+								"SeparatorIsHidden": true
+							},
 							"_Name": "txtMaterial",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"ButtonType": "Normal",
+							"IsVisible": true,
+							"OnPress": "/SAPAssetManager/Rules/vanti/PageForm2SelectedValueBarcode.js",
+							"TextAlignment": "left",
+							"Title": "Dividir Serie y Material",
+							"_Name": "FormCellButton1",
+							"_Type": "Control.Type.FormCell.Button"
 						}
 					],
 					"Visible": true
@@ -125,6 +146,7 @@
 							"Caption": "Lectura medidor retirado",
 							"IsEditable": "{{#Property:oPages/#Property:pageTestForm2/#Property:txtLectMedRetirado/#Property:editable}}",
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm2/#Property:txtLectMedRetirado/#Property:visible}}",
+							"KeyboardType": "Number",
 							"_Name": "txtLectMedRetirado",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
@@ -132,6 +154,7 @@
 							"Caption": "Lectura medidor instalado",
 							"IsEditable": "{{#Property:oPages/#Property:pageTestForm2/#Property:txtLectMedInstalado/#Property:editable}}",
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm2/#Property:txtLectMedInstalado/#Property:visible}}",
+							"KeyboardType": "Number",
 							"_Name": "txtLectMedInstalado",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}

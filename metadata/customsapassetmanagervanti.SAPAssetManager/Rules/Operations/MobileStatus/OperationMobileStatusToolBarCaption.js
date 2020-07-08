@@ -21,12 +21,20 @@ export default function OperationMobileStatusToolBarCaption(context) {
                             oprAlreadyStarted = true;
                         }
                     }
+                    
+                    var oBinding = context.getPageProxy().binding;
+                    
+                    if(oBinding.initialized && mobileStatus === started){
+                    	return context.localizeText('end_operation');
+                    }
+                    
                     if (oprAlreadyStarted && (mobileStatus === received || mobileStatus === hold)) {
                         return context.localizeText('transfer');
                     } else if (mobileStatus === received || mobileStatus === hold || mobileStatus === local) {
                         return context.localizeText('start_operation');
                     } else if (mobileStatus === started) {
-                        return context.localizeText('end_operation');
+                        //return context.localizeText('end_operation');
+                        return "Continuar";
                     } else if (mobileStatus === transfer) {
                         return context.localizeText('transferred');
                     } else if (mobileStatus === complete) {

@@ -5,16 +5,18 @@
 				"Icon": "res://profileicon",
 				"OnPress": "/SAPAssetManager/Actions/User/UserProfileSettings.action",
 				"Position": "left",
-				"Text": "User"
+				"Text": ""
 			},
 			{
 				"Icon": "res://sync",
 				"OnPress": "/SAPAssetManager/Actions/SyncInitializeProgressBannerMessage.action",
-				"Position": "right"
+				"Position": "right",
+				"SystemItem": "Refresh",
+				"Text": ""
 			}
 		]
 	},
-	"Caption": "$(L,app_display_name)",
+	"Caption": "$(L,'nombre_empresa')",
 	"Controls": [
 		{
 			"Sections": [
@@ -234,14 +236,20 @@
 					"MaxItemCount": 4,
 					"ObjectCell": {
 						"AccessoryType": "disclosureIndicator",
+						"Footnote": "/SAPAssetManager/Rules/WorkOrders/ListView/WorkOrdersListViewFooter.js",
 						"OnPress": "/SAPAssetManager/Rules/WorkOrders/WorkOrderHighPriorityDetailsNav.js",
 						"PreserveIconStackSpacing": false,
-						"Subhead": "{OrderId}",
-						"Title": "#Property:OrderDescription"
+						"StatusText": "{{#Property:WOPriority/#Property:PriorityDescription}}",
+						"Styles": {
+							"Title": "WorkOrderListViewTitle"
+						},
+						"Subhead": "{Direccion}",
+						"SubstatusText": "{HoraIniExtremo}",
+						"Title": "/SAPAssetManager/Rules/WorkOrders/ListView/WorkOrdersListViewTitle.js"
 					},
 					"Target": {
 						"EntitySet": "MyWorkOrderHeaders",
-						"QueryOptions": "$filter=Priority eq '1' or  Priority eq '2'&$orderby=Priority,DueDate,OrderId",
+						"QueryOptions": "$filter=Priority eq '1'&$orderby=Priority,DueDate,OrderId",
 						"Service": "/SAPAssetManager/Services/AssetManager.service"
 					},
 					"_Name": "HighPriorityOrdersSection",
@@ -263,7 +271,7 @@
 								"KeyName": "$(L,'suboperations')",
 								"OnPress": "/SAPAssetManager/Rules/WorkOrders/SubOperations/SubOperationsListViewNav.js",
 								"Value": "/SAPAssetManager/Rules/SubOperations/SubOperationCount.js",
-								"Visible": "/SAPAssetManager/Rules/WorkOrders/SubOperations/IsSubOperationLevelAssigmentType.js"
+								"Visible": false
 							}
 						},
 						{
@@ -288,7 +296,8 @@
 								"AccessoryType": "disclosureIndicator",
 								"KeyName": "$(L,equipment)",
 								"OnPress": "/SAPAssetManager/Rules/Equipment/EquipmentListViewNav.js",
-								"Value": "/SAPAssetManager/Rules/Equipment/EquipmentCount.js"
+								"Value": "/SAPAssetManager/Rules/Equipment/EquipmentCount.js",
+								"Visible": false
 							}
 						},
 						{
@@ -296,7 +305,8 @@
 								"AccessoryType": "disclosureIndicator",
 								"KeyName": "$(L,reminders)",
 								"OnPress": "/SAPAssetManager/Actions/Reminders/RemindersListViewNav.action",
-								"Value": "/SAPAssetManager/Rules/OverviewPage/OverviewPageRemindersCount.js"
+								"Value": "/SAPAssetManager/Rules/OverviewPage/OverviewPageRemindersCount.js",
+								"Visible": false
 							}
 						},
 						{
@@ -304,7 +314,8 @@
 								"AccessoryType": "disclosureIndicator",
 								"KeyName": "$(L,functional_locations)",
 								"OnPress": "/SAPAssetManager/Rules/FunctionalLocation/FunctionalLocationListViewNav.js",
-								"Value": "/SAPAssetManager/Rules/FunctionalLocation/FunctionalLocationCount.js"
+								"Value": "/SAPAssetManager/Rules/FunctionalLocation/FunctionalLocationCount.js",
+								"Visible": false
 							}
 						}
 					],

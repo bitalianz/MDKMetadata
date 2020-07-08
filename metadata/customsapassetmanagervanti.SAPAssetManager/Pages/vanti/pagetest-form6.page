@@ -20,80 +20,97 @@
 						{
 							"AllowEmptySelection": false,
 							"AllowMultipleSelection": false,
-							"Caption": "Tipo de recinto",
-							"IsEditable": true,
+							"Caption": "Recinto",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm6/#Property:lstPickRecinto/#Property:editable}}",
 							"IsPickerDismissedOnSelection": true,
 							"IsSearchCancelledAfterSelection": false,
 							"IsSelectedSectionEnabled": false,
-							"IsVisible": true,
-							"PickerItems": [
-							],
-							"PickerPrompt": "Please select one single item",
-							"_Name": "FormCellListPicker0",
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm6/#Property:lstPickRecinto/#Property:visible}}",
+							"PickerItems": {
+								"DisplayValue": "{Recinto}",
+								"ReturnValue": "{Recinto}",
+								"Target": {
+									"EntitySet": "ZZRecintos",
+									"QueryOptions": "$orderby=Recinto",
+									"Service": "/SAPAssetManager/Services/AssetManager.service"
+								}
+							},
+							"PickerPrompt": "Por favor seleccione una sola opción",
+							"Search": {
+								"Enabled": true
+							},
+							"_Name": "lstPickRecinto",
 							"_Type": "Control.Type.FormCell.ListPicker"
-						},
-						{
-							"Caption": "Volumen CO",
-							"IsEditable": true,
-							"IsVisible": true,
-							"_Name": "FormCellSimpleProperty2",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"AllowEmptySelection": false,
 							"AllowMultipleSelection": false,
-							"Caption": "Cantidad de equipos",
-							"IsEditable": true,
+							"Caption": "Tipo de recinto",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm6/#Property:lstPickTipoRecinto/#Property:editable}}",
 							"IsPickerDismissedOnSelection": true,
 							"IsSearchCancelledAfterSelection": false,
 							"IsSelectedSectionEnabled": false,
-							"IsVisible": true,
-							"OnValueChange": "/test/Actions/Open_Form_6_2a.action",
-							"PickerItems": [
-								"1",
-								"2",
-								"3",
-								"4",
-								"5"
-							],
-							"PickerPrompt": "Please select one single item",
-							"_Name": "FormCellListPicker1",
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm6/#Property:lstPickTipoRecinto/#Property:visible}}",
+							"PickerItems": {
+								"DisplayValue": "{Descripcion}",
+								"ReturnValue": "{Codigo}",
+								"Target": {
+									"EntitySet": "ZZTipoRecintos",
+									"QueryOptions": "$orderby=Codigo",
+									"Service": "/SAPAssetManager/Services/AssetManager.service"
+								}
+							},
+							"PickerPrompt": "Por favor seleccione una sola opción",
+							"Search": {
+								"Enabled": true
+							},
+							"_Name": "lstPickTipoRecinto",
 							"_Type": "Control.Type.FormCell.ListPicker"
+						},
+						{
+							"AlternateInput": "None",
+							"Caption": "Volumen CO",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm6/#Property:txtVolCO/#Property:editable}}",
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm6/#Property:txtVolCO/#Property:visible}}",
+							"KeyboardType": "Number",
+							"_Name": "txtVolCO",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "Carga recinto KW",
 							"IsEditable": false,
-							"IsVisible": true,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm6/#Property:txtCargaRecintoKW/#Property:visible}}",
 							"PlaceHolder": "XX",
-							"_Name": "FormCellSimpleProperty0",
+							"Value": "0",
+							"_Name": "txtCargaRecintoKW",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"ButtonType": "Normal",
+							"IsVisible": true,
+							"OnPress": "/SAPAssetManager/Rules/vanti/PageForm6OnAddPress.js",
+							"TextAlignment": "left",
+							"Title": "Registrar Equipos",
+							"_Name": "FormCellButton0",
+							"_Type": "Control.Type.FormCell.Button"
 						}
 					],
 					"Visible": true
 				}
 			],
-			"_Name": "FormCellContainer0",
-			"_Type": "Control.Type.FormCellContainer"
-		},
-		{
-			"Sections": [
-				{
-					"Controls": [
-					],
-					"Visible": true
-				}
-			],
-			"_Name": "FormCellContainer1",
+			"_Name": "frmContForm6",
 			"_Type": "Control.Type.FormCellContainer"
 		}
 	],
+	"OnLoaded": "/SAPAssetManager/Rules/vanti/PageForm6Kw.js",
+	"OnReturning": "/SAPAssetManager/Rules/vanti/PageForm6Kw.js",
 	"ToolBar": {
 		"Controls": [
 			{
-				"Caption": "Siguente",
+				"Caption": "Aceptar",
 				"Clickable": true,
 				"Enabled": true,
-				"OnPress": "/SAPAssetManager/Actions/vanti/Open_Form_6_2a.action",
+				"OnPress": "/SAPAssetManager/Rules/vanti/PageForm6OnAcceptPress.js",
 				"Visible": true,
 				"_Name": "ToolbarItem0",
 				"_Type": "Control.Type.ToolbarItem"

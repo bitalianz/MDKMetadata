@@ -36,7 +36,7 @@
 							"Title": "WorkOrderListViewTitle"
 						},
 						"Subhead": "{Direccion}",
-						"SubstatusText": "/SAPAssetManager/Rules/DateTime/DueDate.js",
+						"SubstatusText": "{HoraIniExtremo}",
 						"Title": "/SAPAssetManager/Rules/WorkOrders/ListView/WorkOrdersListViewTitle.js"
 					},
 					"Search": {

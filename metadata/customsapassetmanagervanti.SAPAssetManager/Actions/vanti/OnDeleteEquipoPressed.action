@@ -1,0 +1,8 @@
+{
+	"CancelCaption": "Cancelar",
+	"Message": "¿Está seguro que desea eliminar el equipo seleccionado?",
+	"OKCaption": "Eliminar",
+	"OnOK": "/SAPAssetManager/Actions/vanti/ZZHistEquipos_Delete.action",
+	"Title": "Confirmación",
+	"_Type": "Action.Type.Message"
+}

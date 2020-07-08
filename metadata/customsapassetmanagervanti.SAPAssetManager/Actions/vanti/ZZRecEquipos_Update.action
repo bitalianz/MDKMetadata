@@ -1,0 +1,16 @@
+{
+	"Headers": {
+		"OfflineOData.TransactionID": "#Property:OrderId"
+	},
+	"Properties": {
+		"ValuePartE": "/SAPAssetManager/Rules/vanti/ZZRecEquiposUpdate_ValuePartE.js",
+		"ValuePartR": "/SAPAssetManager/Rules/vanti/ZZRecEquiposUpdate_ValuePartR.js"
+	},
+	"ShowActivityIndicator": false,
+	"Target": {
+		"EntitySet": "ZZRecEquipos",
+		"ReadLink": "/SAPAssetManager/Rules/vanti/ZZRecEquiposUpdate_ReadLink.js",
+		"Service": "/SAPAssetManager/Services/AssetManager.service"
+	},
+	"_Type": "Action.Type.ODataService.UpdateEntity"
+}

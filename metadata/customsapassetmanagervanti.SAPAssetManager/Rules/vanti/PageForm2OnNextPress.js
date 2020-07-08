@@ -10,8 +10,14 @@ export default function PageForm2OnNextPress(context) {
 
 	} else {
 
-		PageFields.goNextActionPage(context, "INST_SUST_MED");
-		
+		sMsg = PageFields.validateTextFields(context, "");
+
+		if (sMsg) {
+			context.binding.sMsg = sMsg;
+			return context.executeAction('/SAPAssetManager/Actions/vanti/MandatoryFieldMessage.action');
+		} else {
+			PageFields.goNextActionPage(context, "INST_SUST_MED");
+		}
 	}
 
 }

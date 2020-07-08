@@ -4,12 +4,15 @@
 			{
 				"Icon": "res://add",
 				"OnPress": "/SAPAssetManager/Rules/WorkOrders/Details/WorkOrderDetailsAddPopover.js",
-				"Position": "right"
+				"Position": "right",
+				"Text": "$(L,'add')",
+				"Visible": false
 			},
 			{
 				"OnPress": "/SAPAssetManager/Rules/WorkOrders/WorkOrderUpdateNav.js",
 				"Position": "right",
-				"SystemItem": "Edit"
+				"SystemItem": "Edit",
+				"Visible": false
 			}
 		]
 	},
@@ -78,6 +81,7 @@
 										}
 									},
 									"Module": "extension-Analytics",
+									"Target": "",
 									"_Name": "Extension",
 									"_Type": "Control.Type.Extension"
 								}
@@ -104,7 +108,7 @@
 						"FooterVisible": false
 					},
 					"Header": {
-						"Caption": "$(L,location)",
+						"Caption": "$(L,'datos_adic')",
 						"UseTopPadding": true
 					},
 					"ObjectCells": [
@@ -113,10 +117,13 @@
 								"AccessoryType": "none",
 								"PreserveIconStackSpacing": false,
 								"Subhead": "/SAPAssetManager/Rules/WorkOrders/WorkOrderLocationFormat.js",
-								"Title": "/SAPAssetManager/Rules/WorkOrders/WorkOrderLocationFormat.js"
+								"Target": "",
+								"Title": "/SAPAssetManager/Rules/WorkOrders/WorkOrderLocationFormat.js",
+								"Visible": false
 							}
 						}
 					],
+					"Target": "",
 					"_Name": "WorkOrderLocationSection",
 					"_Type": "Section.Type.ObjectTable"
 				},
@@ -133,21 +140,22 @@
 							"SimplePropertyCell": {
 								"AccessoryType": "disclosureIndicator",
 								"KeyName": "Datos clientes",
-								"OnPress": "/SAPAssetManager/Actions/vanti/Open_form_1_datos_cliente.action",
-								"Value": "  ",
-								"Visible": true
+								"OnPress": "/SAPAssetManager/Rules/vanti/PageForm1DC_PreLoaded.js",
+								"Target": "",
+								"Value": "  "
 							}
 						},
 						{
 							"SimplePropertyCell": {
 								"AccessoryType": "disclosureIndicator",
 								"KeyName": "Datos técnicos",
-								"OnPress": "/SAPAssetManager/Actions/vanti/Open_form_1_datos_tecnicos.action",
-								"Value": "  ",
-								"Visible": true
+								"OnPress": "/SAPAssetManager/Rules/vanti/PageForm1DT_PreLoaded.js",
+								"Target": "",
+								"Value": "  "
 							}
 						}
 					],
+					"Target": "",
 					"_Name": "SectionSimplePropertyCollection0",
 					"_Type": "Section.Type.SimplePropertyCollection"
 				},
@@ -166,7 +174,8 @@
 						"Caption": "$(L,see_all)",
 						"FooterStyle": "attribute",
 						"OnPress": "/SAPAssetManager/Actions/WorkOrders/Operations/WorkOrderOperationsListViewNav.action",
-						"UseBottomPadding": false
+						"UseBottomPadding": false,
+						"Visible": false
 					},
 					"Header": {
 						"Caption": "$(L,operations)",
@@ -220,6 +229,7 @@
 						"QueryOptions": "$orderby=EquipId&$top=2&$filter=WorkOrderHeader/any( wo: wo/OrderId eq '{{#Property:OrderId}}' ) or WorkOrderOperation/WOHeader/any(wo: wo/OrderId eq '{{#Property:OrderId}}' ) or WorkOrderSubOperation/WorkOrderOperation/WOHeader/any( wo: wo/OrderId eq '{{#Property:OrderId}}' )",
 						"Service": "/SAPAssetManager/Services/AssetManager.service"
 					},
+					"Visible": false,
 					"_Name": "SectionObjectTable0",
 					"_Type": "Section.Type.ObjectTable"
 				},
@@ -253,6 +263,7 @@
 						"QueryOptions": "$orderby=FuncLocIdIntern&$top=2&$filter=WorkOrderHeader/any( wo: wo/OrderId eq '{{#Property:OrderId}}' ) or WorkOrderOperation/WOHeader/any(wo: wo/OrderId eq '{{#Property:OrderId}}' ) or WorkOrderSubOperation/WorkOrderOperation/WOHeader/any( wo: wo/OrderId eq '{{#Property:OrderId}}')",
 						"Service": "/SAPAssetManager/Services/AssetManager.service"
 					},
+					"Visible": false,
 					"_Name": "WorkOrderFunctionalLocationSection",
 					"_Type": "Section.Type.ObjectTable"
 				},
@@ -283,6 +294,7 @@
 						"QueryOptions": "/SAPAssetManager/Rules/Notifications/NotificationsListViewQueryOption.js",
 						"Service": "/SAPAssetManager/Services/AssetManager.service"
 					},
+					"Visible": false,
 					"_Name": "NotificationsList",
 					"_Type": "Section.Type.ObjectTable"
 				},
@@ -305,7 +317,9 @@
 								"AccessoryType": "disclosureIndicator",
 								"KeyName": "$(L,parts)",
 								"OnPress": "/SAPAssetManager/Actions/Parts/PartsListViewNav.action",
-								"Value": "/SAPAssetManager/Rules/Parts/PartsCount.js"
+								"Target": "",
+								"Value": "/SAPAssetManager/Rules/Parts/PartsCount.js",
+								"Visible": false
 							}
 						},
 						{
@@ -313,6 +327,7 @@
 								"AccessoryType": "disclosureIndicator",
 								"KeyName": "$(L,documents)",
 								"OnPress": "/SAPAssetManager/Actions/Documents/DocumentsBDSListNav.action",
+								"Target": "",
 								"Value": "/SAPAssetManager/Rules/Documents/Count/DocumentsBDSCount.js"
 							}
 						},
@@ -321,6 +336,7 @@
 								"AccessoryType": "disclosureIndicator",
 								"KeyName": "$(L,notes)",
 								"OnPress": "/SAPAssetManager/Rules/Notes/NotesViewNav.js",
+								"Target": "",
 								"Value": "/SAPAssetManager/Rules/Notes/NotesCount.js"
 							}
 						},
@@ -329,7 +345,9 @@
 								"AccessoryType": "disclosureIndicator",
 								"KeyName": "$(L,related_notifications)",
 								"OnPress": "/SAPAssetManager/Actions/Notifications/RelatedNotifications/RelatedNotificationsListViewNav.action",
-								"Value": "/SAPAssetManager/Rules/Notifications/RelatedNotifications/RelatedNotificationsCount.js"
+								"Target": "",
+								"Value": "/SAPAssetManager/Rules/Notifications/RelatedNotifications/RelatedNotificationsCount.js",
+								"Visible": false
 							}
 						},
 						{
@@ -337,14 +355,18 @@
 								"AccessoryType": "/SAPAssetManager/Rules/WorkOrders/Details/Confirmations/ConfirmationsSectionAccessory.js",
 								"KeyName": "/SAPAssetManager/Rules/WorkOrders/Details/Confirmations/ConfirmationsSectionTitle.js",
 								"OnPress": "/SAPAssetManager/Rules/WorkOrders/Details/Confirmations/ConfirmationsSectionOnPress.js",
-								"Value": "/SAPAssetManager/Rules/WorkOrders/Details/Confirmations/ConfirmationsSectionCount.js"
+								"Target": "",
+								"Value": "/SAPAssetManager/Rules/WorkOrders/Details/Confirmations/ConfirmationsSectionCount.js",
+								"Visible": false
 							}
 						}
 					],
+					"Target": "",
 					"_Name": "SectionSimplePropertyCollection1",
 					"_Type": "Section.Type.SimplePropertyCollection"
 				}
 			],
+			"Target": "",
 			"_Name": "SectionedTable",
 			"_Type": "Control.Type.SectionedTable"
 		}
@@ -355,12 +377,14 @@
 		"MyWorkOrderSales"
 	],
 	"OnLoaded": "/SAPAssetManager/Rules/WorkOrders/Details/WorkOrderDetailsOnPageLoad.js",
+	"Target": "",
 	"ToolBar": {
 		"Controls": [
 			{
 				"Clickable": true,
 				"Enabled": true,
 				"SystemItem": "FlexibleSpace",
+				"Target": "",
 				"Visible": true,
 				"_Name": "FlexibleSpaceLeftTbI",
 				"_Type": "Control.Type.ToolbarItem"
@@ -373,7 +397,8 @@
 				],
 				"Enabled": "/SAPAssetManager/Rules/WorkOrders/MobileStatus/WorkOrderEnableMobileStatus.js",
 				"OnPress": "/SAPAssetManager/Rules/WorkOrders/MobileStatus/WorkOrderChangeStatusPopover.js",
-				"Visible": true,
+				"Target": "",
+				"Visible": false,
 				"_Name": "IssuePartTbI",
 				"_Type": "Control.Type.ToolbarItem"
 			},
@@ -381,6 +406,7 @@
 				"Clickable": true,
 				"Enabled": true,
 				"SystemItem": "FlexibleSpace",
+				"Target": "",
 				"Visible": true,
 				"_Name": "FlexibleSpaceRightTbI",
 				"_Type": "Control.Type.ToolbarItem"

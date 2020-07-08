@@ -41,6 +41,11 @@
 							"Value": "{RequirementNumber}"
 						},
 						{
+							"KeyName": "Tipo de movimiento",
+							"Value": "/SAPAssetManager/Rules/vanti/PartsDetailView_TipoDeMovimento.js",
+							"Visible": true
+						},
+						{
 							"KeyName": "$(L,work_center_plant)",
 							"Value": "{Plant}"
 						},

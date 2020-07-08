@@ -112,13 +112,13 @@ export class WorkOrderLibrary {
     }
 
     static getWorkOrderDetailsNavQueryOption() {
-        return '$select=WODefectos/ClasOrd,WODefectos/UserStatus,WODefectos/Codigo,WODefectos/Descripcion,WOFormParams/OrdesClass,WOFormParams/ActivityClass,WOFormParams/UserStatus,WOFormParams/CurrPage,WOFormParams/NextPage,WOAnomalias/ClasOrd,WOAnomalias/StatusUsr,' + 
+        return '$select=WOHistRecintos/OrderId,WOHistRecintos/Consec,WOHistRecintos/Recinto,WOHistRecintos/TipoRecinto,WOHistRecintos/VolumenCo,WOHistRecintos/Descripcion,  WODefectos/ClasOrd,WODefectos/UserStatus,WODefectos/Codigo,WODefectos/Descripcion,WOFormParams/OrdesClass,WOFormParams/ActivityClass,WOFormParams/UserStatus,WOFormParams/CurrPage,WOFormParams/NextPage,WOAnomalias/ClasOrd,WOAnomalias/StatusUsr,' + 
         	   'WOAnomalias/Codigo,WOAnomalias/Descripcion,WOEquipos/Equipment,WOEquipos/MaterialNo,WOEquipos/SerialNo,WOEquipos/MaterialDesc,WOUserStatus/Status,WOUserStatus/StatusProfile,' + 
         	   'WOUserStatus/UserStatus,WOUserStatus/UserStatusText,BPFirma,NumCuotas,CuentaContrato,CostCenter, MaintenanceActivityType,' + 
         	   'OrderId,Priority,OrderDescription,ObjectKey,OrderType,DueDate,MainWorkCenter,MainWorkCenterPlant,ControllingArea,MaintenancePlant,FunctionalLocation/FuncLocDesc,' + 
         	   'MobileStatus/MobileStatus,Operations/MobileStatus/MobileStatus,Operations/SubOperations/MobileStatus/MobileStatus,HeaderEquipment,HeaderFunctionLocation,MarkedJob,' + 
         	   'WOPartners/PartnerFunction,DescServhogar,WOSales_Nav/ProductDesc,RequestStartDate,HoraIniExtremo,HoraFinExtremo,TipoCorte2,MaintenanceActivityType' +
-        	   '&$expand=WODefectos,WOFormParams,WOAnomalias,WOEquipos,WOUserStatus,WOSales_Nav,WODocuments,MobileStatus,FunctionalLocation,Operations,Operations/MobileStatus,Operations/SubOperations,Operations/SubOperations/MobileStatus,' + 
+        	   '&$expand=WOHistRecintos,WODefectos,WOFormParams,WOAnomalias,WOEquipos,WOUserStatus,WOSales_Nav,WODocuments,MobileStatus,FunctionalLocation,Operations,Operations/MobileStatus,Operations/SubOperations,Operations/SubOperations/MobileStatus,' + 
         	   'WOGeometries/Geometry,MarkedJob,Confirmations,Address,WOPartners/Address_Nav';
     }
 

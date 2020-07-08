@@ -1,0 +1,69 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/SAPAssetManager/Rules/vanti/OpenCamera.js",
+				"Position": "right",
+				"SystemItem": "Camera",
+				"Text": "Item",
+				"Visible": true
+			},
+			{
+				"OnPress": "/SAPAssetManager/Actions/vanti/Open_Form_6_2a.action",
+				"Position": "right",
+				"Text": "Agregar"
+			}
+		]
+	},
+	"Caption": "Equipos",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ContactCells": [
+					],
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Header": {
+						"Caption": "Equipos",
+						"UseTopPadding": true
+					},
+					"Visible": true,
+					"_Name": "SectionContactCellTable1",
+					"_Type": "Section.Type.ContactCell"
+				},
+				{
+					"DataSubscriptions": [
+						"ZZHistEquipos"
+					],
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"AccessoryType": "checkmark",
+						"Description": "{DescEstado}",
+						"DetailImageIsCircular": false,
+						"OnAccessoryButtonPress": "/SAPAssetManager/Rules/vanti/PageForm6_1TableOnDeletePress.js",
+						"OnPress": "/SAPAssetManager/Rules/vanti/PageForm6_1TableOnDeletePress.js",
+						"PreserveIconStackSpacing": true,
+						"StatusText": "/SAPAssetManager/Rules/vanti/PageForm6_1TableStatus.js",
+						"Title": "{Equipo}"
+					},
+					"Target": {
+						"EntitySet": "ZZHistEquipos",
+						"QueryOptions": "$filter=OrderId eq '{{#Property:OrderId}}' and ConsecRecinto eq '{{#Property:Consec}}'&$orderby=ConsecEquipo",
+						"Service": "/SAPAssetManager/Services/AssetManager.service"
+					},
+					"Visible": true,
+					"_Name": "SectionObjectTable0",
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"_Name": "OverviewPageSectionedTable",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "pageTestForm6_1",
+	"_Type": "Page"
+}

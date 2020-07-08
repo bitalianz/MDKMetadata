@@ -19,118 +19,120 @@
 						{
 							"Caption": "Número de ODS",
 							"IsEditable": false,
-							"IsVisible": true,
+							"IsVisible": "{{#Property:oPagesDT/#Property:pageTestForm1_datos_tecnicos/#Property:txtNumeroODS/#Property:visible}}",
 							"KeyboardType": "Number",
 							"Value": "{OrderId}",
-							"_Name": "FormCellSimpleProperty0",
+							"_Name": "txtNumeroODS",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "Clase de actividad",
 							"IsEditable": false,
-							"IsVisible": true,
+							"IsVisible": "{{#Property:oPagesDT/#Property:pageTestForm1_datos_tecnicos/#Property:txtClaseActividad/#Property:visible}}",
 							"KeyboardType": "Number",
 							"Value": "{MaintenanceActivityType}",
-							"_Name": "FormCellSimpleProperty1",
+							"_Name": "txtClaseActividad",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "Fecha inicio extremo",
 							"IsEditable": false,
-							"IsVisible": true,
+							"IsVisible": "{{#Property:oPagesDT/#Property:pageTestForm1_datos_tecnicos/#Property:txtFechaInicioExtremo/#Property:visible}}",
 							"KeyboardType": "Number",
 							"Value": "{RequestStartDate}",
-							"_Name": "FormCellSimpleProperty2",
+							"_Name": "txtFechaInicioExtremo",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "Hora inicial",
 							"IsEditable": false,
-							"IsVisible": true,
+							"IsVisible": "{{#Property:oPagesDT/#Property:pageTestForm1_datos_tecnicos/#Property:txtHoraInicial/#Property:visible}}",
 							"KeyboardType": "Number",
 							"Value": "{HoraIniExtremo}",
-							"_Name": "FormCellSimpleProperty3",
+							"_Name": "txtHoraInicial",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "Hora final",
 							"IsEditable": false,
-							"IsVisible": true,
+							"IsVisible": "{{#Property:oPagesDT/#Property:pageTestForm1_datos_tecnicos/#Property:txtHoraFinal/#Property:visible}}",
 							"KeyboardType": "Number",
 							"Value": "{HoraFinExtremo}",
-							"_Name": "FormCellSimpleProperty4",
+							"_Name": "txtHoraFinal",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "BP firma ",
 							"IsEditable": false,
-							"IsVisible": true,
+							"IsVisible": "{{#Property:oPagesDT/#Property:pageTestForm1_datos_tecnicos/#Property:txtBPFirma/#Property:visible}}",
 							"KeyboardType": "Email",
 							"Value": "{BPFirma}",
-							"_Name": "FormCellSimpleProperty5",
+							"_Name": "txtBPFirma",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "Teléfono BP firma",
 							"IsEditable": false,
-							"IsVisible": true,
+							"IsVisible": "{{#Property:oPagesDT/#Property:pageTestForm1_datos_tecnicos/#Property:txtTelefonoBP/#Property:visible}}",
 							"KeyboardType": "Number",
 							"Value": "/SAPAssetManager/Rules/vanti/TelefonoBPCliente.js",
-							"_Name": "FormCellSimpleProperty6",
+							"_Name": "txtTelefonoBP",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "Tipo de corte",
 							"IsEditable": false,
-							"IsVisible": true,
+							"IsVisible": "{{#Property:oPagesDT/#Property:pageTestForm1_datos_tecnicos/#Property:txtTipoCorte/#Property:visible}}",
 							"KeyboardType": "Number",
-							"Value": "{TipoCorte2}",
-							"_Name": "FormCellSimpleProperty7",
+							"Value": "/SAPAssetManager/Rules/vanti/PageForm1DT_TipoCorte2.js",
+							"_Name": "txtTipoCorte",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "Producto de servicio",
 							"IsEditable": false,
-							"IsVisible": true,
+							"IsVisible": "{{#Property:oPagesDT/#Property:pageTestForm1_datos_tecnicos/#Property:txtProductoServicio/#Property:visible}}",
 							"KeyboardType": "Default",
 							"Value": "/SAPAssetManager/Rules/vanti/DescServTecnico.js",
-							"_Name": "FormCellSimpleProperty8",
+							"_Name": "txtProductoServicio",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "Descripción corta",
 							"IsEditable": false,
-							"IsVisible": true,
+							"IsVisible": "{{#Property:oPagesDT/#Property:pageTestForm1_datos_tecnicos/#Property:txtDescCorta/#Property:visible}}",
 							"KeyboardType": "Default",
 							"Value": "/SAPAssetManager/Rules/vanti/DescServCliente.js",
-							"_Name": "FormCellSimpleProperty9",
+							"_Name": "txtDescCorta",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "Defectos del punto de suministro",
 							"IsEditable": false,
-							"IsVisible": true,
+							"IsVisible": "{{#Property:oPagesDT/#Property:pageTestForm1_datos_tecnicos/#Property:txtDefPuntoSuministro/#Property:visible}}",
 							"KeyboardType": "Number",
-							"_Name": "FormCellSimpleProperty10",
+							"Value": "/SAPAssetManager/Rules/vanti/PageForm1DT_DefPuntSuministro.js",
+							"_Name": "txtDefPuntoSuministro",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "Motivo de suspensión",
 							"IsEditable": false,
-							"IsVisible": true,
+							"IsVisible": "{{#Property:oPagesDT/#Property:pageTestForm1_datos_tecnicos/#Property:txtMotivoSuspension/#Property:visible}}",
 							"KeyboardType": "Number",
-							"_Name": "FormCellSimpleProperty11",
+							"Value": "/SAPAssetManager/Rules/vanti/PageForm1DT_MotSuspension.js",
+							"_Name": "txtMotivoSuspension",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
 					],
 					"Visible": true
 				}
 			],
-			"_Name": "FormCellContainer0",
+			"_Name": "fromContDC",
 			"_Type": "Control.Type.FormCellContainer"
 		}
 	],
 	"OnReturning": "/SAPAssetManager/Rules/OverviewPage/OverviewOnPageReturning.js",
-	"_Name": "pageTestForm1_datos_cliente",
+	"_Name": "pageTestForm1_datos_tecnicos",
 	"_Type": "Page"
 }

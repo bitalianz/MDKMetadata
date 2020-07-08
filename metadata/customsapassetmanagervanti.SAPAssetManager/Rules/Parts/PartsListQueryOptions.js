@@ -24,6 +24,8 @@ export default function PartsListQueryOptions(context) {
         queryBuilder.filter().and(searchTerms);
     }
 
-    queryBuilder.orderBy('OperationNo','ItemNumber');
+//    queryBuilder.orderBy('OperationNo','ItemNumber');
+    // queryBuilder.orderBy('WithdrawnQuantity desc','OperationNo','ItemNumber');
+    queryBuilder.orderBy('WithdrawnQuantity desc');
     return queryBuilder;
 }

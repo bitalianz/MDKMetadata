@@ -1,0 +1,21 @@
+{
+	"Headers": {
+		"OfflineOData.RemoveAfterUpload": "true",
+		"OfflineOData.TransactionID": "/SAPAssetManager/Rules/vanti/ZZHistRecintosCreate_TXID.js"
+	},
+	"OnSuccess": "/SAPAssetManager/Actions/Page/ClosePage.action",
+	"Properties": {
+		"Consec": "/SAPAssetManager/Rules/vanti/ZZHistRecintosCreate_Consec.js",
+		"Descripcion": "/SAPAssetManager/Rules/vanti/ZZHistRecintosCreate_Descripcion.js",
+		"OrderId": "#Property:OrderId",
+		"Recinto": "/SAPAssetManager/Rules/vanti/ZZHistRecintosCreate_Recinto.js",
+		"TipoRecinto": "/SAPAssetManager/Rules/vanti/ZZHistRecintosCreate_TipoRecinto.js",
+		"TotalKw": "/SAPAssetManager/Rules/vanti/ZZHistRecintosCreate_TotalKw.js",
+		"VolumenCo": "/SAPAssetManager/Rules/vanti/ZZHistRecintosCreate_VolumenCo.js"
+	},
+	"Target": {
+		"EntitySet": "ZZHistRecintos",
+		"Service": "/SAPAssetManager/Services/AssetManager.service"
+	},
+	"_Type": "Action.Type.ODataService.CreateEntity"
+}

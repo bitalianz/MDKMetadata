@@ -19,44 +19,157 @@
 						{
 							"Caption": "Cuenta Contrato",
 							"IsEditable": false,
-							"IsVisible": true,
+							"IsVisible": "{{#Property:oPagesDC/#Property:pageTestForm1_datos_cliente/#Property:txtCuentaContrato/#Property:visible}}",
 							"KeyboardType": "Number",
 							"Value": "{CuentaContrato}",
-							"_Name": "FormCellSimpleProperty0",
+							"_Name": "txtCuentaContrato",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "Nombre del cliente",
 							"IsEditable": false,
-							"IsVisible": true,
+							"IsVisible": "{{#Property:oPagesDC/#Property:pageTestForm1_datos_cliente/#Property:txtNombreCliente/#Property:visible}}",
 							"KeyboardType": "Email",
 							"Value": "/SAPAssetManager/Rules/vanti/NombreCliente.js",
-							"_Name": "FormCellSimpleProperty1",
+							"_Name": "txtNombreCliente",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Barrio",
+							"IsEditable": false,
+							"IsVisible": "{{#Property:oPagesDC/#Property:pageTestForm1_datos_cliente/#Property:txtBarrio/#Property:visible}}",
+							"Value": "/SAPAssetManager/Rules/vanti/PageForm1DC_ZBarrioOC.js",
+							"_Name": "txtBarrio",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "Descripción del producto de Servicio",
 							"IsEditable": false,
-							"IsVisible": true,
+							"IsVisible": "{{#Property:oPagesDC/#Property:pageTestForm1_datos_cliente/#Property:txtDescripcionProducto/#Property:visible}}",
 							"KeyboardType": "Default",
 							"Value": "/SAPAssetManager/Rules/vanti/DescServCliente.js",
-							"_Name": "FormCellSimpleProperty3",
+							"_Name": "txtDescripcionProducto",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"Caption": "Producto Servihogar",
 							"IsEditable": false,
-							"IsVisible": true,
+							"IsVisible": "{{#Property:oPagesDC/#Property:pageTestForm1_datos_cliente/#Property:txtProductoServihogar/#Property:visible}}",
 							"KeyboardType": "Default",
 							"Value": "{DescServhogar}",
-							"_Name": "FormCellSimpleProperty4",
+							"_Name": "txtProductoServihogar",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Estado Servihogar",
+							"IsEditable": false,
+							"IsVisible": "{{#Property:oPagesDC/#Property:pageTestForm1_datos_cliente/#Property:txtEstadoServihogar/#Property:visible}}",
+							"PlaceHolder": "PlaceHolder",
+							"Value": "/SAPAssetManager/Rules/vanti/Form1DC_EstatusServihogar.js",
+							"_Name": "txtEstadoServihogar",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Contador RTR",
+							"IsEditable": false,
+							"IsVisible": "{{#Property:oPagesDC/#Property:pageTestForm1_datos_cliente/#Property:txtContadorRTR/#Property:visible}}",
+							"PlaceHolder": "PlaceHolder",
+							"Value": "/SAPAssetManager/Rules/vanti/PageForm1DC_ContadorRTR.js",
+							"_Name": "txtContadorRTR",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Unidad de Lectura",
+							"IsEditable": false,
+							"IsVisible": "{{#Property:oPagesDC/#Property:pageTestForm1_datos_cliente/#Property:txtUnidadLectura/#Property:visible}}",
+							"Value": "/SAPAssetManager/Rules/vanti/PageForm1DC_UndLec.js",
+							"_Name": "txtUnidadLectura",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Código de Orden Lectura",
+							"IsEditable": false,
+							"IsVisible": "{{#Property:oPagesDC/#Property:pageTestForm1_datos_cliente/#Property:txtCodigoOrdenLectura/#Property:visible}}",
+							"PlaceHolder": "PlaceHolder",
+							"Value": "/SAPAssetManager/Rules/vanti/PageForm1DC_CodOrdLec.rule.js",
+							"_Name": "txtCodigoOrdenLectura",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Malla",
+							"IsEditable": false,
+							"IsVisible": "{{#Property:oPagesDC/#Property:pageTestForm1_datos_cliente/#Property:txtMalla/#Property:visible}}",
+							"PlaceHolder": "PlaceHolder",
+							"Value": "/SAPAssetManager/Rules/vanti/PageForm1DC_Malla.js",
+							"_Name": "txtMalla",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Teléfono RTR",
+							"IsEditable": false,
+							"IsVisible": "{{#Property:oPagesDC/#Property:pageTestForm1_datos_cliente/#Property:txtTelefonoRTR/#Property:visible}}",
+							"PlaceHolder": "PlaceHolder",
+							"Value": "/SAPAssetManager/Rules/vanti/PageForm1DC_Telefono1.js",
+							"_Name": "txtTelefonoRTR",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Teléfono Interlocutor",
+							"IsEditable": false,
+							"IsVisible": "{{#Property:oPagesDC/#Property:pageTestForm1_datos_cliente/#Property:txtTelefonoInterlocutor/#Property:visible}}",
+							"Value": "/SAPAssetManager/Rules/vanti/PageForm1DC_TelefonoBP.js",
+							"_Name": "txtTelefonoInterlocutor",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Última Lectura",
+							"IsEditable": false,
+							"IsVisible": "{{#Property:oPagesDC/#Property:pageTestForm1_datos_cliente/#Property:txtUltimaLectura/#Property:visible}}",
+							"PlaceHolder": "PlaceHolder",
+							"Value": "/SAPAssetManager/Rules/vanti/PageForm1DC_UltLectura.js",
+							"_Name": "txtUltimaLectura",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Indicador de Fraude",
+							"IsEditable": false,
+							"IsVisible": "{{#Property:oPagesDC/#Property:pageTestForm1_datos_cliente/#Property:txtIndicadorFraude/#Property:visible}}",
+							"PlaceHolder": "PlaceHolder",
+							"Value": "/SAPAssetManager/Rules/vanti/PageForm1DC_MotivoFraude.js",
+							"_Name": "txtIndicadorFraude",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Situación de Suministro",
+							"IsEditable": false,
+							"IsVisible": "{{#Property:oPagesDC/#Property:pageTestForm1_datos_cliente/#Property:txtSituacionSuministro/#Property:visible}}",
+							"PlaceHolder": "PlaceHolder",
+							"Value": "/SAPAssetManager/Rules/vanti/PageForm1DC_SitSuministro.js",
+							"_Name": "txtSituacionSuministro",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Anomalías Predio",
+							"IsEditable": false,
+							"IsVisible": "{{#Property:oPagesDC/#Property:pageTestForm1_datos_cliente/#Property:txtAnomaliaPredio/#Property:visible}}",
+							"PlaceHolder": "PlaceHolder",
+							"_Name": "txtAnomaliaPredio",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Presión Contratada ",
+							"IsEditable": false,
+							"IsVisible": "{{#Property:oPagesDC/#Property:pageTestForm1_datos_cliente/#Property:txtPresContOper/#Property:visible}}",
+							"PlaceHolder": "PlaceHolder",
+							"Value": "/SAPAssetManager/Rules/vanti/PageForm1DC_PresContratada.js",
+							"_Name": "txtPresContOper",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
 					],
 					"Visible": true
 				}
 			],
-			"_Name": "FormCellContainer0",
+			"_Name": "frmContDC",
 			"_Type": "Control.Type.FormCellContainer"
 		}
 	],

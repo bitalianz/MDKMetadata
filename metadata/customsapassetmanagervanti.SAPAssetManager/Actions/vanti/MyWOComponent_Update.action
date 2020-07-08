@@ -1,0 +1,14 @@
+{
+	"Headers": {
+		"OfflineOData.TransactionID": "/SAPAssetManager/Rules/vanti/MyWOComponentsUpdate_TXID.js"
+	},
+	"Properties": {
+		"TextTypeDesc": "/SAPAssetManager/Rules/vanti/MyWOComponentsUpdate_TextTypeDesc.js"
+	},
+	"Target": {
+		"EntitySet": "MyWorkOrderComponents",
+		"ReadLink": "/SAPAssetManager/Rules/vanti/MyWOComponentsUpdate_ReadLink.js",
+		"Service": "/SAPAssetManager/Services/AssetManager.service"
+	},
+	"_Type": "Action.Type.ODataService.UpdateEntity"
+}

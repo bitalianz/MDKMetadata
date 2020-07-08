@@ -7,6 +7,11 @@
 				"SystemItem": "Camera",
 				"Text": "Item",
 				"Visible": true
+			},
+			{
+				"OnPress": "/SAPAssetManager/Rules/vanti/PageForm5OnAddPress.js",
+				"Position": "right",
+				"Text": "Agregar"
 			}
 		]
 	},
@@ -21,7 +26,7 @@
 						"FooterVisible": false
 					},
 					"Header": {
-						"Caption": "Recintos a inspeccionar (2)",
+						"Caption": "Recintos a inspeccionar",
 						"UseTopPadding": true
 					},
 					"Visible": true,
@@ -29,23 +34,27 @@
 					"_Type": "Section.Type.ContactCell"
 				},
 				{
+					"DataSubscriptions": [
+					],
 					"EmptySection": {
 						"FooterVisible": false
 					},
 					"ObjectCell": {
-						"AccessoryType": "none",
-						"Description": "N° de equipos  2",
+						"AccessoryType": "checkmark",
+						"Description": "/SAPAssetManager/Rules/vanti/PageForm5TableDescription.js",
 						"DetailImage": "res://mdk_logo.png",
 						"DetailImageIsCircular": false,
-						"Footnote": "Total KW 16",
+						"Footnote": "/SAPAssetManager/Rules/vanti/PageForm5TableFootnote.js",
+						"OnAccessoryButtonPress": "/SAPAssetManager/Rules/vanti/PageForm5TableOnDeletePress.js",
+						"OnPress": "/SAPAssetManager/Rules/vanti/PageForm5TableOnDeletePress.js",
 						"PreserveIconStackSpacing": true,
-						"ProgressIndicator": "inProgress",
-						"StatusText": "CO ppm 24",
-						"Subhead": "Subhead",
-						"Title": "A_04_lavandría"
+						"StatusText": "/SAPAssetManager/Rules/vanti/PageForm5TableStatus.js",
+						"Subhead": "/SAPAssetManager/Rules/vanti/PageForm5TableDescription.js",
+						"Title": "/SAPAssetManager/Rules/vanti/PageForm5TableTitle.js"
 					},
 					"Target": {
-						"EntitySet": "Customers",
+						"EntitySet": "ZZHistRecintos",
+						"QueryOptions": "$filter=OrderId eq '{{#Property:OrderId}}'&$orderby=Consec",
 						"Service": "/SAPAssetManager/Services/AssetManager.service"
 					},
 					"Visible": true,
@@ -63,7 +72,7 @@
 				"Caption": "Siguente",
 				"Clickable": true,
 				"Enabled": true,
-				"OnPress": "/SAPAssetManager/Actions/vanti/Open_form_6.action",
+				"OnPress": "/SAPAssetManager/Rules/vanti/PageForm5OnNextPress.js",
 				"Visible": true,
 				"_Name": "ToolbarItem0",
 				"_Type": "Control.Type.ToolbarItem"

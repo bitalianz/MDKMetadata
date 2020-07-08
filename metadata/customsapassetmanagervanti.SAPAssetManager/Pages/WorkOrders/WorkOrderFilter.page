@@ -35,23 +35,15 @@
 								},
 								{
 									"DisplayValue": "Barrio",
-									"ReturnValue": "Address/Barrio"
+									"ReturnValue": "/SAPAssetManager/Rules/WorkOrders/ListView/WorkOrdersListViewTitle.js"
 								},
 								{
-									"DisplayValue": "Fecha vistia concertada",
-									"ReturnValue": ""
+									"DisplayValue": "Hora de Inicio Extremo",
+									"ReturnValue": "HoraIniExtremo"
 								},
 								{
-									"DisplayValue": "Código municipio",
-									"ReturnValue": "Municipio"
-								},
-								{
-									"DisplayValue": "Unidad de lectura",
-									"ReturnValue": "UnidadLectura"
-								},
-								{
-									"DisplayValue": "Orden de recorrido",
-									"ReturnValue": "CodOrdLectura"
+									"DisplayValue": "Ruta de Lectura",
+									"ReturnValue": "RutaLectura"
 								}
 							],
 							"_Name": "SortFilter",

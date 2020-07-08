@@ -35,7 +35,7 @@
 							"AllowEmptySelection": false,
 							"AllowMultipleSelection": true,
 							"Caption": "Anomalía",
-							"IsEditable": true,
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm1/#Property:lstPickAnomalias/#Property:editable}}",
 							"IsSelectedSectionEnabled": false,
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm1/#Property:lstPickAnomalias/#Property:visible}}",
 							"PickerItems": {
@@ -43,11 +43,14 @@
 								"ReturnValue": "{Codigo}",
 								"Target": {
 									"EntitySet": "ZZAnomaliass",
-									"QueryOptions": "$filter=OrderId eq '{{#Property:OrderId}}'",
+									"QueryOptions": "$filter=OrderId eq '{{#Property:OrderId}}'&$orderby=Codigo",
 									"Service": "/SAPAssetManager/Services/AssetManager.service"
 								}
 							},
 							"PickerPrompt": "Por favor seleccione una o varias opciones",
+							"Search": {
+								"Enabled": true
+							},
 							"_Name": "lstPickAnomalias",
 							"_Type": "Control.Type.FormCell.ListPicker"
 						},
@@ -55,7 +58,7 @@
 							"AllowEmptySelection": false,
 							"AllowMultipleSelection": false,
 							"Caption": "Tipo de lectura",
-							"IsEditable": true,
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm1/#Property:lstPickTipoLectura/#Property:editable}}",
 							"IsPickerDismissedOnSelection": true,
 							"IsSearchCancelledAfterSelection": false,
 							"IsSelectedSectionEnabled": false,
@@ -81,7 +84,7 @@
 						{
 							"AlternateInput": "None",
 							"Caption": "Lectura",
-							"IsEditable": true,
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm1/#Property:txtLectura/#Property:editable}}",
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm1/#Property:txtLectura/#Property:visible}}",
 							"KeyboardType": "Number",
 							"_Name": "txtLectura",
@@ -91,7 +94,7 @@
 							"AllowEmptySelection": false,
 							"AllowMultipleSelection": false,
 							"Caption": "Tipo de corte",
-							"IsEditable": true,
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm1/#Property:lstPickTipoCorte/#Property:editable}}",
 							"IsPickerDismissedOnSelection": true,
 							"IsSearchCancelledAfterSelection": false,
 							"IsSelectedSectionEnabled": false,
@@ -101,6 +104,7 @@
 								"ReturnValue": "{Codigo}",
 								"Target": {
 									"EntitySet": "ZZTipoCortes",
+									"QueryOptions": "$orderby=Codigo",
 									"Service": "/SAPAssetManager/Services/AssetManager.service"
 								}
 							},
@@ -110,17 +114,81 @@
 						},
 						{
 							"Caption": "Instalación/Sustitución Medidor",
-							"IsEditable": true,
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm1/#Property:swInstalacion/#Property:editable}}",
 							"IsVisible": "{{#Property:oPages/#Property:pageTestForm1/#Property:swInstalacion/#Property:visible}}",
 							"Value": false,
 							"_Name": "swInstalacion",
 							"_Type": "Control.Type.FormCell.Switch"
 						},
 						{
+							"Caption": "Persona que atiende la visita",
+							"IsEditable": true,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm1/#Property:txtPersona/#Property:visible}}",
+							"KeyboardType": "Email",
+							"PlaceHolder": "Introducir nombre",
+							"_Name": "txtPersona",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "Vínculo",
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm1/#Property:lstPickVinculo/#Property:editable}}",
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm1/#Property:lstPickVinculo/#Property:visible}}",
+							"PickerItems": {
+								"DisplayValue": "{Descripcion}",
+								"ReturnValue": "{Codigo}",
+								"Target": {
+									"EntitySet": "ZZVinculos",
+									"QueryOptions": "$orderby=Codigo",
+									"Service": "/SAPAssetManager/Services/AssetManager.service"
+								}
+							},
+							"PickerPrompt": "Por favor seleccione una sola opción",
+							"_Name": "lstPickVinculo",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						},
+						{
+							"Caption": "Celular",
+							"IsEditable": true,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm1/#Property:txtCelular/#Property:visible}}",
+							"KeyboardType": "Number",
+							"PlaceHolder": "XXXXXXXXXX",
+							"ValidationProperties": {
+								"SeparatorBackgroundColor": "#193BD0",
+								"ValidationMessage": "#33ED1A",
+								"ValidationMessageColor": "#F80707",
+								"ValidationViewBackgroundColor": "#F701D9"
+							},
+							"_Name": "txtCelular",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Email",
+							"IsEditable": true,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm1/#Property:txtEmail/#Property:visible}}",
+							"KeyboardType": "Email",
+							"PlaceHolder": "Formato: ejemplo@ejemplo.com",
+							"_Name": "txtEmail",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"AlternateInput": "None",
+							"Caption": "Numero de Cuotas",
+							"IsEditable": true,
+							"IsVisible": "{{#Property:oPages/#Property:pageTestForm1/#Property:txtCuotas/#Property:visible}}",
+							"KeyboardType": "Number",
+							"_Name": "txtCuotas",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
 							"AllowEmptySelection": false,
 							"AllowMultipleSelection": false,
 							"Caption": "Cobro compartido / Nro pagadores",
-							"IsEditable": true,
+							"IsEditable": "{{#Property:oPages/#Property:pageTestForm1/#Property:lstPagadores/#Property:editable}}",
 							"IsPickerDismissedOnSelection": true,
 							"IsSearchCancelledAfterSelection": false,
 							"IsSelectedSectionEnabled": false,
@@ -155,54 +223,6 @@
 							"PickerPrompt": "Por favor seleccione una sola opción",
 							"_Name": "lstPagadores",
 							"_Type": "Control.Type.FormCell.ListPicker"
-						},
-						{
-							"AllowEmptySelection": false,
-							"AllowMultipleSelection": false,
-							"Caption": "Vínculo",
-							"IsEditable": true,
-							"IsPickerDismissedOnSelection": true,
-							"IsSearchCancelledAfterSelection": false,
-							"IsSelectedSectionEnabled": false,
-							"IsVisible": "{{#Property:oPages/#Property:pageTestForm1/#Property:lstPickVinculo/#Property:visible}}",
-							"PickerItems": {
-								"DisplayValue": "{Descripcion}",
-								"ReturnValue": "{Codigo}",
-								"Target": {
-									"EntitySet": "ZZVinculos",
-									"Service": "/SAPAssetManager/Services/AssetManager.service"
-								}
-							},
-							"PickerPrompt": "Por favor seleccione una sola opción",
-							"_Name": "lstPickVinculo",
-							"_Type": "Control.Type.FormCell.ListPicker"
-						},
-						{
-							"Caption": "Celular",
-							"IsEditable": true,
-							"IsVisible": "{{#Property:oPages/#Property:pageTestForm1/#Property:txtCelular/#Property:visible}}",
-							"KeyboardType": "Number",
-							"OnValueChange": "/SAPAssetManager/Rules/vanti/ValidateFields.js",
-							"_Name": "txtCelular",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
-						},
-						{
-							"Caption": "Email",
-							"IsEditable": true,
-							"IsVisible": "{{#Property:oPages/#Property:pageTestForm1/#Property:txtEmail/#Property:visible}}",
-							"KeyboardType": "Email",
-							"OnPress": "/SAPAssetManager/Actions/vanti/Open_form_1_datos_cliente.action",
-							"_Name": "txtEmail",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
-						},
-						{
-							"AlternateInput": "None",
-							"Caption": "Numero de Cuotas",
-							"IsEditable": true,
-							"IsVisible": "{{#Property:oPages/#Property:pageTestForm1/#Property:txtCuotas/#Property:visible}}",
-							"KeyboardType": "Number",
-							"_Name": "txtCuotas",
-							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
 							"IsEditable": true,

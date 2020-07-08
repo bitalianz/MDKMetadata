@@ -4,7 +4,9 @@
 	"externals": [
 		"file-system",
 		"ui/dialogs",
-		"utils/utils"
+		"utils/utils",
+		"nativescript-geolocation",
+		"ui/enums"
 	],
 	"nativescript-project": "../dist",
 	"seam-project": "../metadata/customsapassetmanagervanti.SAPAssetManager",

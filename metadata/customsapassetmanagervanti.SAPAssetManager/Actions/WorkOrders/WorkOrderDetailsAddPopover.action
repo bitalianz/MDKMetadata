@@ -1,29 +1,37 @@
 {
-  "PopoverItems": 
-	[{
- 		"Title": "$(L,add_follow_up_workorder)",
- 		"OnPress" : "/SAPAssetManager/Rules/WorkOrders/FollowUpWorkOrderCreateNav.js"
- 	},
-	{
-		"Title": "$(L,add_operation)",
-		"OnPress" : "/SAPAssetManager/Rules/WorkOrders/Operations/CreateUpdate/WorkOrderOperationCreateNav.js"
-	},
-	{
-		"Title" : "$(L,add_part)",
-		"OnPress" : "/SAPAssetManager/Rules/Parts/CreateUpdate/PartCreateNav.js"
-	},
-	{
-		"Title" : "/SAPAssetManager/Rules/Notes/NotePopoverSelectionText.js",
-		"OnPress" : "/SAPAssetManager/Rules/Notes/NoteCreateNav.js"
-	},
-	{
-		"Title": "$(L,add_notification)",
-		"OnPress" : "/SAPAssetManager/Rules/WorkOrders/WorkOrderNotificationCreateNav.js"
-	},
-	{
-		"Title" : "$(L,add_reminder)",
-		"OnPress" : "/SAPAssetManager/Rules/Reminders/ReminderCreateNav.js"
-	}
+	"PopoverItems": [
+		{
+			"OnPress": "/SAPAssetManager/Rules/WorkOrders/FollowUpWorkOrderCreateNav.js",
+			"Title": "$(L,add_follow_up_workorder)"
+		},
+		{
+			"Enabled": false,
+			"OnPress": "/SAPAssetManager/Rules/WorkOrders/Operations/CreateUpdate/WorkOrderOperationCreateNav.js",
+			"Title": "$(L,add_operation)",
+			"Visible": false
+		},
+		{
+			"Enabled": false,
+			"OnPress": "/SAPAssetManager/Rules/Parts/CreateUpdate/PartCreateNav.js",
+			"Title": "$(L,add_part)",
+			"Visible": false
+		},
+		{
+			"OnPress": "/SAPAssetManager/Rules/Notes/NoteCreateNav.js",
+			"Title": "/SAPAssetManager/Rules/Notes/NotePopoverSelectionText.js"
+		},
+		{
+			"Enabled": false,
+			"OnPress": "/SAPAssetManager/Rules/WorkOrders/WorkOrderNotificationCreateNav.js",
+			"Title": "$(L,add_notification)",
+			"Visible": false
+		},
+		{
+			"Enabled": false,
+			"OnPress": "/SAPAssetManager/Rules/Reminders/ReminderCreateNav.js",
+			"Title": "$(L,add_reminder)",
+			"Visible": false
+		}
 	],
 	"_Type": "Action.Type.PopoverMenu"
 }

@@ -1,4 +1,5 @@
 import PageFields from './PageFields';
+
 export default function PageForm1OnNextPress(context) {
 
 	var sMsg = PageFields.checkRequiredFields(context, "pageTestForm1");
